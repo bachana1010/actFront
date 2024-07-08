@@ -50,3 +50,39 @@ document.addEventListener('DOMContentLoaded', function() {
     updateImage();
     startAutoSwitch();
 });
+
+
+//სსს
+
+document.addEventListener('DOMContentLoaded', function() {
+    const navLinks = document.querySelectorAll('.nav-link');
+    const dropdownContainer = document.getElementById('dropdown-container');
+    const dropdownContents = document.querySelectorAll('.dropdown-content');
+
+    navLinks.forEach(link => {
+        link.addEventListener('mouseover', function() {
+            const targetMenu = this.getAttribute('data-target');
+            dropdownContents.forEach(content => {
+                if (content.id === targetMenu) {
+                    content.style.display = 'flex';
+                } else {
+                    content.style.display = 'none';
+                }
+            });
+            dropdownContainer.style.display = 'block';
+        });
+
+        link.addEventListener('mouseout', function() {
+            dropdownContainer.style.display = 'flex';
+        });
+    });
+
+    dropdownContainer.addEventListener('mouseover', function() {
+        this.style.display = 'block';
+    });
+
+    dropdownContainer.addEventListener('mouseout', function() {
+        this.style.display = 'none';
+    });
+});
+
