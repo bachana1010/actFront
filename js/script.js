@@ -71,10 +71,6 @@ document.addEventListener('DOMContentLoaded', function() {
             });
             dropdownContainer.style.display = 'block';
         });
-
-        link.addEventListener('mouseout', function() {
-            dropdownContainer.style.display = 'flex';
-        });
     });
 
     dropdownContainer.addEventListener('mouseover', function() {
@@ -85,4 +81,3 @@ document.addEventListener('DOMContentLoaded', function() {
         this.style.display = 'none';
     });
 });
-
