@@ -81,3 +81,23 @@ document.addEventListener('DOMContentLoaded', function() {
         this.style.display = 'none';
     });
 });
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.querySelector('.hamburger');
+    const cross = document.querySelector('.cross');
+    const menu = document.querySelector('.menu');
+
+    hamburger.addEventListener('click', function() {
+        menu.classList.add('open');
+        hamburger.style.display = 'none';
+        cross.style.display = 'block';
+    });
+
+    cross.addEventListener('click', function() {
+        menu.classList.remove('open');
+        cross.style.display = 'none';
+        hamburger.style.display = 'block';
+    });
+});

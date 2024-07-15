@@ -58,6 +58,7 @@ header {
     max-width: 20px;
 }
 
+
 /* Responsive Design */
 @media (max-width: 768px) {
     header .row:first-child {
@@ -214,7 +215,7 @@ header {
                 align-items: flex-start;
 
                 .vertical-line {
-                    height: 50px; /* Adjust height for smaller screens */
+                    height: 64px; /* Adjust height for smaller screens */
                     margin-bottom: 10px;
                 }
 
@@ -259,14 +260,14 @@ header {
         }
     }
 
-    @media (max-width: 768px) {
+    /* @media (max-width: 768px) {
         .hero-text {
             .text-container {
                 flex-direction: column;
                 align-items: flex-start;
             }
         }
-    }
+    } */
 }
 
 /* General styles */
@@ -583,10 +584,10 @@ body {
 }
 
 @media (max-width: 768px) {
-    .news-title {
+    /* .news-title {
         text-align: center;
-    }
-
+    } */
+/* 
     .news-line {
         width: 90%;
         margin: 0 auto 56px;
@@ -604,7 +605,7 @@ body {
     .news-cards .card img {
         width: 100%;
         height: auto;
-    }
+    } */
 }
 
 
@@ -998,3 +999,218 @@ body {
     display: block;
 }
 
+
+/* Add these styles to your existing CSS */
+
+/* Hamburger Menu Styles */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 100%;
+    height: 4px;
+    background: #333;
+}
+
+/* Hide the top row on mobile */
+@media (max-width: 768px) {
+    .header-row {
+        display: none;
+    }
+
+    .hamburger {
+        cursor: pointer;
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+    }
+
+    .nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+        position: absolute;
+        top: 60px; /* Adjust based on your header height */
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+        box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    }
+
+    .nav-item {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hamburger.active .bi-list {
+        display: none;
+    }
+
+    .hamburger.active .bi-x {
+        display: block;
+    }
+
+    .bi-x {
+        display: none;
+    }
+}
+
+
+.hamburger-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.hamburger-icon.open i::before {
+    content: "\f00d"; /* FontAwesome 'times' icon */
+}
+
+
+
+/* Global Styles */
+body {
+    font-family: 'Lato', Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    position: relative;
+    z-index: 1000;
+}
+
+.hamburger, .cross {
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.hamburger {
+    display: block;
+}
+
+.menu {
+    display: none;
+    position: fixed;
+    top: 120px;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 120px);
+    background: white;
+    color: black;
+    text-align: center;
+    z-index: 999;
+    overflow-y: auto;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.menu li {
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+}
+
+.menu a:hover {
+    background-color: #ddd;
+}
+
+@media (max-width: 768px) {
+    .row.align-items-center:first-of-type {
+        display: none;
+    }
+
+    .divider{
+        display:none
+    }
+
+        .text-container {
+            /* flex-direction: column; */
+            align-items: flex-start !important;
+        }
+
+    .hamburger {
+        display: block;
+        color: #17004C !important;
+        font-size:50px;
+        top: -54px;
+    }
+
+    .cross{
+        font-size:70px;
+        top: -54px;
+
+    }
+
+    .menu.open {
+        display: block;
+    }
+
+    
+    .img-fluid{
+        margin-left: 0px !important;
+    }
+
+    .card .text-container {
+        padding: 10px 0;
+        color: #333;
+        margin-top: -385px;
+  
+    }
+
+    .webinar{
+        font-size:20px !important
+    }
+
+    .play-button{
+        font-size:50px !important;
+        margin-right:-155px;
+        margin-top: 65px
+    }
+
+    .card-content{
+        max-height:350px
+    }
+
+}
+
+
+@media (min-width: 769px) {
+    .hamburger, .cross {
+        display: none;
+    }
+}
