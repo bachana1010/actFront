@@ -528,7 +528,7 @@ body {
     height: 2px;
     background-color: black;
     margin: 0;
-    width: 100%; /* Ensure it spans the full width */
+    width: 68%; /* Ensure it spans the full width */
 }
 
 .card {
@@ -1206,6 +1206,70 @@ header {
         max-height:350px
     }
 
+    .news-section .row.align-items-center .col-12 {
+        flex-direction: column; /* Stack elements vertically */
+    }
+
+    .news-title {
+        margin-bottom: -58px;
+        margin-right: 271px;
+        }
+
+    .view-all-link {
+        margin: 0 0 10px 0; /* Add spacing around the view all link */
+    }
+
+    .news-line, .section-line {
+   
+        display:none;
+    }
+
+    .view-all-link{
+        color: #61686E;
+        margin-right: 30px !important;
+        margin-top: 30px;
+        
+    }
+
+
+    .section-title{
+        font-size:25px;
+        margin-right:45px
+    }
+
+    .d-flex .align-items-center{
+        margin-left:10px
+    }
+
+    #viewAll{
+        margin-right:60px !important;
+        margin-top:10px
+    }
+}
+
+
+.news-section .row.align-items-center .col-12 {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.news-section .news-title {
+    margin-bottom: 10px; /* Add spacing below the title */
+    text-align: center; /* Center the title text */
+    width:0
+}
+
+
+.news-section .view-all-link {
+    margin: 10px 0; /* Add spacing around the view all link */
+    text-align: center; /* Center the link text */
+
+}
+
+.news-section .news-line {
+    width: 100%; /* Ensure the line spans the full width */
+    height: 2px; /* Set a fixed height for the line */
+    margin: 10px 0; /* Add spacing around the line */
 }
 
 
@@ -1214,3 +1278,45 @@ header {
         display: none;
     }
 }
+
+
+.news-section .row.align-items-center {
+    display: flex !important; /* Ensure flexbox display */
+}
+
+.news-section .row.align-items-center .col-12 {
+    display: flex !important; /* Ensure flex display */
+    justify-content: center; /* Center the content */
+    align-items: center; /* Align items vertically */
+}
+
+.featured-projects-section .row.align-items-center {
+    display: flex !important; /* Ensure flexbox display */
+}
+
+.featured-projects-section .row.align-items-center .col-12 {
+    display: flex !important; /* Ensure flex display */
+    justify-content: space-between; /* Distribute space between elements */
+    align-items: center; /* Align items vertically */
+}
+
+.view-all-link .ml-2{
+    color: #61686E;
+    margin-right:  135px;
+}
+
+
+
+
+/* Ensure the title section remains visible on all screen sizes */
+.featured-projects-section .row.align-items-center {
+    display: flex !important; /* Ensure flexbox display */
+}
+
+.featured-projects-section .row.align-items-center .col-12 {
+    display: flex !important; /* Ensure flex display */
+    justify-content: space-between; /* Distribute space between elements */
+    align-items: center; /* Align items vertically */
+}
+
+/* Adjust the spacing and alignment for mobile devices */
