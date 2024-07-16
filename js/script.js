@@ -93,11 +93,80 @@ document.addEventListener('DOMContentLoaded', function() {
         menu.classList.add('open');
         hamburger.style.display = 'none';
         cross.style.display = 'block';
+        console.log(hamburger,"cross")
+
+        
     });
 
     cross.addEventListener('click', function() {
         menu.classList.remove('open');
         cross.style.display = 'none';
         hamburger.style.display = 'block';
+    });
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const searchHamburger = $('.search-hamburger');
+  const searchClose = $('.search-close');
+
+  function toggleSearch() {
+    console.log("Aq shemodis?")
+    console.log("Aq shemodis?",searchClose)
+    console.log("Aq shemodis?",searchHamburger)
+    searchHamburger.toggleClass('active');
+    searchClose.toggleClass('active');
+  }
+
+
+
+  searchHamburger.click(toggleSearch);
+  searchClose.click(toggleSearch);
+
+  });
+
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.querySelector('.hamburger');
+    const cross = document.querySelector('.cross');
+    const menu = document.querySelector('.menu');
+
+    hamburger.addEventListener('click', function() {
+        menu.classList.add('open');
+        hamburger.classList.add('d-none');
+        cross.classList.remove('d-none');
+    });
+
+    cross.addEventListener('click', function() {
+        menu.classList.remove('open');
+        cross.classList.add('d-none');
+        hamburger.classList.remove('d-none');
+    });
+
+    const parentItems = document.querySelectorAll('.parent-item');
+
+    parentItems.forEach(item => {
+        item.addEventListener('click', function() {
+            const submenu = this.nextElementSibling;
+            submenu.classList.toggle('open');
+
+            const icon = this.querySelector('i');
+            icon.classList.toggle('fa-chevron-down');
+            icon.classList.toggle('fa-chevron-up');
+        });
+    });
+});
+
+
+
+$(document).ready(function() {
+    // Hide all submenus initially
+    $('.submenu').hide();
+
+    // Toggle submenu on click
+    $('.parent-item').on('click', function(e) {
+        e.preventDefault();
+        $(this).next('.submenu').slideToggle('fast');
+        $(this).find('.toggle-icon').text(function(_, value) { return value === '▼' ? '▲' : '▼'; });
     });
 });

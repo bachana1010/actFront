@@ -525,7 +525,7 @@ body {
 
 .news-line {
     flex-grow: 1;
-    height: 2px;
+    /* height: 2px; */
     background-color: black;
     margin: 0;
     width: 68%; /* Ensure it spans the full width */
@@ -583,30 +583,6 @@ body {
     white-space: normal; /* Allow text to wrap */
 }
 
-@media (max-width: 768px) {
-    /* .news-title {
-        text-align: center;
-    } */
-/* 
-    .news-line {
-        width: 90%;
-        margin: 0 auto 56px;
-    }
-
-    .news-cards {
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    .news-cards .card {
-        width: 100%;
-    }
-
-    .news-cards .card img {
-        width: 100%;
-        height: auto;
-    } */
-}
 
 
 /* Featured Projects Section */
@@ -1030,6 +1006,9 @@ body {
         display: flex;
         align-items: center;
     }
+    .hamburgerLan{
+        display:display
+    }
 
     .nav {
         display: none;
@@ -1103,9 +1082,9 @@ header {
     z-index: 1001;
 }
 
-.hamburger {
+/* .hamburger {
     display: block;
-}
+} */
 
 .menu {
     display: none;
@@ -1245,37 +1224,102 @@ header {
         margin-right:60px !important;
         margin-top:10px
     }
-}
 
+    #logoFooter{
+        margin-left:94px
+    }
 
-.news-section .row.align-items-center .col-12 {
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Center items horizontally */
-}
+    #socialFooter{
+        margin-top:43px
+    }
+
+    .search-icon {
+        cursor: pointer; /* Makes the icon clickable */
+        font-size: 24px; /* Adjust the size as needed */
+        padding: 10px; /* Adjust padding as needed */
+        color: #333; /* Adjust color as needed */
+        margin-right: 50px; /* Adjust margin as needed */
+        margin-top: -42px; /* Adjust margin as needed */
+      }
+      
+      .search-icon i {
+        font-size: 24px; /* Adjust size as needed */
+      }
+      
+      /* Add an "active" class for styling the close icon */
+      .search-icon {
+        cursor: pointer; /* Makes the icon clickable */
+        font-size: 24px; /* Adjust the size as needed */
+        padding: 10px; /* Adjust padding as needed */
+        color: #333; /* Adjust color as needed */
+        margin-right: 50px; /* Adjust margin as needed */
+        margin-top: -42px; /* Adjust margin as needed */
+      }
+      
+
+      
+      .search-icon {
+        cursor: pointer; /* Makes the icon clickable */
+        font-size: 24px; /* Adjust the size as needed */
+        padding: 10px; /* Adjust padding as needed */
+        color: #333; /* Adjust color as needed */
+        margin-right: 50px; /* Adjust margin as needed */
+        margin-top: -42px; /* Adjust margin as needed */
+      }
+      
+      .search-icon i {
+        font-size: 24px; /* Adjust size as needed */
+      }
+      
+      /* Only one icon can be active at a time */
+      .search-icon.active {
+      }
+      
+      .search-close {
+        display: none; /* Keep the disconnect icon initially hidden */
+      }
+      
+   
+      
+      
+      
+
+    .px-2 {
+        font-size: 35px;
+        color: #989898;
+    }
+
+    .news-section .row.align-items-center .col-12 {
+    flex-direction: column; 
+    align-items: center; 
+} 
 
 .news-section .news-title {
-    margin-bottom: 10px; /* Add spacing below the title */
-    text-align: center; /* Center the title text */
+    margin-bottom: 10px; 
+    text-align: center; 
     width:0
-}
-
+} 
 
 .news-section .view-all-link {
-    margin: 10px 0; /* Add spacing around the view all link */
-    text-align: center; /* Center the link text */
+    margin: 10px 0; 
+    text-align: center;
+} 
 
 }
 
-.news-section .news-line {
-    width: 100%; /* Ensure the line spans the full width */
-    height: 2px; /* Set a fixed height for the line */
-    margin: 10px 0; /* Add spacing around the line */
-}
+
+
+
+
+
 
 
 @media (min-width: 769px) {
     .hamburger, .cross {
         display: none;
+    }
+    .hamburgerLan{
+        display:none
     }
 }
 
@@ -1320,3 +1364,92 @@ header {
 }
 
 /* Adjust the spacing and alignment for mobile devices */
+
+
+
+
+
+
+body {
+    font-family: 'Lato', Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    color: black;
+    z-index: 999;
+    overflow-y: auto;
+    padding-top: 60px; /* Adjust padding as per your logo height */
+    box-sizing: border-box;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    position: relative;
+    border-bottom: 1px solid #ddd;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px; /* Adjust padding for spacing */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.menu a:hover {
+    background-color: #ddd;
+}
+
+.submenu {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    padding-left: 20px; /* Indentation for submenu items */
+    position: relative;
+    top: 15px; /* Ensure submenu appears below the parent menu */
+}
+
+.submenu li {
+    padding: 10px 0;
+}
+
+.parent-item {
+    cursor: pointer;
+}
+
+.toggle-icon {
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+    .row.align-items-center:first-of-type {
+        display: none;
+    }
+
+    .menu.open {
+        display: block;
+    }
+}
+
+
