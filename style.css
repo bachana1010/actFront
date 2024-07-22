@@ -293,7 +293,7 @@ body {
 /* Card styles */
 .card {
     background-color: #fff; /* White background for the card */
-    border-radius: 8px; /* Rounded corners */
+    border-radius: 0px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
     overflow: hidden; /* Ensure child elements don't overflow the card */
 }
@@ -593,6 +593,7 @@ body {
 .section-title {
     font-size: 30px;
     font-weight: bold;
+    margin-right:40px
 }
 
 .container {
@@ -972,7 +973,7 @@ body {
 
 /* Ensure the dropdown menu stays visible when hovering over it */
 .dropdown-container:hover {
-    display: block;
+    /* display: block; */
 }
 
 
@@ -1221,7 +1222,7 @@ header {
     }
 
     #viewAll{
-        margin-right:60px !important;
+        /* margin-right:60px !important; */
         margin-top:10px
     }
 
@@ -1280,10 +1281,22 @@ header {
       }
       
    
+      .new-section {
+        margin:0 !important
+    }
       
+    .section-line-bottom{
+        margin-left:0px !important
+    }
       
-      
-
+    .row{
+        margin-right: 0px !important;
+        margin-left:0px !important
+    }
+    .col-md-4{
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
     .px-2 {
         font-size: 35px;
         color: #989898;
@@ -1303,6 +1316,7 @@ header {
 .news-section .view-all-link {
     margin: 10px 0; 
     text-align: center;
+    width:69px
 } 
 
 }
@@ -1461,7 +1475,7 @@ body {
 
     .footer-bottom {
         
-        width: 104% !important;
+        width: 100% !important;
     }
 }
 
