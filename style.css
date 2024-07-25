@@ -887,8 +887,30 @@ body {
 
 /* Visual cue for active parent menu item */
 .nav-item:hover > .nav-link {
-    background-color: blue; /* Change to desired color */
+    background-color: #001f3f; /* Change to desired color */
     color: white; /* Ensure text is readable */
+}
+
+
+
+/* Global Styles */
+body {
+    font-family: 'Lato', Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Mobile specific styles */
+@media (max-width: 768px) {
+    .fixed-bottom-mobile {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background-color: red;
+        z-index: 1000; /* Ensure it stays above other content */
+    }
 }
 
 
@@ -1106,7 +1128,7 @@ header {
     padding: 0;
     margin: 0;
     position: relative;
-    top: 50%;
+    top: 67%;
     transform: translateY(-50%);
     width: 100%;
 }
@@ -1478,5 +1500,9 @@ body {
         width: 100% !important;
     }
 }
+
+
+
+
 
 

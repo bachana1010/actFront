@@ -1,29 +1,30 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Slider functionality
     const images = [
         'asserts/Rectangle12.png',
         'asserts/Rectangle4.png',
         'asserts/Rectangle14.png',
-        'asserts/Rectangle6.png' 
+        'asserts/Rectangle6.png'
     ];
-    
+
     let currentImageIndex = 0;
     let autoSwitchInterval;
-    
+
     const sliderImage = document.getElementById('slider-image');
     const dots = document.querySelectorAll('.dot');
-    
+
     function updateImage() {
         sliderImage.src = images[currentImageIndex];
         updateDots();
     }
-    
+
     function startAutoSwitch() {
         autoSwitchInterval = setInterval(function() {
             currentImageIndex = (currentImageIndex === images.length - 1) ? 0 : currentImageIndex + 1;
             updateImage();
         }, 2000);
     }
-    
+
     function stopAutoSwitch() {
         clearInterval(autoSwitchInterval);
     }
@@ -37,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
-    
+
     dots.forEach((dot, index) => {
         dot.addEventListener('click', function() {
             stopAutoSwitch();
@@ -49,12 +50,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     updateImage();
     startAutoSwitch();
-});
 
-
-//სსს
-
-document.addEventListener('DOMContentLoaded', function() {
+    // Navigation dropdown functionality
     const navLinks = document.querySelectorAll('.nav-link');
     const dropdownContainer = document.getElementById('dropdown-container');
     const dropdownContents = document.querySelectorAll('.dropdown-content');
@@ -62,14 +59,32 @@ document.addEventListener('DOMContentLoaded', function() {
     navLinks.forEach(link => {
         link.addEventListener('mouseover', function() {
             const targetMenu = this.getAttribute('data-target');
-            dropdownContents.forEach(content => {
-                if (content.id === targetMenu) {
-                    content.style.display = 'flex';
-                } else {
-                    content.style.display = 'none';
-                }
-            });
-            dropdownContainer.style.display = 'block';
+            const dropdownContent = document.getElementById(targetMenu);
+
+            // Check if the dropdown content exists
+            if (dropdownContent) {
+                dropdownContents.forEach(content => {
+                    if (content.id === targetMenu) {
+                        content.style.display = 'flex';
+                    } else {
+                        content.style.display = 'none';
+                    }
+                });
+                dropdownContainer.style.display = 'block';
+            } else {
+                dropdownContainer.style.display = 'none';
+            }
+        });
+
+        link.addEventListener('mouseleave', function() {
+            const targetMenu = this.getAttribute('data-target');
+            const dropdownContent = document.getElementById(targetMenu);
+            
+            if (dropdownContent) {
+                dropdownContent.addEventListener('mouseleave', function() {
+                    dropdownContent.style.display = 'none';
+                });
+            }
         });
     });
 
@@ -77,14 +92,11 @@ document.addEventListener('DOMContentLoaded', function() {
         this.style.display = 'block';
     });
 
-    dropdownContainer.addEventListener('mouseout', function() {
+    dropdownContainer.addEventListener('mouseleave', function() {
         this.style.display = 'none';
     });
-});
 
-
-
-document.addEventListener('DOMContentLoaded', function() {
+    // Hamburger menu functionality
     const hamburger = document.querySelector('.hamburger');
     const cross = document.querySelector('.cross');
     const menu = document.querySelector('.menu');
@@ -93,9 +105,7 @@ document.addEventListener('DOMContentLoaded', function() {
         menu.classList.add('open');
         hamburger.style.display = 'none';
         cross.style.display = 'block';
-        console.log(hamburger,"cross")
-
-        
+        console.log(hamburger, "cross");
     });
 
     cross.addEventListener('click', function() {
@@ -103,46 +113,23 @@ document.addEventListener('DOMContentLoaded', function() {
         cross.style.display = 'none';
         hamburger.style.display = 'block';
     });
-});
 
-
-document.addEventListener('DOMContentLoaded', function() {
+    // Search icon toggle functionality
     const searchHamburger = $('.search-hamburger');
-  const searchClose = $('.search-close');
+    const searchClose = $('.search-close');
 
-  function toggleSearch() {
-    console.log("Aq shemodis?")
-    console.log("Aq shemodis?",searchClose)
-    console.log("Aq shemodis?",searchHamburger)
-    searchHamburger.toggleClass('active');
-    searchClose.toggleClass('active');
-  }
+    function toggleSearch() {
+        console.log("Aq shemodis?");
+        console.log("Aq shemodis?", searchClose);
+        console.log("Aq shemodis?", searchHamburger);
+        searchHamburger.toggleClass('active');
+        searchClose.toggleClass('active');
+    }
 
+    searchHamburger.click(toggleSearch);
+    searchClose.click(toggleSearch);
 
-
-  searchHamburger.click(toggleSearch);
-  searchClose.click(toggleSearch);
-
-  });
-
-
-  document.addEventListener('DOMContentLoaded', function() {
-    const hamburger = document.querySelector('.hamburger');
-    const cross = document.querySelector('.cross');
-    const menu = document.querySelector('.menu');
-
-    hamburger.addEventListener('click', function() {
-        menu.classList.add('open');
-        hamburger.classList.add('d-none');
-        cross.classList.remove('d-none');
-    });
-
-    cross.addEventListener('click', function() {
-        menu.classList.remove('open');
-        cross.classList.add('d-none');
-        hamburger.classList.remove('d-none');
-    });
-
+    // Mobile menu functionality
     const parentItems = document.querySelectorAll('.parent-item');
 
     parentItems.forEach(item => {
@@ -150,14 +137,19 @@ document.addEventListener('DOMContentLoaded', function() {
             const submenu = this.nextElementSibling;
             submenu.classList.toggle('open');
 
-            const icon = this.querySelector('i');
-            icon.classList.toggle('fa-chevron-down');
-            icon.classList.toggle('fa-chevron-up');
+            // Toggle active class on parent item
+            this.classList.toggle('active');
+
+            // Update the toggle icon
+            const toggleIcon = this.querySelector('.toggle-icon');
+            if (submenu.classList.contains('open')) {
+                toggleIcon.textContent = '▲';
+            } else {
+                toggleIcon.textContent = '▼';
+            }
         });
     });
 });
-
-
 
 $(document).ready(function() {
     // Hide all submenus initially
