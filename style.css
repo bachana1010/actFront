@@ -99,9 +99,11 @@ header {
     display: flex;
     flex-direction: column; /* Stack vertically */
     align-items: center;
-    background-image: url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExY3Y0NHB3aWh4ZmdkdGw4czVoZDA0bjF2dWJwNHU3eGVwaHJwcWNibSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/kuf7g0KM5UMBW/200.webp');
-    background-size: cover;
+  
     height: 100vh;
+    position:relative;
+    overflow:hidden;
+    min-height:100vh;
 
     .container {
         display: flex;
@@ -268,6 +270,16 @@ header {
             }
         }
     } */
+}
+
+.video-bg{
+position:absolute;
+top:0;
+left:0;
+min-width:100%;
+min-height: 100%;
+z-index:-1
+
 }
 
 /* General styles */
