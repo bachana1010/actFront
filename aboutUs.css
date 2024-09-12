@@ -1,0 +1,100 @@
+/* About Us Section */
+.about-us-section {
+    padding: 40px 0;
+    text-align: left;
+}
+
+/* Title Styling */
+.about-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 20px;
+    margin-left: 190px;
+}
+
+/* About Us Cards Section */
+/* About Us Cards Section */
+.about-cards {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping to create new rows when space runs out */
+    gap: 20px; /* Space between the cards */
+    justify-content: flex-start; /* Aligns the cards to the left */
+    margin-left: 175px; /* Adjust as needed */
+}
+
+/* Individual Card Styling */
+.about-card {
+    display: flex;
+    width: 445px;
+    height: 309px;
+    background-color: #fbfbfb;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* Left section: Image and icons */
+.card-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.card-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.card-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 136px;
+}
+
+/* Right section: Text and details */
+.card-right {
+    flex: 1;
+    text-align: left;
+    margin-top: 29px;
+}
+
+.card-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #17004c;
+    margin-bottom: 5px;
+}
+
+.card-title {
+    font-size: 16px;
+    color: #1f1f1f;
+    margin-bottom: 10px;
+}
+
+/* Two-column section for climate change and social impact */
+.card-columns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+.card-column {
+    flex: 1;
+    padding-right: 10px;
+    font-size: 14px;
+    color: #999;
+    margin-left: -95px
+}
+
+.card-column p{
+    color: #000000
+}

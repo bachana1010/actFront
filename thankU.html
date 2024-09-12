@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You Page</title>
+    <script src="https://kendo.cdn.telerik.com/2018.3.911/js/jquery.min.js"></script>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="thankU.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="header"></header>
+
+    <!-- Thank You Section -->
+    <main class="thank-you-section">
+        <div class="thank-you-message">
+            <h1>Thank you!</h1>
+            <p>Please check your inbox. We will send you the recording shortly.</p>
+            <p id="meanwhileP">Meanwhile, check out some of our latest blogs</p>
+            <a href="#" class="blog-link">Visit the blog <i class="bi bi-arrow-right"></i></a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer"></footer>
+
+    <script>
+        function loadHTML(elementId, filePath) {
+            $(elementId).load(filePath);
+        }
+
+        $(document).ready(function() {
+            loadHTML('#header', 'header.html');
+            loadHTML('#footer', 'footer.html');
+        });
+    </script>
+
+    <script src="js/thankU.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <script src="https://kendo.cdn.telerik.com/2018.3.911/js/jquery.min.js"></script>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="registration.css"> <!-- New CSS file for registration form -->
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="header"></header>
+
+    <!-- Main registration section -->
+    <section class="registration-section">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Left column with the heading -->
+                <div class="col-md-6 text-left">
+                    <h1>Exploring Business Intelligence:<br> How BI Transforms Business operations</h1>
+                </div>
+
+                <!-- Right column with the form -->
+                <div class="col-md-6">
+                    <div class="registration-form">
+                        <form>
+                            <!-- First row: Full name -->
+                            <div class="form-row" id="NameInput">
+                                <div class="col-md-12 mb-3">
+                                    <input type="text" class="form-control" placeholder="Full name">
+                                </div>
+                            </div>
+
+                            <!-- Second row: Business Email and Phone -->
+                            <div class="form-row">
+                                <div class="col-md-6 mb-3">
+                                    <input   id="otherInput" type="email" class="form-control" placeholder="Business Email*">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <input   id="otherInput" type="text" class="form-control" placeholder="Phone*">
+                                </div>
+                            </div>
+
+                            <!-- Third row: Company and Country -->
+                            <div class="form-row">
+                                <div class="col-md-6 mb-3">
+                                    <input    id="otherInput" type="text" class="form-control" placeholder="Company*">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <input    id="otherInput" type="text" class="form-control" placeholder="Country*">
+                                </div>
+                            </div>
+
+                            <!-- Fourth row: Job role and Number of employees -->
+                            <div class="form-row">
+                                <div class="col-md-6 mb-3">
+                                    <input   id="otherInput" type="text" class="form-control" placeholder="Job role*">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <input    id="otherInput" type="text" class="form-control" placeholder="Number of employees*">
+                                </div>
+                            </div>
+
+                            <!-- Checkbox for newsletter and privacy terms -->
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="newsletterCheck">
+                                <label class="form-check-label" for="newsletterCheck">I agree to receive newsletter</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="termsCheck">
+                                <label class="form-check-label" for="termsCheck">I agree to the Privacy Terms & Conditions</label>
+                            </div>
+
+                            <!-- Submit button -->
+                            <button type="submit" class="btn btn-primary btn-block mt-4">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer"></footer>
+
+    <script>
+        function loadHTML(elementId, filePath) {
+            $(elementId).load(filePath);
+        }
+
+        $(document).ready(function() {
+            loadHTML('#header', 'header.html');
+            loadHTML('#footer', 'footer.html');
+        });
+    </script>
+
+    <script src="js/registration.js"></script> <!-- New JS file for registration -->
+</body>
+</html>

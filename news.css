@@ -1,0 +1,80 @@
+/* Overall News Section Styling */
+.news-section {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0; /* Add padding to the top and bottom */
+}
+
+.news-section-card {
+    width: 1180px; /* Fixed width matching expertise section */
+    padding: 0 20px;
+}
+
+/* Title and Line Styling */
+.news-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 5px; 
+    text-align: left;
+}
+
+.news-line {
+    width: 823px;
+    height: 1px;
+    background-color: #cfcfcf;
+    margin-top: 5px;
+    margin-left:110px
+}
+
+/* News Card Styling */
+/* News Card Styling */
+/* News Card Styling */
+.news-card {
+    display: flex;
+    width: 920px; /* Fixed width for the card */
+    height: 195px; /* Fixed height for the card */
+    margin-top: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border:none
+}
+
+/* Image inside the card */
+.news-card-img {
+    width: 250px; /* Fixed width for the image container */
+    height: 195px; /* Same height as the card */
+    overflow: hidden; /* Ensure no overflow */
+}
+
+.news-card-img img {
+    width: 100%; /* Make sure image fills the container's width */
+    height: 100%; /* Ensures the image fills the container's height */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+/* Card Body (Text Section) */
+.news-card-body {
+    padding: 20px;
+    width: calc(100% - 250px); /* Ensure the body takes up the rest of the card's width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.news-card-body h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left:10px;
+    margin-top:20px
+}
+
+.news-card-body p {
+    font-size: 16px;
+    margin-top: 5px;
+    margin-left:10px
+}
