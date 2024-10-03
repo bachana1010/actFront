@@ -1,0 +1,186 @@
+.news-title {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#newSectionHr {
+    margin-right: 5px;
+    border: -0.1px solid gray !important;
+    margin-top: 17px;
+}
+
+/* Event Section - Center with spacing */
+.event-section {
+    margin: 0 auto;
+    max-width: 1200px; /* Adjust to keep it in the center */
+    padding: 0 10px; /* 10px space on both left and right */
+    margin-bottom: 80px;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    padding: 20px;
+    height: 100%; /* Make sidebar full height */
+}
+
+.event-types-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.event-types-list li {
+    margin-bottom: 15px;
+}
+
+.event-types-list li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.event-types-list li a.active,
+.event-types-list li a:hover {
+    color: #fff;
+}
+
+/* Year Filter Styles */
+.year-filters {
+    padding-right: 15px;
+    border-right: 1px solid #ddd; /* Optional: Add a separator line */
+    height: 100%;
+}
+
+.year-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 31px;
+}
+
+.year-list li {
+    text-align: left;
+}
+
+.year-list li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.year-list li a:hover {
+    color: #0056b3; /* Change color on hover */
+}
+
+/* Month Title */
+.month {
+    margin-left: 20px; /* Updated to align with the left spacing */
+    margin-top: 28px;
+    margin-bottom: -21px;
+    font-weight: bold;
+}
+
+/* Scrollable Event Cards Wrapper */
+.event-cards-wrapper {
+    height: 650px; /* Adjust height to your preference */
+    overflow-y: scroll; /* Enable vertical scrolling */
+    padding-right: 10px; /* Adjust padding for better spacing */
+    margin: 0; /* Remove extra margin to prevent spacing */
+    border-left: 1px solid #ddd; /* Restore the left line as separator */
+}
+
+/* Customize Scrollbar */
+.event-cards-wrapper::-webkit-scrollbar {
+    width: 6px;
+    height: 30px; /* Adjust the height of the scroll bar to be smaller */
+}
+
+.event-cards-wrapper::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.event-cards-wrapper::-webkit-scrollbar-thumb {
+    background: #17004c; /* Blue color */
+    border-radius: 8px; /* Rounded edges for a sleek look */
+    cursor: pointer;
+}
+
+.event-cards-wrapper::-webkit-scrollbar-thumb:hover {
+    background: #17004c;
+}
+
+/* Event Cards Container */
+.event-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 0; /* Remove gaps between cards to make them tight */
+    margin: 0; /* Ensure no extra space */
+}
+
+/* Event Card Styles */
+.event-card {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add some shadow for better appearance */
+    border-bottom: 1px solid #ddd; /* Restore the bottom border to separate cards */
+    margin-bottom: 0; /* Remove margin to eliminate any space */
+}
+
+/* Left section: Date and Time */
+.event-card-date {
+    background-color: #17004c;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    text-align: center;
+}
+
+/* Right section: Image and Description */
+.event-card-details {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    flex-grow: 1;
+    gap: 20px; /* Space between the image and text */
+}
+
+.event-card-image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.event-card-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.event-card-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #3b1b6a;
+    margin-bottom: 0;
+}
+
+#mainCard {
+    margin-top: 30px;
+}
+
+/* Month List Styles */
+.month-list {
+    margin-left: 20px; /* Move the month list to the right */
+}
