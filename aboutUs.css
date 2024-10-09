@@ -98,3 +98,7 @@
 .card-column p{
     color: #000000
 }
+
+#cardColumnFirst{
+    margin-right: 60px
+}

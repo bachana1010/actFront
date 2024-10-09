@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Booking</title>
+    <script src="https://kendo.cdn.telerik.com/2018.3.911/js/jquery.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="eventbooking.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="header"></header>
+
+    <!-- Main Event Section -->
+    <main class="event-section">
+        <section class="event-banner">
+            <div class="image-container">
+                <div class="date-box">
+                    <div class="date-item">
+                        <p class="day">28</p>
+                        <p class="month">Feb</p>
+                        <p class="year">2024</p>
+                    </div>
+                    <div class="date-arrow">
+                        <p>&gt;</p> <!-- This represents the arrow (>) -->
+                    </div>
+                    <div class="date-item">
+                        <p class="day">28</p>
+                        <p class="month">Feb</p>
+                        <p class="year">2024</p>
+                    </div>
+                </div>
+                
+                <div class="text-content">
+                    <h2 class="event-title">Webinar: "Empowering sustainable Growth: unleashing potential of AI"</h2>
+                </div>
+                <img src="asserts/Rectangle8.png" alt="Event Image" class="event-image">
+            </div>
+        </section>
+        
+        <!-- Action Buttons -->
+        <section class="event-description-container">
+            <p class="event-description">
+                "Join us for an insightful webinar where industry experts discuss sustainable growth and the potential of AI in driving business transformation. Learn from real-world case studies and get actionable insights to apply to your organization."
+            </p>
+            <section class="event-actions">
+                <a href="#" class="btn btn-primary register-btn">Register</a>
+                <a href="#" class="btn btn-secondary location-btn">Location</a>
+            </section>
+        </section>
+        
+        
+        <!-- Speaker Section -->
+        <section class="news-section">
+            <div class="container custom-container">
+                <div class="row align-items-center">
+                    <div class="col-12 d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <h2 class="news-title">Meet the speaker</h2>
+                        </div>
+                        <hr class="news-line flex-grow-1 ml-3" id="hrNesSection">
+                    </div>
+                </div>
+                <!-- <div class="row news-cards">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="asserts/Rectangle12.png" class="card-img-top" alt="Speaker Image 1">
+                            <div class="card-body">
+                                <p class="speaker-name">Jane Smith</p>
+                                <p class="speaker-bio">Jane is a leading expert in sustainable growth with 15 years of experience in AI.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="asserts/Rectangle8.png" class="card-img-top" alt="Speaker Image 2">
+                            <div class="card-body">
+                                <p class="speaker-name">John Doe</p>
+                                <p class="speaker-bio">John is an AI strategist working with multinational companies on sustainable growth.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="asserts/Rectangle14.png" class="card-img-top" alt="Speaker Image 3">
+                            <div class="card-body">
+                                <p class="speaker-name">Emily Johnson</p>
+                                <p class="speaker-bio">Emily specializes in ethical AI and business transformations for future success.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="row news-cards">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="asserts/Rectangle4.png" class="card-img-top" alt="News Image 1">
+                            <div class="card-body">
+                                <p class="ebook-type">Jane smith</p> <!-- Ebook type above text -->
+                                <p id="cardIdP">Chief executibe officer</p>
+                                <p class="card-text">utem.At aceasqui cones quam res repceriam, evendellabo utem.At aceasqui cones quam res repceriam, evendellabo utem.At aceasqui cones quam res repceriam, evendellabo.</p>
+                                <div class="learn-more-div">
+                                    <a href="#" class="learn-more-btn">
+                                        <span class="learn-more-text">Learn more</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="asserts/Rectangle5.png" class="card-img-top" alt="News Image 2">
+                            <div class="card-body">
+                                <p class="ebook-type">Jane smith</p> <!-- Ebook type above text -->
+                                <p id="cardIdP">Chief executibe officer</p>
+                                <p class="card-text">utem.At aceasqui cones quam res repceriam, evendellabo utem.At aceasqui cones quam res repceriam, evendellabo utem.At aceasqui cones quam res repceriam, evendellabo.</p>
+                                <div class="learn-more-div">
+                                    <a href="#" class="learn-more-btn">
+                                        <span class="learn-more-text">Learn more</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+</div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer"></footer>
+
+    <script>
+        function loadHTML(elementId, filePath) {
+            $(elementId).load(filePath);
+        }
+
+        $(document).ready(function() {
+            loadHTML('#header', 'header.html');
+            loadHTML('#footer', 'footer.html');
+        });
+    </script>
+
+</body>
+</html>

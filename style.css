@@ -1513,8 +1513,28 @@ body {
     }
 }
 
+//idebi
 
+#cotainerHeader{
+    height:120px
+}
 
+#containerHeaderRow{
+    margin-top:1.3rem
+}
 
+#containerHeaderJustify{
+    margin-bottom:10px
+}
 
+#colDivider{
+    margin-top: -15px
+}
 
+#imageDivider{
+    margin-left:50px
+}
+
+#dividerJustifyCenter{
+    margin-top:-4px
+}

@@ -178,3 +178,8 @@ h1 {
     color:black;
     font-weight:bold
 }
+
+#newSectionHr{
+    margin-right: 5px; 
+    border:1px solid #000
+}

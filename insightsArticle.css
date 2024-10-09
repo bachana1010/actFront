@@ -178,3 +178,7 @@ h1 {
     color:black;
     font-weight:bold
 }
+
+#hrNesSection{
+    margin-right: 5px; border:1px solid #000
+}

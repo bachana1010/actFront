@@ -1,0 +1,146 @@
+/* Event Section */
+.event-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+/* Event Banner */
+.event-banner {
+    position: relative;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto; /* Center align */
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+}
+
+.event-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Date Box */
+.date-box {
+    position: absolute;
+    top: 301px;
+    left: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.date-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.date-arrow {
+    padding: 0 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.date-box .day {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.date-box .month {
+    font-size: 24px;
+    margin: 0;
+}
+
+.date-box .year {
+    font-size: 18px;
+    margin: 0;
+}
+
+/* Text Content for the Event Title */
+.text-content {
+    position: absolute;
+    top: 300px;
+    left: 350px; /* Adjusted to align with date box */
+    color: #fff;
+    max-width: 500px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.event-title {
+    font-size: 36px;
+    line-height: 1.4;
+    font-weight:bold;
+
+}
+
+.event-description-container {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0; /* Adds space above and below the text */
+}
+
+.event-description {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.event-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 10px;
+}
+
+.register-btn, .location-btn {
+    width: 329px;
+    height: 50px;
+    display: inline-block;
+    line-height: 36px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 10px;
+    margin: 5px 0;
+}
+
+.register-btn {
+    background-color: #17004c;
+    color: #fff;
+}
+
+.location-btn {
+    background-color: #3B3092;
+    color: #fff;
+}
+
+#cardIdP{
+    font-size:20px;
+    font-weight:bold;
+    margin-top: -12px;
+
+}
+
+.ebook-type{
+    color:#643695;
+    font-weight: bold
+
+}
+
+
