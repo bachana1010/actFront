@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Section</title>
+    <script src="https://kendo.cdn.telerik.com/2018.3.911/js/jquery.min.js"></script>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="search.css"> <!-- New CSS file for the news section -->
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="header"></header>
+
+    <main class="news-section">
+
+        <!-- News Section -->
+        <section class="news-section-card">
+            <div class="container">
+                <!-- Title and Line -->
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="news-title">Results for “Digital</h2>
+                        <h6 class="search-result">All results more than 30</h6>
+                    </div>
+                    <hr class="news-line">
+
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <!-- Left Side Menu -->
+                    <div class="col-md-3 menu-section">
+                        <ul class="menu-list">
+                            <li><a href="#">All Filters</a></li>
+                            <li><a href="#">Insights</a></li>
+                            <li><a href="#">Profiles</a></li>
+                            <li><a href="#">Articles</a></li>
+                        </ul>
+                    </div>
+    
+                    <!-- News Cards Section -->
+                    <div class="col-md-9">
+                        <section class="news-section-card">
+                      
+    
+                            <!-- News Cards -->
+                            <div class="news-card">
+                                <div class="news-card-img">
+                                    <img src="asserts/Rectangle10.png" alt="News Image">
+                                </div>
+                                <div class="news-card-body">
+                                    <h3>Delete digital named Top Health care marketing agency on MM +M Agency 100 list</h3>
+                                    <p class="card-date">18.02.2024</p>
+
+                                    <p>Read more</p>
+                                </div>
+                            </div>
+                            <div class="news-card">
+                                <div class="news-card-img">
+                                    <img src="asserts/Rectangle7.png" alt="News Image">
+                                </div>
+                                <div class="news-card-body">
+                                    <h3>Delete digital named Top Health care marketing agency on MM +M Agency 100 list</h3>
+                                    <p class="card-date">18.02.2024</p>
+                                    <p>Read more</p>
+                                </div>
+                            </div>
+                            <div class="news-card">
+                                <div class="news-card-img">
+                                    <img src="asserts/Rectangle14.png" alt="News Image">
+                                </div>
+                                <div class="news-card-body">
+                                    <h3>Delete digital named Top Health care marketing agency on MM +M Agency 100 list</h3>
+                                    <p class="card-date">18.02.2024</p>
+
+                                    <p>Read more</p>
+                                </div>
+                            </div>
+                            <div class="news-card">
+                                <div class="news-card-img">
+                                    <img src="asserts/Rectangle12.png" alt="News Image">
+                                </div>
+                                <div class="news-card-body">
+                                    <h3>Delete digital named Top Health care marketing agency on MM +M Agency 100 list</h3>
+                                    <p class="card-date">18.02.2024</p>
+
+                                    <p>Read more</p>
+                                </div>
+                            </div>
+                            <div class="news-card">
+                                <div class="news-card-img">
+                                    <img src="asserts/Rectangle24.png" alt="News Image">
+                                </div>
+                                <div class="news-card-body">
+                                    <h3>Delete digital named Top Health care marketing agency on MM +M Agency 100 list</h3>
+                                    <p class="card-date">18.02.2024</p>
+
+                                    <p>Read more</p>
+                                </div>
+                            </div>
+                            <div class="news-card">
+                                <div class="news-card-img">
+                                    <img src="asserts/Rectangle4.png" alt="News Image">
+                                </div>
+                                <div class="news-card-body">
+                                    <h3>Delete digital named Top Health care marketing agency on MM +M Agency 100 list</h3>
+                                    <p class="card-date">18.02.2024</p>
+
+                                    <p>Read more</p>
+                                </div>
+                            </div>
+                            <div class="news-card">
+                                <div class="news-card-img">
+                                    <img src="asserts/Rectangle5.png" alt="News Image">
+                                </div>
+                                <div class="news-card-body">
+                                    <h3>Delete digital named Top Health care marketing agency on MM +M Agency 100 list</h3>
+                                    <p class="card-date">18.02.2024</p>
+
+                                    <p>Read more</p>
+                                </div>
+                            </div>
+                            <div class="news-card">
+                                <div class="news-card-img">
+                                    <img src="asserts/Rectangle6.png" alt="News Image">
+                                </div>
+                                <div class="news-card-body">
+                                    <h3>Delete digital named Top Health care marketing agency on MM +M Agency 100 list</h3>
+                                    <p class="card-date">18.02.2024</p>
+
+                                    <p>Read more</p>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer"></footer>
+
+    <script>
+        function loadHTML(elementId, filePath) {
+            $(elementId).load(filePath);
+        }
+
+        $(document).ready(function() {
+            loadHTML('#header', 'header.html');
+            loadHTML('#footer', 'footer.html');
+        });
+    </script>
+
+    <script src="js/registration.js"></script> <!-- New JS file for registration -->
+</body>
+</html>

@@ -1,0 +1,174 @@
+/* Overall News Section Styling */
+.news-section {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0; /* Add padding to the top and bottom */
+}
+
+.news-section-card {
+    padding: 0 20px;
+}
+
+/* Title and Line Styling */
+.news-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 25px; 
+    text-align: left;
+}
+
+.search-result{
+    margin-bottom:20px
+}
+
+.news-line {
+    width: 823px;
+    background-color: #cfcfcf;
+    margin-top: 5px;
+    margin-left:15px
+}
+
+/* News Card Styling */
+/* News Card Styling */
+/* News Card Styling */
+.news-card {
+    display: flex;
+    width: 920px; /* Fixed width for the card */
+    height: 195px; /* Fixed height for the card */
+    margin-top: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border:none
+}
+
+/* Image inside the card */
+.news-card-img {
+    width: 250px; /* Fixed width for the image container */
+    height: 195px; /* Same height as the card */
+    overflow: hidden; /* Ensure no overflow */
+}
+
+.news-card-img img {
+    width: 100%; /* Make sure image fills the container's width */
+    height: 100%; /* Ensures the image fills the container's height */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+/* Card Body (Text Section) */
+.news-card-body {
+    padding: 20px;
+    width: calc(100% - 250px); /* Ensure the body takes up the rest of the card's width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.news-card-body h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left:10px;
+    margin-top:20px
+}
+
+.news-card-body p {
+    font-size: 16px;
+    margin-top: 5px;
+    margin-left:0px
+}
+
+
+/* Container and layout for the search section */
+.search-section {
+    padding: 30px 0;
+}
+
+/* Left Side Menu */
+.menu-section {
+    padding: 20px;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-list li {
+    margin-bottom: 15px;
+}
+
+.menu-list li a {
+    text-decoration: none;
+    color: #17004c;
+    font-weight: bold;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+    width:138px;
+    height:44px
+}
+
+.menu-list li a:hover {
+    background-color: #17004c;
+    color: #fff;
+}
+
+/* News Cards */
+.news-card {
+    display: flex;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 926px; /* Set the width of the cards to 926px */
+    height: 195px; /* Set the height of the cards to 195px */
+}
+
+.news-card-img img {
+    width: 200px;
+    height: 195px;
+    object-fit: cover;
+}
+
+.news-card-body {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.news-card-body h3 {
+    font-size: 18px;
+    margin: 0 0 10px 0;
+}
+
+.news-card-body p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Title and Line */
+.news-title {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.news-line {
+    border-top: 1px solid #ddd;
+    margin: 10px 0;
+}
+
+@media (min-width: 768px) {
+    .col-md-3 {
+        flex: 0 0 0%;
+        max-width: 25%;
+    }}
+
+.card-date{
+    font-size:10px !important
+}
