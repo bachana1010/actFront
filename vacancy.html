@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacancy Section</title>
+    <script src="https://kendo.cdn.telerik.com/2018.3.911/js/jquery.min.js"></script>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="vacancy.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="header"></header>
+
+    <main class="vacancy-section">
+        <section class="vacancy">
+            <!-- Vacancy Title -->
+            <div class="row align-items-center mb-4">
+                <div class="col-12 d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center">
+                        <h2 class="vacancy-title">Vacancy</h2>
+                    </div>
+                    <hr class="vacancy-line flex-grow-1 ml-3">
+                </div>
+            </div>
+
+            <section class="card-section"> 
+                <div class="vacancy-card">
+                    <div class="vacancy-card-body">
+                        <h3 class="job-title">Job opening</h3>
+                        <p class="job-description">Delete digital named Top Health care marketing agency on MM +M Agency 100 list</p>
+                        <a href="#" class="read-more">Read more</a>
+                    </div>
+                    <div class="vacancy-card-action">
+                        <a href="#" class="apply-btn">Apply</a>
+                        <div class="location-info">
+                            <p>Tbilisi, Georgia</p>
+                            <i class="bi bi-geo-alt"></i>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="vacancy-card">
+                    <div class="vacancy-card-body">
+                        <h3 class="job-title">Job opening</h3>
+                        <p class="job-description">Delete digital named Top Health care marketing agency on MM +M Agency 100 list</p>
+                        <a href="#" class="read-more">Read more</a>
+                    </div>
+                    <div class="vacancy-card-action">
+                        <a href="#" class="apply-btn">Apply</a>
+                        <div class="location-info">
+                            <p>Baku, Azerbaijan</p>
+                            <i class="bi bi-geo-alt"></i>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="vacancy-card">
+                    <div class="vacancy-card-body">
+                        <h3 class="job-title">Job opening</h3>
+                        <p class="job-description">Delete digital named Top Health care marketing agency on MM +M Agency 100 list</p>
+                        <a href="#" class="read-more">Read more</a>
+                    </div>
+                    <div class="vacancy-card-action">
+                        <a href="#" class="apply-btn">Apply</a>
+                        <div class="location-info">
+                            <p>Tbilisi, Georgia</p>
+                            <i class="bi bi-geo-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Vacancy Cards -->
+       
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer"></footer>
+
+    <script>
+        function loadHTML(elementId, filePath) {
+            $(elementId).load(filePath);
+        }
+
+        $(document).ready(function () {
+            loadHTML('#header', 'header.html');
+            loadHTML('#footer', 'footer.html');
+        });
+    </script>
+
+    <script src="js/registration.js"></script> <!-- New JS file for registration -->
+</body>
+
+</html>
