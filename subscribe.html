@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe Section</title>
+    <script src="https://kendo.cdn.telerik.com/2018.3.911/js/jquery.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="subscribe.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="header"></header>
+
+    <!-- Subscribe Section -->
+    <section class="subscribe-section">
+        <div class="container">
+            <!-- Title and Line -->
+            <div class="row">
+                <div class="col-12 d-flex justify-content-between align-items-center">
+                    <h2 class="subscribe-title">Subscribe</h2>
+                    <hr class="subscribe-line flex-grow-1 ml-3">
+                </div>
+            </div>
+
+            <!-- Grid of Cards (Two per row, 5 rows) -->
+            <div class="row subscribe-grid">
+                <div class="col-md-6">
+                    <div class="subscribe-card">
+                        <p>Organizational Transformation / Power 3</p>
+                        <button class="plus-btn">
+                            <i class="bi bi-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="subscribe-card">
+                        <p>Organizational Transformation / Power 3</p>
+                        <button class="plus-btn">
+                            <i class="bi bi-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Repeat this block for 5 rows -->
+                <div class="col-md-6">
+                    <div class="subscribe-card">
+                        <p>Organizational Transformation / Power 3</p>
+                        <button class="plus-btn">
+                            <i class="bi bi-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="subscribe-card">
+                        <p>Organizational Transformation / Power 3</p>
+                        <button class="plus-btn">
+                            <i class="bi bi-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Additional rows (as per your requirement) -->
+                <div class="col-md-6">
+                    <div class="subscribe-card">
+                        <p>Organizational Transformation / Power 3</p>
+                        <button class="plus-btn">
+                            <i class="bi bi-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="subscribe-card">
+                        <p>Organizational Transformation / Power 3</p>
+                        <button class="plus-btn">
+                            <i class="bi bi-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="subscribe-card">
+                        <p>Organizational Transformation / Power 3</p>
+                        <button class="plus-btn">
+                            <i class="bi bi-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="subscribe-card">
+                        <p>Organizational Transformation / Power 3</p>
+                        <button class="plus-btn">
+                            <i class="bi bi-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="subscribe-card">
+                        <p>Organizational Transformation / Power 3</p>
+                        <button class="plus-btn">
+                            <i class="bi bi-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="subscribe-card">
+                        <p>Organizational Transformation / Power 3</p>
+                        <button class="plus-btn">
+                            <i class="bi bi-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <section class="account-info-section">
+                <div class="container">
+                    <h2>Create your account Information</h2>
+        
+                    <form action="#" method="POST" class="account-form">
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <label for="email">Email*</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label for="password">Password*</label>
+                                <input type="password" id="password" class="form-control" required>
+                            </div>
+                        </div>
+        
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <label for="first-name">First Name*</label>
+                                <input type="text" id="first-name" class="form-control" required>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label for="last-name">Last Name*</label>
+                                <input type="text" id="last-name" class="form-control" required>
+                            </div>
+                        </div>
+        
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <label for="job-title">Job Title*</label>
+                                <input type="text" id="job-title" class="form-control" required>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label for="organization">Organization*</label>
+                                <input type="text" id="organization" class="form-control" required>
+                            </div>
+                        </div>
+        
+                        <div class="row">
+                            <div class="col-12 text-left">
+                                <button type="submit" class="btn btn-primary submit-btn">Subscribe</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer"></footer>
+
+    <script>
+        function loadHTML(elementId, filePath) {
+            $(elementId).load(filePath);
+        }
+
+        $(document).ready(function() {
+            loadHTML('#header', 'header.html');
+            loadHTML('#footer', 'footer.html');
+        });
+    </script>
+
+</body>
+</html>

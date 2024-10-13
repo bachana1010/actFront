@@ -1,0 +1,161 @@
+/* Overall Styling */
+.subscribe-section {
+    padding: 40px 0;
+    display: flex;
+    justify-content: center; /* Center the entire content */
+}
+
+.container {
+    max-width: 1200px; /* Maximum width for the content */
+    width: 100%; /* Full width until max-width is reached */
+    padding-left: 20px; /* Space on the left */
+    padding-right: 20px; /* Space on the right */
+}
+
+/* Title and Line Styling */
+.subscribe-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #000;
+}
+
+.subscribe-line {
+    height: 1px;
+    background-color: #cfcfcf;
+    width: 100%;
+}
+
+/* Grid of Cards */
+.subscribe-grid {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ensures equal space between cards */
+}
+
+.subscribe-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 440px; /* Ensures two cards per row */
+}
+
+.subscribe-card.active {
+}
+
+.subscribe-card p {
+    margin: 0;
+    font-size: 18px;
+}
+
+/* Styling for the Plus Button */
+.plus-btn {
+    background-color: transparent;
+    border: 1px solid #17004c;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #17004c;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.plus-btn:hover {
+    background-color: #17004c;
+    color: #fff;
+}
+
+/* Styling for active state */
+.subscribe-card.active .plus-btn {
+    background-color: #17004c;
+    color: #fff;
+    border-color: #17004c;
+}
+
+/* Account Info Section Styling */
+.account-info-section {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.account-info-section h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.account-form {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    /* padding: 20px; */
+    border-radius: 8px;
+}
+
+.form-group label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+    color: #333;
+}
+
+.form-group input {
+    width: 577px; /* Set input width to 577px */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px; /* Add margin-bottom for better spacing */
+}
+
+.submit-btn {
+    padding: 12px 40px;
+    font-size: 16px;
+    background-color: #17004c;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width:329px
+}
+
+.submit-btn:hover {
+    background-color: #32007a;
+}
+
+/* Fix input alignment */
+.account-form .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-group {
+    flex: 0 0 48%; /* Set input to take 48% of the row, ensuring two inputs per row */
+}
+
+.form-group input {
+    width: 100%; /* Set width to 100% within its container */
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .account-form {
+        padding: 20px;
+    }
+
+    .form-group {
+        flex: 0 0 100%; /* Set input to full width for smaller screens */
+    }
+}
