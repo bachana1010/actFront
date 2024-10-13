@@ -1,189 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us Section</title>
     <script src="https://kendo.cdn.telerik.com/2018.3.911/js/jquery.min.js"></script>
-
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="aboutUs.css">
 </head>
+
 <body>
 
     <!-- Header -->
     <header id="header"></header>
 
-    <!-- Main About Us Section -->
-    <main class="about-us-section">
+    <!-- About Us Section -->
+    <section class="aboutus-section">
         <div class="container">
-            <!-- Title -->
-            <h2 class="about-title">About Us</h2>
-
-            <!-- Cards Section -->
-            <div class="about-cards">
-                <!-- Card 1 -->
-                <div class="about-card">
-                    <div class="card-left">
-                        <img src="asserts/trump.jpeg" alt="Jane Smith" class="card-img">
-                        <!-- Climate and Social Impact below the image -->
-                        <div class="card-icons">
-                            <img src="asserts/Icon-mail.png" alt="Email Icon" class="icon">
-                            <img src="asserts/Icon.png" alt="LinkedIn Icon" class="icon">
-                        </div>
-                    </div>
-                    <div class="card-right">
-                        <h3 class="card-name">Jane Smith</h3>
-                        <p class="card-title">Chief Executive</p>
-                        <!-- Two-column section for Climate change and Social impact -->
-                        <div class="card-columns">
-                            <div class="card-column" id="cardColumnFirst">
-                                <p>Climate change</p>
-                                <p>Social impact</p>
-                            </div>
-                            <div class="card-column">
-                                <p>Climate change</p>
-                                <p>Social impact</p>
-                            </div>
-                        </div>
-                    </div>
+            <!-- Title and Line -->
+            <div class="row">
+                <div class="col-12 d-flex justify-content-between align-items-center">
+                    <h2 class="aboutus-title">About us</h2>
+                    <hr class="aboutus-line flex-grow-1 ml-3">
                 </div>
-
-                <!-- Card 2 -->
-                <div class="about-card">
-                    <div class="card-left">
-                        <img src="asserts/trump.jpeg" alt="John Doe" class="card-img">
-                        <div class="card-icons">
-                            <img src="asserts/Icon-mail.png" alt="Email Icon" class="icon">
-                            <img src="asserts/Icon.png" alt="LinkedIn Icon" class="icon">
-                        </div>
-                    </div>
-                    <div class="card-right">
-                        <h3 class="card-name">John Doe</h3>
-                        <p class="card-title">Chief Executive</p>
-                        <div class="card-columns">
-                            <div class="card-column">
-                                <p>Climate change</p>
-                                <p>Social impact</p>
-                            </div>
-                            <div class="card-column">
-                                <p>Climate change</p>
-                                <p>Social impact</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                       <!-- Card 1 -->
-                       <div class="about-card">
-                        <div class="card-left">
-                            <img src="asserts/trump.jpeg" alt="Jane Smith" class="card-img">
-                            <!-- Climate and Social Impact below the image -->
-                            <div class="card-icons">
-                                <img src="asserts/Icon-mail.png" alt="Email Icon" class="icon">
-                                <img src="asserts/Icon.png" alt="LinkedIn Icon" class="icon">
-                            </div>
-                        </div>
-                        <div class="card-right">
-                            <h3 class="card-name">Jane Smith</h3>
-                            <p class="card-title">Chief Executive</p>
-                            <!-- Two-column section for Climate change and Social impact -->
-                            <div class="card-columns">
-                                <div class="card-column" ="margin-right: 60px;">
-                                    <p>Climate change</p>
-                                    <p>Social impact</p>
-                                </div>
-                                <div class="card-column">
-                                    <p>Climate change</p>
-                                    <p>Social impact</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <!-- Card 2 -->
-                    <div class="about-card">
-                        <div class="card-left">
-                            <img src="asserts/trump.jpeg" alt="John Doe" class="card-img">
-                            <div class="card-icons">
-                                <img src="asserts/Icon-mail.png" alt="Email Icon" class="icon">
-                                <img src="asserts/Icon.png" alt="LinkedIn Icon" class="icon">
-                            </div>
-                        </div>
-                        <div class="card-right">
-                            <h3 class="card-name">John Doe</h3>
-                            <p class="card-title">Chief Executive</p>
-                            <div class="card-columns">
-                                <div class="card-column">
-                                    <p>Climate change</p>
-                                    <p>Social impact</p>
-                                </div>
-                                <div class="card-column">
-                                    <p>Climate change</p>
-                                    <p>Social impact</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                           <!-- Card 1 -->
-                <div class="about-card">
-                    <div class="card-left">
-                        <img src="asserts/trump.jpeg" alt="Jane Smith" class="card-img">
-                        <!-- Climate and Social Impact below the image -->
-                        <div class="card-icons">
-                            <img src="asserts/Icon-mail.png" alt="Email Icon" class="icon">
-                            <img src="asserts/Icon.png" alt="LinkedIn Icon" class="icon">
-                        </div>
-                    </div>
-                    <div class="card-right">
-                        <h3 class="card-name">Jane Smith</h3>
-                        <p class="card-title">Chief Executive</p>
-                        <!-- Two-column section for Climate change and Social styleimpact -->
-                        <div class="card-columns">
-                            <div class="card-column" id="cardColumnFirst">
-                                <p>Climate change</p>
-                                <p>Social impact</p>
-                            </div>
-                            <div class="card-column">
-                                <p>Climate change</p>
-                                <p>Social impact</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="about-card">
-                    <div class="card-left">
-                        <img src="asserts/trump.jpeg" alt="John Doe" class="card-img">
-                        <div class="card-icons">
-                            <img src="asserts/Icon-mail.png" alt="Email Icon" class="icon">
-                            <img src="asserts/Icon.png" alt="LinkedIn Icon" class="icon">
-                        </div>
-                    </div>
-                    <div class="card-right">
-                        <h3 class="card-name">John Doe</h3>
-                        <p class="card-title">Chief Executive</p>
-                        <div class="card-columns">
-                            <div class="card-column">
-                                <p>Climate change</p>
-                                <p>Social impact</p>
-                            </div>
-                            <div class="card-column">
-                                <p>Climate change</p>
-                                <p>Social impact</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
             </div>
         </div>
-    </main>
+
+        <!-- Full-Width Image with Overlay and Text -->
+        <div class="aboutus-banner">
+            <img src="asserts/aboutus.png" alt="About Us Image" class="aboutus-image">
+            <div class="overlay"></div>
+            <div class="centered-text">
+                <div class="text-wrapper">
+                    <div class="white-stick"></div>
+                    <div class="text-content">
+                        <h1 class="bold-text">Empowering</h1>
+                        <h1 class="italic-text"><span id="theSpan">the</span> Change</h1>
+                        <p class="small-logo">ACT.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ACT Logo and Quote -->
+        <section class="container">
+            <div class="act-logo-container text-center">
+                <img src="asserts/Group10.png" alt="ACT Logo" class="act-logo">
+                <blockquote class="act-quote">
+                    <p>“Our clients’ systems support modern society. In making them faster, more productive, and more secure, we don’t just make business work better. We make the world work better.”</p>
+                    <footer>
+                        <strong>Arvind Krishna</strong><br>
+                        Chairman and CEO<br>
+                        IBM
+                    </footer>
+                </blockquote>
+            </div>
+        
+            <!-- Who We Are Section -->
+            <section class="about-section-content">
+                <h2 class="section-title">Who we are</h2>
+                <p class="section-text">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                </p>
+            </section>
+        
+            <!-- Our Culture Section -->
+            <section class="about-section-content">
+                <h2 class="section-title">Our culture</h2>
+                <p class="section-text">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                </p>
+            </section>
+        
+            <!-- Illustration Section -->
+            <div class="illustration-section">
+                <img src="asserts/continent.png" alt="Illustration" class="illustration-img">
+            </div>
+        
+            <!-- Additional Information Sections -->
+            <section class="additional-info">
+                <h2 class="section-title">Our mission</h2>
+                <p class="section-text">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                </p>
+            </section>
+        
+            <section class="additional-info">
+                <h2 class="section-title">Our vision</h2>
+                <p class="section-text">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                </p>
+            </section>
+        </section>
+        
+    </section>
 
     <!-- Footer -->
     <footer id="footer"></footer>
@@ -199,6 +113,6 @@
         });
     </script>
 
-    <script src="js/aboutUs.js"></script>
 </body>
+
 </html>

@@ -1,104 +1,179 @@
-/* About Us Section */
-.about-us-section {
-    padding: 40px 0;
-    text-align: left;
+/* Full-Width Image Styling Stays the Same */
+.aboutus-banner {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+    overflow: hidden;
 }
 
-/* Title Styling */
-.about-title {
-    font-size: 28px;
-    font-weight: bold;
-    color: black;
-    margin-bottom: 20px;
-    margin-left: 190px;
+.aboutus-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-/* About Us Cards Section */
-/* About Us Cards Section */
-.about-cards {
+/* Overlay and Centered Text Stay the Same */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: rgba(23, 0, 76, 0.8);
+}
+
+.centered-text {
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translate(-50%, 50%);
     display: flex;
-    flex-wrap: wrap; /* Allows wrapping to create new rows when space runs out */
-    gap: 20px; /* Space between the cards */
-    justify-content: flex-start; /* Aligns the cards to the left */
-    margin-left: 175px; /* Adjust as needed */
+    justify-content: left;
+    color: #fff;
+    z-index: 2;
 }
 
-/* Individual Card Styling */
-.about-card {
+.text-wrapper {
     display: flex;
-    width: 445px;
-    height: 309px;
-    background-color: #fbfbfb;
-    border: none;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-
-/* Left section: Image and icons */
-.card-left {
-    display: flex;
-    flex-direction: column;
     align-items: center;
+}
+
+.white-stick {
+    width: 17px;
+    height: 125px;
+    background-color: #fff;
     margin-right: 20px;
 }
 
-.card-img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 15px;
+.text-content {
+    margin-top: 10px;
 }
 
-.card-icons {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 136px;
-}
-
-/* Right section: Text and details */
-.card-right {
-    flex: 1;
-    text-align: left;
-    margin-top: 29px;
-}
-
-.card-name {
-    font-size: 20px;
+.text-content h1 {
+    font-size: 40px;
     font-weight: bold;
-    color: #17004c;
-    margin-bottom: 5px;
+    margin: 0;
+    line-height: 1.2;
+    color: #fff;
 }
 
-.card-title {
+#theSpan {
+    font-size: 30px;
+}
+
+.text-content .small-logo {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #fff;
+    text-align: right;
+}
+
+/* Centered Content for Sections Below the Image */
+.aboutus-section .container {
+    max-width: 1180px; /* Max width for centered content */
+    margin: 0 auto;
+    padding: 0 20px; /* Optional padding on the sides */
+}
+
+.container-section{
+    
+}
+/* ACT Logo and Quote Styling */
+.act-logo-container {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.act-logo {
+    width: 120px;
+    margin-bottom: 20px;
+    margin-top:20px
+}
+
+.act-quote {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    font-style: italic;
+    margin: 0 auto;
+}
+
+.act-quote footer {
     font-size: 16px;
-    color: #1f1f1f;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: left;
+
+}
+
+/* Section Content (Who We Are, Our Culture, etc.) */
+.about-section-content {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left; /* Align the text in the center */
+}
+
+.section-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #17004c;
+}
+
+.section-text {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Illustration Section */
+.illustration-section {
+    margin: 50px 0;
+    text-align: left; /* Center the illustration */
+}
+
+.illustration-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Additional Information (Mission, Vision) */
+.additional-info {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.additional-info .section-title {
+    font-size: 24px;
+    font-weight: bold;
     margin-bottom: 10px;
+    color: #17004c;
 }
 
-/* Two-column section for climate change and social impact */
-.card-columns {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 70px;
+.additional-info .section-text {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
 }
 
-.card-column {
-    flex: 1;
-    padding-right: 10px;
-    font-size: 14px;
-    color: #999;
-    margin-left: -95px
-}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .act-logo-container {
+        text-align: left;
+    }
 
-.card-column p{
-    color: #000000
-}
+    .act-quote {
+        font-size: 16px;
+    }
 
-#cardColumnFirst{
-    margin-right: 60px
+    .section-title {
+        font-size: 24px;
+    }
+
+    .additional-info .section-title {
+        font-size: 22px;
+    }
 }
