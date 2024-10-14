@@ -1,0 +1,325 @@
+
+
+/* Article content section below the image */
+.article-content {
+    max-width: 1180px; /* Match the width to the previous content */
+    margin: 40px auto; /* Center the content */
+    padding: 0 20px; /* Add some padding for smaller screens */
+}
+
+.article-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.article-text {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* News Section */
+.news-section {
+    padding: 40px 0;
+}
+
+.custom-container {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.news-title {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+/* EBook Inside Section */
+/* EBook Inside Section */
+.ebook-inside-section {
+    width: 100%;
+    padding: 30px 20px;
+    background-color: #f9f9f9;
+    position: relative; /* So the footer image is positioned relative to this section */
+    overflow: hidden; /* Hide any overflow of the fixed image */
+}
+
+.ebook-inside-section .container {
+    max-width: 1169px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Top Section */
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 120px;
+}
+
+.text-content {
+    width: 60%;
+}
+
+.ebook-title {
+    font-size: 24px;
+    color: #6f459c;
+    margin-bottom: 10px;
+}
+
+.ebook-subtitle {
+    font-size: 28px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.ebook-btn {
+    padding: 12px 24px;
+    background-color: #17004c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.ebook-btn:hover {
+    background-color: #32007a;
+}
+
+/* Image Content */
+.image-content {
+    width: 35%;
+}
+
+.ebook-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* About Section */
+.about-section {
+    margin-top: 20px;
+}
+
+.about-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+    z-index: 1; /* Ensures text appears above the image */
+    margin-bottom:-300px
+}
+
+/* Bottom Image Footer Section */
+.image-content-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 215px;
+    z-index: 0; /* Ensure the image is behind the text */
+}
+
+.ebook-image-footer {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px; /* Only round the bottom corners */
+}
+
+/* Ensuring the text flows on top of the image */
+.ebook-inside-section .container {
+    position: relative;
+    z-index: 1; /* Ensure the content stays above the image */
+    padding-bottom: 350px; /* Add padding at the bottom so the image doesn't cover the text */
+}
+
+/* Form Section */
+.ebook-form-section {
+    width: 100%;
+    /* background-color: #f9f9f9; */
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -315px
+}
+
+.form-container {
+    max-width: 600px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 30px;
+    position: relative;
+}
+
+/* Form Styling */
+.ebook-form .form-group {
+    margin-bottom: 20px;
+}
+
+.ebook-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #000;
+}
+
+.ebook-form .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.ebook-submit-btn {
+    width: 100%;
+    padding: 12px 0;
+    background-color: #17004c;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.ebook-submit-btn:hover {
+    background-color: #32007a;
+}
+
+
+
+/* News Section */
+.news-section {
+    padding: 40px 0;
+}
+
+.custom-container {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.news-title {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.news-cards {
+    margin-top: 20px;
+}
+
+.card {
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #707070;
+}
+
+.custom-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6f459c;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.custom-button:hover {
+    background-color: #563d7c;
+}
+
+#cardIdP{
+    font-size:20px;
+    font-weight:bold;
+    margin-top: -12px;
+}
+
+/* Learn More Div Styling */
+.learn-more-div {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.learn-more-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    color: #6f459c;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.learn-more-btn:hover {
+    background-color: #6f459c;
+    color: #fff;
+    border-color: #6f459c;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.learn-more-text {
+    margin-right: 5px;
+}
+
+.learn-more-arrow {
+    font-size: 16px;
+    transition: transform 0.3s ease;
+}
+
+.learn-more-btn:hover .learn-more-arrow {
+    transform: translateX(5px); /* Makes the arrow slide to the right on hover */
+}
+
+
+#exploreA{
+    color:black;
+    font-weight:bold
+}
+
+#newSectionHr{
+    margin-right: 5px; 
+    border:1px solid #000
+}
