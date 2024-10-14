@@ -1,0 +1,183 @@
+/* Full-Width Image */
+.projects-banner {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.projects-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Projects Section */
+.projects-section .container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-bottom:20px;
+    margin-top:20px
+}
+
+.projects-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #000;
+}
+
+
+
+/* Project Description */
+.projects-description {
+    margin-top: 50px;
+    text-align: left;
+}
+
+.description-text {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Spotlight Projects Section */
+.spotlight-section {
+    padding: 40px 0;
+}
+
+.custom-container {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.spotlight-title {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.spotlight-line {
+    width: 79%;
+    margin-top: 25px;
+}
+
+
+
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .text-wrapper {
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+
+    .projects-title {
+        font-size: 24px;
+    }
+
+    .description-text {
+        font-size: 16px;
+    }
+}
+
+
+.project-inside-section {
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Project Title */
+.project-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #17004c;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.project-title i {
+    margin-right: 8px;
+    font-size: 24px;
+}
+
+/* Date and Status */
+.project-info {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.date-label {
+    font-size: 14px;
+    color: #555;
+    background-color: #f1f1f1;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.status-label {
+    font-size: 14px;
+    color: white;
+    background-color: #6f459c;
+    padding: 4px 8px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.status-label.finished {
+    background-color: #9c4578;
+}
+
+/* Team Members */
+.team-members {
+    margin-bottom: 20px;
+}
+
+.team-members i {
+    font-size: 18px;
+    margin-right: 8px;
+    color: #17004c;
+}
+
+.member-names span {
+    display: inline-block;
+    font-size: 16px;
+    background-color: #f1f1f1;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-right: 8px;
+    margin-top: 5px;
+}
+
+/* Areas of Expertise */
+.areas-of-expertise p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.expertise-tags .tag {
+    display: inline-block;
+    font-size: 14px;
+    background-color: #f1f1f1;
+    padding: 6px 12px;
+    border-radius: 4px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.project-title ,  .areasofexperrtise, #projecTmember{
+    color:#17004C
+}
+
