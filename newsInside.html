@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects Section</title>
+    <script src="https://kendo.cdn.telerik.com/2018.3.911/js/jquery.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="newsinside.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="header"></header>
+
+    <!-- Projects Section -->
+    <section class="projects-section">
+   
+
+        <!-- Full-Width Image with Text -->
+        <div class="projects-banner">
+            <img src="asserts/aboutus.png" alt="Project Image" class="projects-image">
+            <div class="image-text-overlay">
+                <p>Delote digital named Top Health care marketing agency on MM +M Agency 100 list</p>
+            </div>
+        </div>
+        
+        <!-- Project Information Section -->
+        <section class="container">
+            <section class="projects-description">
+                <h1>Loro ipsum loro ipsum loro ipsum   loro ipsu loro ipsum</h1>
+                <h1>Loro ipsum loro ipsum loro ipsum   loro ipsu loro ipsum</h1>
+
+                <p class="description-text">
+                    "Lorem ipsum                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+                    dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+                </p>
+            </section>
+        </section>
+
+        <!-- Spotlight Projects Section -->
+        <section class="spotlight-section">
+            <div class="custom-container">
+                <div class="row align-items-center">
+                    <div class="col-12 d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <h2 class="spotlight-title">Spotlight Projects</h2>
+                        </div>
+                    </div>
+                </div>
+                <section class="news-section">
+            
+                    <div class="custom-container">
+                        <div class="row align-items-center">
+                            <div class="col-12 d-flex justify-content-between align-items-center">
+                               
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="row news-cards">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="asserts/Rectangle4.png" class="card-img-top" alt="News Image 1">
+                                    <div class="card-body">
+                                        <a href="#" class="custom-button">Lorem ipsum <span class="arrow">→</span></a>
+                                        <p class="card-text">utem.At aceasqui cones quam res repceriam, evendellabo utem.At aceasqui cones quam res repceriam, evendellabo utem.At aceasqui cones quam res repceriam, evendellabo.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="asserts/Rectangle5.png" class="card-img-top" alt="News Image 2">
+                                    <div class="card-body">
+                                        <a href="#" class="custom-button">Lorem ipsum <span class="arrow">→</span></a>
+                                        <p class="card-text">utem.At aceasqui cones quam res repceriam, evendellabo utem.At aceasqui cones quam res repceriam, evendellabo utem.At aceasqui cones quam res repceriam, evendellabo.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="asserts/Rectangle6.png" class="card-img-top" alt="News Image 3">
+                                    <div class="card-body">
+                                        <a href="#" class="custom-button">Lorem ipsum <span class="arrow">→</span></a>
+                                        <p class="card-text">utem.At aceasqui cones quam res repceriam, evendellabo utem.At aceasqui cones quam res repceriam, evendellabo utem.At aceasqui cones quam res repceriam, evendellabo.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 
+                </section>
+            </div>
+        </section>
+
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer"></footer>
+
+    <script>
+        function loadHTML(elementId, filePath) {
+            $(elementId).load(filePath);
+        }
+
+        $(document).ready(function() {
+            loadHTML('#header', 'header.html');
+            loadHTML('#footer', 'footer.html');
+        });
+    </script>
+
+</body>
+</html>
