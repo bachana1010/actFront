@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacancy Section</title>
+    <script src="https://kendo.cdn.telerik.com/2018.3.911/js/jquery.min.js"></script>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="vacancyinside.css">
+</head>
+
+<body>
+    <header id="header"></header>
+
+    <!-- Back Arrow -->
+    <div class="back-arrow">←</div>
+
+    <!-- Job Header -->
+    <section class="job-header">
+        <h2>Account Manager</h2>
+        <button>Apply now</button>
+    </section>
+
+    <!-- Job Details -->
+    <section class="job-details">
+        <div>
+            <span>Location</span>
+            On-site (Tbilisi)
+        </div>
+        <div>
+            <span>Headquarter</span>
+            Tbilisi, Georgia
+        </div>
+        <div>
+            <span>Deadline</span>
+            October 1, 2024 at 12:00 pm
+        </div>
+        <div>
+            <span>Salary</span>
+            1300$
+        </div>
+        <div>
+            <span>Job Type</span>
+            Full-time
+        </div>
+    </section>
+
+    <!-- Job Description -->
+    <section class="job-description">
+        <h3>Job Description</h3>
+        <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </p>
+        <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        </p>
+    </section>
+
+    <!-- Duties and Requirements -->
+    <section class="duties-requirements">
+        <div>
+            <h3>Your duties</h3>
+            <ul>
+                <li>loro ipsum minim veniam, quis nostrud exercitation</li>
+                <li>loro ipsum minim veniam, quis nostrud exercitation</li>
+                <li>loro ipsum minim veniam, quis nostrud exercitation</li>
+                <li>loro ipsum minim veniam, quis nostrud exercitation</li>
+                <li>loro ipsum minim veniam, quis nostrud exercitation</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Requirements</h3>
+            <ul>
+                <li>loro ipsum minim veniam, quis nostrud exercitation</li>
+                <li>loro ipsum minim veniam, quis nostrud exercitation</li>
+                <li>loro ipsum minim veniam, quis nostrud exercitation</li>
+                <li>loro ipsum minim veniam, quis nostrud exercitation</li>
+                <li>loro ipsum minim veniam, quis nostrud exercitation</li>
+            </ul>
+        </div>
+    </section>
+     <!-- Footer -->
+     <footer id="footer"></footer>
+
+     <script>
+         function loadHTML(elementId, filePath) {
+             $(elementId).load(filePath);
+         }
+ 
+         $(document).ready(function () {
+             loadHTML('#header', 'header.html');
+             loadHTML('#footer', 'footer.html');
+         });
+     </script>
+ 
+     <script src="js/registration.js"></script> <!-- New JS file for registration -->
+</body>
+</html>
