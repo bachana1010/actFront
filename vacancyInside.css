@@ -1,6 +1,5 @@
 body {
     font-family: 'Lato', sans-serif;
-    margin: 20px;
 }
 
 .back-arrow {
@@ -10,7 +9,6 @@ body {
 }
 
 .job-header {
-    background: #f8f9fa;
     padding: 20px;
     border-radius: 8px;
     display: flex;
@@ -24,28 +22,42 @@ body {
 }
 
 .job-header button {
-    background-color: #3f3d56;
+    background-color: #17004c;
     color: white;
     border: none;
-    border-radius: 6px;
-    padding: 10px 20px;
+    border-radius: 10px;
     font-weight: bold;
     cursor: pointer;
+    width:199px;
+    height: 40px;
 }
 
 .job-details {
-    margin-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 40px;
 }
 
-.job-details div {
-    flex: 1;
-    margin-bottom: 20px;
-    min-width: 200px;
+.job-detail-item {
+    position: relative;
+    padding-right: 20px;
 }
 
-.job-details span {
+.job-detail-item:not(:last-child):not(.deadline)::after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 60%;
+    width: 1px;
+    background-color: #ccc;
+}
+
+.job-detail-item span {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
@@ -77,11 +89,45 @@ ul {
 }
 
 ul li {
-    margin-bottom: 10px;
+    margin-bottom: 2px;
 }
 
 @media (max-width: 768px) {
+    .job-details {
+        grid-template-columns: 1fr;
+    }
+
     .duties-requirements div {
         width: 100%;
     }
+}
+
+.vacancy {
+    width: 1180px;
+    padding: 0 20px;
+}
+
+.vacancy-section {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.dutiesRequiemnts{
+    font-size: 24px;
+    font-weight: bold
+}
+
+.vacancy-line {
+    margin-top:30px;
+    height: 2px
+}
+
+.vacancy-title{
+    font-size:24px;
+    font-weight: bold
+}
+
+#jobDescription{
+    margin-bottom:10px
 }
