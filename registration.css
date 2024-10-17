@@ -8,7 +8,6 @@
     display: flex;
     align-items: center;
     position: relative;
-    /* margin-bottom:50px */
 }
 
 /* Blurred Overlay */
@@ -62,7 +61,7 @@
     padding: 15px;
     font-size: 18px;
     width: 100%;
-    border-radius:10px
+    border-radius: 10px;
 }
 
 .btn-primary:hover {
@@ -85,30 +84,28 @@
     margin-bottom: 15px;
 }
 
-.form-row{
-    margin-top:40px
+.form-row {
+    margin-top: 40px;
 }
 
-#NameInput{
-    width:503px;
-    height: 56px
+#NameInput {
+    width: 100%;
+    height: 56px;
 }
 
-#otherInput{
-    width:236px;
-    height: 56px
+#otherInput {
+    width: 100%;
+    height: 56px;
 }
 
-
-.placeholder{
-    color: red
+.placeholder {
+    color: red;
 }
 
-.form-check-label{
-    color:white;
-    font-size:16px;
-    font-weight:bold;
-    color:#9c9c9c
+.form-check-label {
+    color: #9c9c9c;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .custom-checkbox .checkmark {
@@ -123,19 +120,62 @@
 }
 
 .form-check-input {
-    margin-top:10px;
-
+    margin-top: 10px;
 }
 
-/* 
-input[type="checkbox"] {
-    
-    accent-color: green;
-  }
-   */
-   input[type="checkbox"]::before {
-    content: "";
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .registration-section {
+        padding: 30px 0;
+        flex-direction: column;
+        min-height: auto;
+    }
 
-    background-color: green;
-  }
-  
+    .registration-section h1 {
+        font-size: 48px;
+        margin-left: 0;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .registration-form {
+        width: 90%;
+        padding: 20px;
+        height: auto;
+    }
+
+    #NameInput, #otherInput {
+    width: 100%;
+    height: 56px;
+}
+
+    .form-row {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .registration-section h1 {
+        font-size: 36px;
+        margin-top: 10px;
+    }
+
+    .registration-form {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .btn-primary {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .form-control {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .form-check-label {
+        font-size: 14px;
+    }
+}

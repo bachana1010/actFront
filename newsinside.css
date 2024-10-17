@@ -25,12 +25,19 @@
 }
 
 .image-text-overlay p {
-    font-size: 36px;
+    font-size: 28px;
     font-weight: bold;
     color: #000;
     margin: 0;
-    width:65%;
-    margin-left:50px
+    width: 90%;
+    margin-left: 20px;
+}
+
+@media (min-width: 768px) {
+    .image-text-overlay p {
+        font-size: 36px;
+        margin-left: 50px;
+    }
 }
 
 /* Projects Section */
@@ -42,41 +49,81 @@
 
 /* Project Description */
 .projects-description {
-    margin-top: 50px;
+    margin-top: 30px;
     text-align: left;
 }
 
 .description-text {
-    font-size: 16px;
+    font-size: 14px;
     color: #555;
-    line-height: 1.8;
+    line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+    .projects-description {
+        margin-top: 50px;
+    }
+
+    .description-text {
+        font-size: 16px;
+    }
 }
 
 /* Spotlight Projects Section */
 .spotlight-section {
-    padding: 40px 0;
+    padding: 20px 0;
+}
+
+@media (min-width: 768px) {
+    .spotlight-section {
+        padding: 40px 0;
+    }
 }
 
 .custom-container {
     max-width: 1180px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 .spotlight-title {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: bold;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .spotlight-title {
+        font-size: 28px;
+    }
 }
 
 /* News Cards Section */
 .news-cards {
     margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .news-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .news-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 .card {
     border: none;
     border-radius: 8px;
     overflow: hidden;
-    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
 }
 
 .card img {
@@ -96,7 +143,7 @@
 }
 
 .custom-button {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     color: #6f459c;
     text-decoration: none;
@@ -114,11 +161,33 @@
     }
 
     .description-text {
-        font-size: 16px;
+        font-size: 14px;
+    }
+
+    .image-text-overlay p {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 576px) {
+    .projects-banner {
+        height: 300px;
+    }
+
+    .spotlight-title {
+        font-size: 20px;
+    }
+
+    .card-body {
+        padding: 15px;
+    }
+
+    .custom-button {
+        font-size: 14px;
     }
 }
 
 .news-section {
-    padding: 0 ;
+    padding: 0;
     margin-top: 0px !important;
 }
