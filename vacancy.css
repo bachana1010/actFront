@@ -1,62 +1,133 @@
+/* Overall News Section Styling */
 .news-title {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: bold;
-    
+    text-align: center;
 }
+
+@media (min-width: 768px) {
+    .news-title {
+        font-size: 28px;
+        text-align: left;
+    }
+}
+
+/* Event Section Styling */
 .event-section {
     margin: 0 auto;
-    max-width: 1200px; 
-    padding: 0 10px; 
-    margin-bottom: 80px;
-    margin-top:50px
+    max-width: 100%;
+    padding: 0 15px;
+    margin-bottom: 50px;
+    margin-top: 30px;
 }
 
+@media (min-width: 768px) {
+    .event-section {
+        max-width: 1000px;
+        padding: 0 10px;
+        margin-bottom: 70px;
+        margin-top: 40px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .event-section {
+        max-width: 1200px;
+        padding: 0 20px;
+        margin-bottom: 80px;
+        margin-top: 50px;
+    }
+}
+
+/* HR Styling */
 #newSectionHr {
-    margin-right: 5px;
-    border: -0.1px solid gray !important;
-    margin-top: 17px;
+    margin-right: 0;
+    border: 0.5px solid gray !important;
+    margin-top: 10px;
 }
 
+@media (min-width: 768px) {
+    #newSectionHr {
+        margin-right: 5px;
+        margin-top: 17px;
+    }
+}
 
 /* Overall Vacancy Section Styling */
 .vacancy-section {
     display: flex;
     justify-content: center;
-    padding: 40px 0;
+    padding: 20px 0;
 }
 
 .vacancy {
-    width: 1180px; /* Adjust this width to match your design */
+    width: 100%;
+    max-width: 1180px;
     padding: 0 20px;
 }
 
 /* Title and Line Styling */
 .vacancy-title {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: bold;
     color: black;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
+    text-align: center;
 }
 
-.card-section{
-    margin-left: 100px !important;
+@media (min-width: 768px) {
+    .vacancy-title {
+        font-size: 28px;
+        text-align: left;
+    }
+}
+
+.card-section {
+    margin-left: 0;
+}
+
+@media (min-width: 768px) {
+    .card-section {
+        margin-left: 50px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .card-section {
+        margin-left: 100px;
+    }
 }
 
 /* Vacancy Card Styling */
 .vacancy-card {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-    width: 926px; /* Fixed width for the card */
-    height: 195px; /* Fixed height for the card */
-    margin-top: 30px;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 20px;
     border-radius: 8px;
     background-color: #fff;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    border: 1px solid #ddd;
+    padding: 15px;
+    border: 1px solid #88B2DF;
     overflow: hidden;
-    border-color: #88B2DF
+}
+
+@media (min-width: 768px) {
+    .vacancy-card {
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .vacancy-card {
+        height: 195px;
+    }
 }
 
 /* Vacancy Card Body (Text Section) */
@@ -64,20 +135,44 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 15px
+    margin-bottom: 15px;
 }
 
 .job-title {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
+@media (min-width: 768px) {
+    .job-title {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .job-title {
+        font-size: 24px;
+    }
+}
+
 .job-description {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     margin-bottom: 15px;
-    width: 535px
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .job-description {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .job-description {
+        width: 535px;
+    }
 }
 
 .read-more {
@@ -93,23 +188,32 @@
 /* Vacancy Card Action Section (Apply and Location) */
 .vacancy-card-action {
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    .vacancy-card-action {
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 0;
+    }
 }
 
 .apply-btn {
     background-color: #17004c;
     color: #fff;
-    padding: 7px 20px;
+    padding: 10px 20px;
     border-radius: 10px;
     text-decoration: none;
     font-size: 14px;
-    margin-bottom: 20px;
     text-align: center;
-    width: 232px;
-    height:34px;
-    margin-bottom: 75px
+    width: 100%;
+    max-width: 232px;
+    margin-bottom: 20px;
 }
 
 .apply-btn:hover {
@@ -121,22 +225,22 @@
     align-items: center;
     font-size: 14px;
     color: #555;
-    marign-right:10px
 }
 
 .location-info i {
     margin-left: 5px;
     font-size: 20px;
     color: #17004C;
-    font-weight: bold
+    font-weight: bold;
 }
 
-.location-info p{
-    margin:0;
-    color:#17004C;
-    margin-right:20px;
-    font-weight: bold
+.location-info p {
+    margin: 0;
+    color: #17004C;
+    margin-right: 20px;
+    font-weight: bold;
 }
+
 /* Media Query for Responsive Design */
 @media (max-width: 768px) {
     .vacancy-card {
@@ -151,6 +255,21 @@
     }
 
     .apply-btn {
+        width: 40%;
         margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+    .vacancy-card {
+        flex-direction: row;
+        align-items: center;
+        height: auto;
+    }
+
+    .vacancy-card-action {
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 0;
     }
 }

@@ -2,8 +2,14 @@
 .projects-banner {
     position: relative;
     width: 100%;
-    height: 400px;
+    height: 300px;
     overflow: hidden;
+}
+
+@media (min-width: 768px) {
+    .projects-banner {
+        height: 400px;
+    }
 }
 
 .projects-image {
@@ -18,56 +24,122 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 50%;
-    background: #3B3092B2; /* Light blue background */
-    padding: 20px;
+    height: 40%;
+    background: rgba(59, 48, 146, 0.7);
+    padding: 15px;
     box-sizing: border-box;
 }
 
+@media (min-width: 768px) {
+    .image-text-overlay {
+        height: 50%;
+        padding: 20px;
+    }
+}
+
 .image-text-overlay p {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
     color: #000;
     margin: 0;
 }
 
+@media (min-width: 768px) {
+    .image-text-overlay p {
+        font-size: 20px;
+    }
+}
+
 /* Projects Section */
 .projects-section .container {
-    max-width: 1180px;
+    max-width: 100%;
     margin: 20px auto;
-    padding: 0 20px;
+    padding: 0 15px;
+}
+
+@media (min-width: 768px) {
+    .projects-section .container {
+        max-width: 1180px;
+        padding: 0 20px;
+    }
 }
 
 /* Project Description */
 .projects-description {
-    margin-top: 50px;
+    margin-top: 30px;
     text-align: left;
 }
 
+@media (min-width: 768px) {
+    .projects-description {
+        margin-top: 50px;
+    }
+}
+
 .description-text {
-    font-size: 16px;
+    font-size: 14px;
     color: #555;
-    line-height: 1.8;
+    line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+    .description-text {
+        font-size: 16px;
+    }
 }
 
 /* Spotlight Projects Section */
 .spotlight-section {
-    padding: 40px 0;
+    padding: 20px 0;
+}
+
+@media (min-width: 768px) {
+    .spotlight-section {
+        padding: 40px 0;
+    }
 }
 
 .custom-container {
-    max-width: 1180px;
+    max-width: 100%;
     margin: 0 auto;
+    padding: 0 15px;
+}
+
+@media (min-width: 768px) {
+    .custom-container {
+        max-width: 1180px;
+    }
 }
 
 .spotlight-title {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    .spotlight-title {
+        font-size: 28px;
+    }
 }
 
 /* News Cards Section */
 .news-cards {
     margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .news-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .news-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 .card {
@@ -75,16 +147,29 @@
     border-radius: 8px;
     overflow: hidden;
     margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .card img {
     width: 100%;
-    height: 200px;
+    height: 150px;
     object-fit: cover;
 }
 
+@media (min-width: 768px) {
+    .card img {
+        height: 200px;
+    }
+}
+
 .card-body {
-    padding: 20px;
+    padding: 15px;
+}
+
+@media (min-width: 768px) {
+    .card-body {
+        padding: 20px;
+    }
 }
 
 .card-text {
@@ -94,11 +179,17 @@
 }
 
 .custom-button {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     color: #6f459c;
     text-decoration: none;
     transition: all 0.3s ease;
+}
+
+@media (min-width: 768px) {
+    .custom-button {
+        font-size: 18px;
+    }
 }
 
 .custom-button:hover {
@@ -112,6 +203,6 @@
     }
 
     .description-text {
-        font-size: 16px;
+        font-size: 14px;
     }
 }
