@@ -47,11 +47,15 @@
 }
 
 /* Input field styling */
+/* Specific styling for all input fields */
 .form-control {
-    background-color: #c3c3c3;
+    width: 236px !important; /* Set the width to 236px */
+    height: 56px !important; /* Set the height to 56px */
+    background-color: #c3c3c3; /* Keep background color */
     border: none;
     padding: 15px;
     font-size: 16px;
+    box-sizing: border-box; /* Ensures padding doesn’t affect width */
 }
 
 /* Button styling */
@@ -144,7 +148,7 @@
         height: auto;
     }
 
-    #NameInput, #otherInput {
+    #otherInput {
     width: 100%;
     height: 56px;
 }
@@ -177,5 +181,50 @@
 
     .form-check-label {
         font-size: 14px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    /* Make Name and Surname fields sit side-by-side */
+    /* #NameInput {
+        display: flex;
+        justify-content: space-between;
+    } */
+
+    .col-md-6 {
+        flex: 1;
+        margin-right: 10px; /* Small spacing between the fields */
+    }
+
+    /* Remove margin from the last field to align it correctly */
+     .col-md-6:last-child {
+        margin-right: 0;
+    }
+
+    /* Full width and height for other input fields */
+    .form-control {
+        width: 283px !important;
+        height: 56px !important;
+    }
+
+    /* Center align the form */
+    .registration-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Arrange Name and Surname side-by-side with equal width */
+    .form-row {
+        display: flex;
+        gap: 10px; /* Adds space between fields */
+    }
+
+    #nameinput,
+    #surnameinput {
+        width: 93% !important; /* Ensures both fields are 50% width */
     }
 }

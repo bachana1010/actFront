@@ -237,3 +237,12 @@
         font-size: 18px;
     }
 }
+
+
+@media (max-width: 768px) {
+    .articles-line {
+        width:80% !important;
+        margin-left: 23% !important;
+        margin-top: -11px !important
+    }
+}

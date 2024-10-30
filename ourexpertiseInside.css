@@ -130,7 +130,7 @@
     border-radius: 8px;
     overflow: hidden;
     text-align: center;
-    width: calc(33.333% - 20px); /* Makes cards responsive */
+    width: calc(33.333% - 20px); Makes cards responsive
     max-width: 350px; /* Limits the size for large screens */
     flex: 1 1 calc(33.333% - 20px);
 }
@@ -195,6 +195,10 @@
     .custom-container {
         margin-top: 0; /* Remove negative margin for mobile */
     }
+
+    #titlesectionH2{
+        text-align:left !important
+    }
 } 
 
 @media (max-width: 480px) {
@@ -210,3 +214,4 @@
         font-size: 18px;
     }
 }
+

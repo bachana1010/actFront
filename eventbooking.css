@@ -144,3 +144,81 @@
 }
 
 
+
+
+@media (max-width: 768px) {
+    .news-section {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap; /* Wraps the content for smaller screens */
+    }
+    
+    .custom-container {
+        max-width: 1180px; /* Match the image's width */
+        width: 100%;
+        padding: 0 20px; /* Consistent padding */
+        margin: 0 auto; /* Center align */
+        margin-bottom: 30px; /* Adjusted for mobile */
+        margin-top: -50px; /* Reduced negative margin for better mobile view */
+    }
+    
+    .news-cards {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap; /* Allows cards to wrap for smaller screens */
+        /* gap: 20px; Adds space between cards for better layout */
+        margin-top: 30px;
+    }
+    
+    .card {
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+        text-align: center;
+        /* width: calc(33.333% - 20px); Makes cards responsive */
+        max-width: 350px; /* Limits the size for large screens */
+        flex: 1 1 calc(33.333% - 20px);
+    }
+    
+    .date-box{
+        top: 200px !important
+    }
+
+    .image-container img {
+        height:400px !important
+    }
+
+    .text-content{
+        left: 20px !important;
+        top: 60px !important
+    }
+
+    .event-title {
+        font-size:30px !important
+    }
+
+    .event-actions{
+        margin-left: 30px !important
+    }
+
+    .news-line{
+        display: block !important;
+        margin-top: -12px;
+        margin-right: -151px;
+        width:50%
+    }
+
+    .news-title {
+        margin-bottom: 10px !important;
+        text-align: center !important;
+        white-space: nowrap; /* Prevent line breaks */
+        font-size: 20px; /* Adjust font size if needed */
+        margin-left: -75px;
+        font-weight: bold
+    }
+    
+
+} 

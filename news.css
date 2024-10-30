@@ -109,3 +109,25 @@
         font-size: 14px;
     }
 }
+
+
+/* Align "Read more" and date on the same line */
+.read-more-date-card {
+    display: flex;
+    justify-content: space-between; /* Places date on the left and "Read more" on the right */
+    align-items: center;
+    margin-top: 10px; /* Space above the date/read more section */
+}
+
+/* Date styling on the left */
+.news-date {
+    font-size: 14px;
+    color: #555; /* Adjust color as desired */
+}
+
+/* "Read more" styling on the right */
+.read-more {
+    color: #643695; /* Adjust color as desired */
+    font-weight: bold;
+    cursor: pointer;
+}

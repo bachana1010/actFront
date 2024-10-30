@@ -90,7 +90,7 @@
 
 #titlesectionH2 {
     font-size: 20px;
-    text-align: center; /* Center text for smaller screens */
+    text-align: left; /* Center text for smaller screens */
 }
 
 .news-section {
@@ -114,7 +114,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap; /* Allows cards to wrap for smaller screens */
-    gap: 20px; /* Adds space between cards for better layout */
+    /* gap: 20px; Adds space between cards for better layout */
     margin-top: 30px;
 }
 
@@ -124,7 +124,7 @@
     border-radius: 8px;
     overflow: hidden;
     text-align: center;
-    width: calc(33.333% - 20px); /* Makes cards responsive */
+    /* width: calc(33.333% - 20px); Makes cards responsive */
     max-width: 350px; /* Limits the size for large screens */
     flex: 1 1 calc(33.333% - 20px);
 }
@@ -175,7 +175,7 @@
     }
 
     .expertise-line {
-        width: 90%; /* Adjusted width for mobile */
+        width: 99%; /* Adjusted width for mobile */
     }
 
     .card {
@@ -189,6 +189,28 @@
     .custom-container {
         margin-top: 0; /* Remove negative margin for mobile */
     }
+
+    .expertise-caption{
+        text-align: left; /* Center title for smaller screens */
+    }
+
+    .titlesectionH2{
+        text-align: left; /* Center title for smaller screens */
+
+    }
+
+    .news-title{
+        margin-bottom: 10px !important;
+        text-align: center !important;
+        width: 100px !important;
+    }
+
+    .news-line{
+        display: block !important;
+        margin-top: -12px;
+        margin-right: -70px;
+    }
+
 } 
 
 @media (max-width: 480px) {
@@ -204,3 +226,4 @@
         font-size: 18px;
     }
 } 
+
