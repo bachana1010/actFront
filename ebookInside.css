@@ -323,3 +323,91 @@
     margin-right: 5px; 
     border:1px solid #000
 }
+
+
+
+@media (max-width: 768px) {
+    
+    .d-flex .align-items-center {
+        margin-left: -60px;
+    }
+
+    .news-line, .section-line {
+        display: block;
+        width:60%
+    }
+
+    #newSectionHr {
+        margin-right: -65px;
+        margin-top: -14px;}
+}
+
+/* Mobile and Tablet View Styles */
+@media (max-width: 768px) {
+    @media (max-width: 768px) {
+        .top-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 360px;
+            margin: auto;
+        }
+    
+        /* Image styling */
+        .image-content {
+            width: 100%;
+            max-width: 339px; /* Restrict image width */
+            margin-bottom: 20px;
+        }
+    
+        .ebook-image {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 8px 8px 0 0;
+        }
+    
+        /* Text styling */
+        .ebook-title {
+            color: #6f459c;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    
+        .ebook-subtitle {
+            font-size: 18px;
+            font-weight: bold;
+            color: #000;
+            margin: 10px 0;
+            line-height: 1.4;
+        }
+    
+        /* Button styling */
+        .ebook-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #17004c;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+    
+        .ebook-btn:hover {
+            background-color: #32007a;
+        }
+
+       #exploreMore{
+        white-space: nowrap;
+       }
+    }
+    
+}
+

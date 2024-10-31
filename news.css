@@ -18,14 +18,15 @@
     font-weight: bold;
     color: black;
     margin-bottom: 15px;
-    text-align: center;
+    text-align: left;
 }
 
 .news-line {
-    width: 100%;
+    width: 86%;
     height: 1px;
     background-color: #cfcfcf;
     margin: 10px auto;
+    margin-top: -20px;
 }
 
 /* News Card Styling */
@@ -42,11 +43,14 @@
 }
 
 @media (min-width: 768px) {
+
     .news-card {
         flex-direction: row;
         max-width: 920px;
         height: 195px;
     }
+
+       
 }
 
 /* Image inside the card */
@@ -130,4 +134,21 @@
     color: #643695; /* Adjust color as desired */
     font-weight: bold;
     cursor: pointer;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .news-line, .section-line {
+        display: block !important;
+        width: 76%;
+        margin-left: 69px;
+        
+    }
+
+    .news-section .news-title {
+        margin-bottom: 17px !important;
+    }
 }

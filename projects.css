@@ -205,4 +205,11 @@
     .description-text {
         font-size: 14px;
     }
+
+    .projects-line{
+        margin-top: 35px;
+        font-weight: bold;
+        color: #000;
+        border: 1px solid #000;
+    }
 }

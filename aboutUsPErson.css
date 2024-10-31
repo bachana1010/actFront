@@ -245,3 +245,25 @@
         width: 69px;
     }
 }
+
+
+@media (max-width: 768px) {
+    .articles-line{
+        width:70%;
+        margin-left: 31%;
+        margin-top: -10px
+    }
+
+    .contact-box{
+        width: 250px !important;
+        gap: 10px;
+
+    }
+
+    .contact-box span{
+ 
+        color: #17004c;
+
+    }
+
+}

@@ -172,3 +172,154 @@
 .card-date{
     font-size:10px !important
 }
+
+@media (max-width: 768px) {
+    /* Overall News Section Styling */
+    .news-section {
+        padding: 20px 10px;
+    }
+
+    .news-section-card {
+        padding: 0;
+    }
+
+    /* Title and Line Styling */
+    .news-title {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .search-result {
+        text-align: center;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .news-line {
+        width: 60%;
+        margin: 10px auto;
+    }
+
+    /* News Card Styling */
+    .news-card {
+        width: 100%; /* Full width for mobile */
+        height: auto;
+        margin-top: 15px;
+        flex-direction: column;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+
+    .news-card-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .news-card-img img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .news-card-body {
+        padding: 15px;
+        text-align: left;
+    }
+
+    .news-card-body h3 {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+
+    .news-card-body .card-date {
+        font-size: 12px;
+        color: #555;
+        margin-bottom: 8px;
+    }
+
+    /* Left Side Menu Styling for Mobile */
+    .menu-section {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+
+    .menu-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .menu-list li {
+        margin: 0;
+    }
+
+    .menu-list li a {
+        padding: 8px 15px;
+        font-size: 14px;
+        text-align: center;
+        border-radius: 4px;
+        color: #17004c;
+        border: 1px solid #17004c;
+        font-weight: bold;
+        display: inline-block;
+        width: auto;
+    }
+
+    .menu-list li a:hover {
+        background-color: #17004c;
+        color: #fff;
+    }
+
+    
+}
+
+@media (max-width: 768px) {
+
+    @media (max-width: 768px) {
+        /* Left Side Menu - Mobile Specific Styling */
+        .menu-section {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+    
+        .menu-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Two columns */
+            gap: 10px; /* Space between buttons */
+            width: 100%; /* Full width */
+            max-width: 300px; /* Optional: limits the max width for better alignment */
+            margin: 0 auto; /* Center align the button group */
+            padding: 0;
+        }
+    
+        .menu-list li {
+            list-style-type: none; /* Remove bullet points */
+        }
+    
+        .menu-list li a {
+            display: block;
+            padding: 10px;
+            font-size: 16px;
+            text-align: center;
+            color: #17004c;
+            border: 1px solid #17004c;
+            border-radius: 8px;
+            font-weight: bold;
+            width: 100%; /* Full width within grid cell */
+            box-sizing: border-box;
+        }
+    
+        .menu-list li a.active {
+            background-color: #17004c;
+            color: #fff;
+        }
+    }
+    
+
+}

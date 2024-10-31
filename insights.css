@@ -108,6 +108,23 @@
     color: #666;
 }
 
+.news-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.news-line {
+    width: 90%;
+    height: 1px;
+    background-color: #cfcfcf;
+    margin: 10px auto;
+    margin-top: -20px;
+    margin-left: 110px;
+}
+
 .read-more a {
     font-size: 16px;
     text-decoration: none;
@@ -182,5 +199,18 @@ hr {
 @media (min-width: 768px) {
     .author-name {
         font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .read-more{
+        text-align: center;
+        margin-top:10px
+    }
+
+    .news-line, .section-line {
+        display: block;
+        width:67%
+
     }
 }

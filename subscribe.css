@@ -221,4 +221,17 @@
     .form-group {
         flex: 0 0 100%;
     }
+
+    .account-form{
+        box-shadow:none
+    }
+
+    .form-group input{
+        margin-left: -70px;
+        width:312px
+    }
+
+    .form-group label{
+        margin-left: -56px;
+    }
 }

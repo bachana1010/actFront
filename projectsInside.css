@@ -14,7 +14,7 @@
 
 /* Projects Section */
 .projects-section .container {
-    max-width: 1180px;
+    max-width: 900px; /* Adjusted to center content better */
     margin: 0 auto;
     padding: 0 20px;
     margin-bottom: 20px;
@@ -25,12 +25,13 @@
     font-size: 28px;
     font-weight: bold;
     color: #000;
+    text-align: center; /* Center the title */
 }
 
 /* Project Description */
 .projects-description {
     margin-top: 50px;
-    text-align: left;
+    text-align: center; /* Center text alignment */
 }
 
 .description-text {
@@ -42,16 +43,21 @@
 /* Spotlight Projects Section */
 .spotlight-section {
     padding: 40px 0;
+    display: flex;
+    justify-content: center; /* Center the section */
 }
 
 .custom-container {
-    max-width: 1180px;
+    max-width: 900px; /* Centered narrower container */
     margin: 0 auto;
+    padding: 20px;
 }
 
+/* Title in Spotlight Section */
 .spotlight-title {
     font-size: 28px;
     font-weight: bold;
+    text-align: center; /* Centered title */
 }
 
 .spotlight-line {
@@ -86,10 +92,12 @@
 /* Project Inside Section */
 .project-inside-section {
     padding: 40px 20px;
+    display: flex;
+    justify-content: center;
 }
 
-.container {
-    max-width: 1180px;
+.project-inside-section .container {
+    max-width: 900px; /* Narrower max width to align content to center */
     margin: 0 auto;
     padding: 20px;
     border-radius: 8px;
@@ -103,6 +111,7 @@
     margin-bottom: 15px;
     display: flex;
     align-items: center;
+    justify-content: center; /* Center title */
 }
 
 .project-title i {
@@ -115,24 +124,22 @@
     margin-bottom: 20px;
     display: flex;
     align-items: center;
+    justify-content: center; /* Center Date and Status */
 }
 
-.date-label {
+.date-label, .status-label {
     font-size: 14px;
     color: #555;
     background-color: #f1f1f1;
     padding: 4px 8px;
     border-radius: 4px;
     margin-right: 10px;
+    margin-left: 10px;
 }
 
 .status-label {
-    font-size: 14px;
     color: white;
     background-color: #6f459c;
-    padding: 4px 8px;
-    border-radius: 4px;
-    display: inline-block;
 }
 
 .status-label.finished {
@@ -142,6 +149,7 @@
 /* Team Members */
 .team-members {
     margin-bottom: 20px;
+    text-align: center; /* Center team members section */
 }
 
 .team-members i {
@@ -150,21 +158,39 @@
     color: #17004c;
 }
 
+.member-names {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
 .member-names span {
     display: inline-block;
     font-size: 16px;
     background-color: #f1f1f1;
     padding: 5px 10px;
     border-radius: 4px;
-    margin-right: 8px;
     margin-top: 5px;
 }
 
 /* Areas of Expertise */
+.areas-of-expertise {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 .areas-of-expertise p {
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 10px;
+}
+
+.expertise-tags {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .expertise-tags .tag {
@@ -173,8 +199,6 @@
     background-color: #f1f1f1;
     padding: 6px 12px;
     border-radius: 4px;
-    margin-right: 8px;
-    margin-bottom: 8px;
     color: #333;
 }
 

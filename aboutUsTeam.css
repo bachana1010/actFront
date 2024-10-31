@@ -123,6 +123,7 @@
     margin-bottom: 10px;
 }
 
+
 @media (min-width: 768px) {
     .card-title {
         font-size: 16px;
@@ -171,4 +172,71 @@
     #cardColumnFirst {
         margin-right: 60px;
     }
+}
+
+.news-title{
+    margin-left: 172px;
+}
+
+.news-line{
+    margin-left: 311px;
+    margin-bottom: 15px;
+    margin-top: -10px
+}
+
+@media (max-width: 768px) {
+    .news-title {
+        margin-left: 0px !important;
+        margin-bottom: 10px;
+         margin-right: 0px !important
+    }
+
+    .news-line, .section-line {
+        display: block;
+    }
+    .news-line {
+        margin-left: 140px !important;
+        width: 58% !important
+    }
+
+
+
+       
+
+
+}
+
+
+/* For larger screens, stack the columns vertically */
+@media (max-width: 768px) {
+    .card-columns {
+        flex-direction: column; /* Stacks vertically on larger screens */
+        gap: 20px; /* Adds space between rows */
+    }
+
+    .card-columns {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        justify-content: space-between;
+    }
+    
+    .card-column {
+        flex: 1;
+        font-size: 13spx;
+        color: #999;
+        text-align: center; /* Center-align for consistency */
+    }
+    
+    .card-column p {
+        margin: 0;
+        color: #000;
+    }
+
+    .card-icons{
+        margin-top: 60px;
+    }
+
+    
+    
 }

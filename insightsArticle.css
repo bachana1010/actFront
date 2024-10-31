@@ -16,6 +16,9 @@
     .article-header {
         height: 648px;
     }
+    .col-md-4{
+        max-width: none
+    }
 }
 
 .article-text {
@@ -253,6 +256,9 @@ h1 {
     border-color: #6f459c;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
+.row{
+    margin-right:0px
+}
 
 .learn-more-text {
     margin-right: 5px;
@@ -281,4 +287,75 @@ h1 {
     #hrNesSection {
         margin-right: 0;
     }
+}
+
+
+@media (max-width: 768px) {
+    
+    .news-line, .section-line {
+        display: block;
+        width:67%
+
+    }
+
+    .news-lineTop{
+        width: 60% !important;
+        margin-left: 135px !important
+
+    }
+
+    .news-titleTop {
+        margin-left: 10px !important
+    }
+
+        .news-section .news-title {
+         
+            margin-left: -81px;
+        }
+
+        #hrNesSection{
+            margin-top: -18px
+        }
+
+        .news-line, .section-line{
+            width: 60%
+        }
+
+        .news-titleExplore{
+            font-weight: bold !important;
+            margin-left: -156px !important; 
+
+        }
+    
+}
+
+.news-titleExplore{
+    font-weight: bold
+}
+
+.news-titleTop {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 15px;
+    text-align: left;
+    margin-left: 70px;
+    margin-top:15px
+}
+
+.news-lineTop {
+    width: 83%;
+    height: 1px;
+    background-color: #cfcfcf;
+    margin: 10px auto;
+    margin-top: -20px;
+    margin-left: 170px;
+    
+}
+
+
+
+#arrowP{
+    margin-left:20px;
+    font-size: 30px
 }

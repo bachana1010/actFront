@@ -101,9 +101,9 @@
 /* News Cards Section */
 .news-cards {
     margin-top: 20px;
-    display: grid;
+    /* display: grid; */
     grid-template-columns: 1fr;
-    gap: 20px;
+    /* gap: 20px; */
 }
 
 @media (min-width: 768px) {
@@ -154,6 +154,10 @@
     color: #333;
 }
 
+#backP{
+    margin-left:10px
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .projects-title {
@@ -165,7 +169,7 @@
     }
 
     .image-text-overlay p {
-        font-size: 24px;
+        font-size: 22px;
     }
 }
 
