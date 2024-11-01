@@ -131,3 +131,79 @@ ul li {
 #jobDescription{
     margin-bottom:10px
 }
+
+@media (max-width: 768px) {
+    .job-header {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .job-details {
+        display: block;
+        padding: 0;
+    }
+
+    .job-detail-item {
+        display: block;
+        padding: 10px 0;
+        border: none;
+    }
+
+    .job-detail-item:not(:last-child)::after {
+        content: none;
+    }
+
+    .job-detail-item span {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .job-detail-item p {
+        margin: 0;
+    }
+
+    .vacancy {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .back-arrow {
+        margin-bottom: 10px;
+    }
+
+    /* New styling for the Apply button */
+    .apply-now-container {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .job-header button {
+        width: 100%;
+        margin-top: 0; /* Ensure no extra margin at the top */
+        font-size: 16px;
+    }
+    #mobileApply{
+        display: block !important;
+        background-color: #17004c;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        font-weight: bold;
+        cursor: pointer;
+        width: 354px;
+                height: 40px;
+    }
+    #desktopApply{
+        display: none 
+    }
+
+    .job-detail-item:not(:last-child):not(.deadline)::after {
+        display: none
+    }
+}
+
+
+#mobileApply{
+    display: none;
+}
