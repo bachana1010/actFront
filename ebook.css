@@ -143,14 +143,19 @@ h1 {
     padding: 8px 16px;
     border-radius: 6px;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: rgba(255, 255, 255, 0.7);
+    /* background-color: rgba(255, 255, 255, 0.7); */
     text-transform: uppercase;
     font-weight: bold;
     font-size: 14px;
-    color: #6f459c;
+    /* color: #6f459c; */
     text-decoration: none;
     transition: all 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.learn-more-btn span{
+    color: black;
+    font-size: 14px
 }
 
 .learn-more-btn:hover {
@@ -181,7 +186,7 @@ h1 {
 
 #newSectionHr{
     margin-right: 5px; 
-    border:1px solid #000
+    /* border:1px solid #000 */
 }
 
 
@@ -210,6 +215,7 @@ h1 {
     height: 1px;
     background-color: #cfcfcf;
     margin: 10px auto;
+    margin-top: 25px;
 }
 
 /* Cards Grid */
@@ -274,7 +280,7 @@ h1 {
 .learn-more-btn {
     display: inline-block;
     padding: 8px 16px;
-    background-color: #6f459c;
+    /* background-color: #6f459c; */
     color: #fff;
     border-radius: 4px;
     text-decoration: none;

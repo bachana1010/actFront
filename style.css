@@ -74,6 +74,107 @@ header {
         flex-direction: column;
         gap: 10px;
     }
+
+    #pastwebinar{
+        font-size:10px !important
+    }
+    #webinarabout{
+        font-size:13px !important
+    }
+
+    #webinaronline{
+        font-size: 10px !important
+    }
+
+    #learnmorewebinar{
+        font-size: 10px !important;
+        margin-top: 5px
+
+    }
+
+    .text-container{
+        padding: 10px !important
+    }
+
+    .image-container img{
+        height: 170px !important
+    }
+
+    .card-row {
+        display: flex;
+        flex-direction: column-reverse; /* Reverses the order for mobile */
+    }
+
+    .card-image {
+        order: -1; /* Ensures the image is placed before the text */
+    }
+
+    #utemAt{
+        font-size: 20px !important;
+        font-weight: bold
+    }
+
+    #utematP{
+        font-size:16px !important
+    }
+
+    .card-content{
+        margin-left: -17px;
+    }
+
+    .news-line {
+        display: block !important;
+        margin-top: -15px !important; 
+        margin-right: -46px !important;
+        width: 85% !important
+    }
+
+
+    .news-title{
+        font-size: 20px !important;
+        font-weight: bold;
+        margin-right:312px !important
+    }
+
+    #viewAll{
+        display: none
+    }
+
+    .section-title {
+        font-size: 20px !important;
+        margin-left: -23px !important;
+        width: 160px !important;
+        font-weight: bold;
+        margin-right: -5px !important;
+    }
+
+    .section-line{
+        display: block !important;
+        margin-top: 30px !important;
+
+    }
+    
+}
+
+#utemAt{
+    color:Black; font-size:30px"
+}
+
+#utematP{
+    color:#61686E; font-size:20px
+}
+
+#webinarabout{
+    font-size:32px;
+     color:white
+}
+
+#pastwebinar{
+    color:#8C959A; font-size: 19px; font-weight: bold;
+}
+
+#webinaronline{
+    font-size:22px; color:white
 }
 
 .px-2 {
@@ -215,6 +316,7 @@ header {
             .text-container {
                 margin: 20px 0; /* Adjust margins for smaller screens */
                 align-items: flex-start;
+                
 
                 .vertical-line {
                     height: 64px; /* Adjust height for smaller screens */
@@ -468,6 +570,8 @@ body {
     max-width: 455px; /* Maximum width for the text container */
     max-height: 260px; /* Maximum height for the text container */
     overflow: hidden; /* Hide overflow */
+    width: 100%;
+    margin-top: -25px;
 }
 
 .card-content h2 {
@@ -491,6 +595,7 @@ body {
     margin-bottom: 10px; /* Space between buttons */
     position: relative;
     white-space: nowrap; /* Prevent text from wrapping within the button */
+    font-weight: bold
 }
 
 .custom-button:last-child {
@@ -1567,6 +1672,10 @@ body {
     text-align: left;
 }
 
+#text-containerEmpr{
+    background: none
+}
+
 .text-container p, .text-container h2, .play-button {
     margin: 0;
 }
@@ -1583,3 +1692,35 @@ body {
 .play-button:hover {
     color: #007bff; /* Optional hover effect */
 }
+
+
+/* Styling for the slider bars */
+.slider-buttons {
+    display: flex;
+    justify-content: center; /* Center the bars */
+    margin-top: 15px; /* Add space above the bar row */
+    gap: 8px; /* Space between the bars */
+}
+
+/* Styling for the slider bars */
+.slider-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 8px;
+}
+
+.bar {
+    cursor: pointer;
+    height: 4px;
+    width: 65px;
+    background-color: #bbb; /* Default color */
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.bar:hover,
+.bar.active-bar {
+    background-color: #88b2df; /* Color on hover and active */
+}
+

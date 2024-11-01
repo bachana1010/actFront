@@ -3,15 +3,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const images = [
         'asserts/Rectangle12.png',
         'asserts/Rectangle4.png',
-        'asserts/Rectangle14.png',
-        'asserts/Rectangle6.png'
-    ];
+        'asserts/Rectangle14.png'    ];
 
     let currentImageIndex = 0;
     let autoSwitchInterval;
 
     const sliderImage = document.getElementById('slider-image');
-    const dots = document.querySelectorAll('.dot');
+    const dots = document.querySelectorAll('.bar');
 
     function updateImage() {
         sliderImage.src = images[currentImageIndex];
@@ -20,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function startAutoSwitch() {
         autoSwitchInterval = setInterval(function() {
-            currentImageIndex = (currentImageIndex === images.length - 1) ? 0 : currentImageIndex + 1;
+            currentImageIndex = (currentImageIndex + 1) % images.length; // Circular increment
             updateImage();
         }, 2000);
     }
@@ -31,11 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function updateDots() {
         dots.forEach((dot, index) => {
-            if (index === currentImageIndex) {
-                dot.classList.add('active');
-            } else {
-                dot.classList.remove('active');
-            }
+            dot.classList.toggle('active-bar', index === currentImageIndex);
         });
     }
 
@@ -57,22 +51,15 @@ document.addEventListener('DOMContentLoaded', function() {
     const dropdownContents = document.querySelectorAll('.dropdown-content');
 
     navLinks.forEach(link => {
-        link.addEventListener('mouseover', function() {
+        link.addEventListener('mouseenter', function() {
             const targetMenu = this.getAttribute('data-target');
             const dropdownContent = document.getElementById(targetMenu);
 
-            // Check if the dropdown content exists
             if (dropdownContent) {
                 dropdownContents.forEach(content => {
-                    if (content.id === targetMenu) {
-                        content.style.display = 'flex';
-                    } else {
-                        content.style.display = 'none';
-                    }
+                    content.style.display = content.id === targetMenu ? 'flex' : 'none';
                 });
                 dropdownContainer.style.display = 'block';
-            } else {
-                dropdownContainer.style.display = 'none';
             }
         });
 
@@ -88,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    dropdownContainer.addEventListener('mouseover', function() {
+    dropdownContainer.addEventListener('mouseenter', function() {
         this.style.display = 'block';
     });
 
@@ -105,7 +92,6 @@ document.addEventListener('DOMContentLoaded', function() {
         menu.classList.add('open');
         hamburger.style.display = 'none';
         cross.style.display = 'block';
-        console.log(hamburger, "cross");
     });
 
     cross.addEventListener('click', function() {
@@ -119,9 +105,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const searchClose = $('.search-close');
 
     function toggleSearch() {
-        console.log("Aq shemodis?");
-        console.log("Aq shemodis?", searchClose);
-        console.log("Aq shemodis?", searchHamburger);
         searchHamburger.toggleClass('active');
         searchClose.toggleClass('active');
     }
@@ -142,11 +125,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Update the toggle icon
             const toggleIcon = this.querySelector('.toggle-icon');
-            if (submenu.classList.contains('open')) {
-                toggleIcon.textContent = '▲';
-            } else {
-                toggleIcon.textContent = '▼';
-            }
+            toggleIcon.textContent = submenu.classList.contains('open') ? '▲' : '▼';
         });
     });
 });
@@ -159,6 +138,8 @@ $(document).ready(function() {
     $('.parent-item').on('click', function(e) {
         e.preventDefault();
         $(this).next('.submenu').slideToggle('fast');
-        $(this).find('.toggle-icon').text(function(_, value) { return value === '▼' ? '▲' : '▼'; });
+        $(this).find('.toggle-icon').text(function(_, value) {
+            return value === '▼' ? '▲' : '▼';
+        });
     });
 });

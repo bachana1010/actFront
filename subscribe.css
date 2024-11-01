@@ -43,15 +43,15 @@
 }
 
 @media (min-width: 768px) {
-    .subscribe-grid {
+    /* .subscribe-grid {
         grid-template-columns: repeat(2, 1fr);
-    }
+    } */
 }
 
 @media (min-width: 1024px) {
-    .subscribe-grid {
+    /* .subscribe-grid {
         grid-template-columns: repeat(3, 1fr);
-    }
+    } */
 }
 
 .subscribe-card {
@@ -109,10 +109,21 @@
 .account-info-section {
     display: flex;
     justify-content: center;
-    padding: 40px 20px;
     flex-direction: column;
     align-items: center;
+    margin-left: -30px;
+
 }
+
+@media (max-width: 768px) {
+  .account-info-section{
+    padding: 40px 20px; 
+     margin-left: 0;
+
+  }
+}
+
+
 
 .account-info-section h2 {
     font-size: 24px;
@@ -132,14 +143,13 @@
     max-width: 100%;
     width: 100%;
     margin: 0 auto;
-    padding: 20px;
+    /* padding: 20px; */
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 @media (min-width: 768px) {
     .account-form {
-        max-width: 800px;
+        /* max-width: 800px; */
     }
 }
 
@@ -210,6 +220,12 @@
     .form-group {
         flex: 0 0 48%;
     }
+
+    .col-md-6 {
+     
+         max-width: none;
+        }
+
 }
 
 /* Responsive Layout */
@@ -233,5 +249,31 @@
 
     .form-group label{
         margin-left: -56px;
+    }
+}
+
+
+/* Main Styling for Grid */
+.subscribe-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    gap: 20px; /* Space between items */
+}
+
+.subscribe-card {
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px; /* Adjust height if needed */
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .subscribe-grid {
+        grid-template-columns: 1fr; /* Switch to single column on smaller screens */
     }
 }

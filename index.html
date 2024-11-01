@@ -19,7 +19,7 @@
     <section class="hero-section">
         <div class="container">
             <div class="hero-text">
-                <div class="text-container">
+                <div class="text-container" id="text-containerEmpr">
                     <div class="vertical-line"></div>
                     <div class="text-content">
                         <h1>Empowering <br> <span>the Change</span></h1>
@@ -33,13 +33,11 @@
                     <p>This shows approved layouts with a responsive grid for a 16:9 Screen of our website. This will be applicable for websites, landing pages etc.</p>
                 </div>
                 <div class="slider-buttons">
-                    <div style="text-align:center">
-                        <span class="dot" onclick="currentSlide(0)"></span>
-                        <span class="dot" onclick="currentSlide(1)"></span>
-                        <span class="dot" onclick="currentSlide(2)"></span>
-                        <span class="dot" onclick="currentSlide(3)"></span>
-                    </div>
+                    <div class="bar" onclick="currentSlide(0)"></div>
+                    <div class="bar" onclick="currentSlide(1)"></div>
+                    <div class="bar" onclick="currentSlide(2)"></div>
                 </div>
+                
             </div>
 
             <video class="video-bg" autoplay muted loop>
@@ -56,12 +54,10 @@
                 </div>
                 <div class="text-container">
                     <div>
-                        <p style="color:#8C959A; font-size: 19px; font-weight: bold;">Past Webinars</p>
-                        <h2 style="font-size:32px; color:white" class="webinar">Webinar About how to make Webinars</h2>
-                        <p style="font-size:22px; color:white">Online</p>
-                        <button class="play-button" style="font-size:80px">
-                            <i class="bi bi-play-circle"></i>
-                        </button>
+                        <p id="pastwebinar">Past Webinars</p>
+                        <p id="webinarabout" class="webinar">Webinar About how to make Webinars</p>
+                        <p id="webinaronline">Online</p>
+                        <p id="learnmorewebinar">learn more ></p>
                     </div>
                 </div>
             </div>
@@ -73,11 +69,10 @@
             <!-- First row -->
             <div class="card-row reverse">
                 <div class="card-content" style="margin-right: 50px;">
-                    <h2 style="color:Black; font-size:30px">Utem At acesequi Cones</h2>
-                    <p style="color:#61686E; font-size:20px">utem.At aceasqui cones quam res repceriam, evendellabo utem.At aceasqui cones quam res repceriam, evendellabo utem.At aceasqui cones quam res repceriam, evendellabo.</p>
+                    <h2 id="utemAt" >Utem At acesequi Cones</h2>
+                    <p id="utematP">utem.At aceasqui cones quam res repceriam, evendellabo utem.At aceasqui cones quam res repceriam, evendellabo utem.At aceasqui cones quam res repceriam, evendellabo.</p>
                     <div class="buttons">
-                        <a href="#" class="custom-button" style="margin-top: -5px; margin-bottom:-5px">Lorem ipsum <span class="arrow">→</span></a>
-                        <a href="#" class="custom-button">Lorem ipsum Lorem ipsum <span class="arrow">→</span></a>
+                        <a href="#" class="custom-button" style="margin-top: -5px; margin-bottom:-5px">Learn more <span class="arrow">→</span></a>
                     </div>
                 </div>
                 <div class="card-image">
@@ -88,11 +83,10 @@
             <!-- Second row -->
             <div class="card-row" style="margin-top: -60px">
                 <div class="card-content" style="margin-right: 50px;">
-                    <h2 style="color:Black; font-size:30px">Utem At acesequi Cones</h2>
-                    <p style="color:#61686E; font-size:20px">utem.At acesequi cones quam res reperciam, evendellabo utem.At acesequi cones quam res reperciam, evendellabo utem.At acesequi cones quam res reperciam, evendellabo.</p>
+                    <h2 class="utemAt">Utem At acesequi Cones</h2>
+                    <p class="utemAtp" >utem.At acesequi cones quam res reperciam, evendellabo utem.At acesequi cones quam res reperciam, evendellabo utem.At acesequi cones quam res reperciam, evendellabo.</p>
                     <div class="buttons">
-                        <a href="#" class="custom-button" style="margin-top: -5px; margin-bottom:-5px">Lorem ipsum <span class="arrow">→</span></a>
-                        <a href="#" class="custom-button">Lorem ipsum Lorem ipsum <span class="arrow">→</span></a>
+                        <a href="#" class="custom-button" style="margin-top: -5px; margin-bottom:-5px">Learn more <span class="arrow">→</span></a>
                     </div>
                 </div>
                 <div class="card-image">
@@ -103,11 +97,10 @@
             <!-- Third row -->
             <div class="card-row reverse" style="margin-top: -60px">
                 <div class="card-content" style="margin-right: 50px;">
-                    <h2 style="color:Black; font-size:30px">Utem At acesequi Cones</h2>
-                    <p style="color:#61686E; font-size:20px">utem.At acesequi cones quam res reperciam, evendellabo utem.At acesequi cones quam res reperciam, evendellabo utem.At acesequi cones quam res reperciam, evendellabo.</p>
+                    <h2 class="utemAt">Utem At acesequi Cones</h2>
+                    <p class="utemAtp">utem.At acesequi cones quam res reperciam, evendellabo utem.At acesequi cones quam res reperciam, evendellabo utem.At acesequi cones quam res reperciam, evendellabo.</p>
                     <div class="buttons">
-                        <a href="#" class="custom-button" style="margin-top: -5px; margin-bottom:-5px">Lorem ipsum <span class="arrow">→</span></a>
-                        <a href="#" class="custom-button">Lorem ipsum Lorem ipsum <span class="arrow">→</span></a>
+                        <a href="#" class="custom-button" style="margin-top: -5px; margin-bottom:-5px">Learn more <span class="arrow">→</span></a>
                     </div>
                 </div>
                 <div class="card-image">
@@ -123,7 +116,6 @@
                     <div class="col-12 d-flex justify-content-between align-items-center">
                         <div class="d-flex align-items-center">
                             <h2 class="news-title">NEWS</h2>
-                            <a href="#" class="view-all-link ml-2" style="color: #61686E;"> > View all</a>
                         </div>
                         <hr class="news-line flex-grow-1 ml-3" style="margin-right: 5px; border:1px solid #000">
                     </div>
@@ -182,7 +174,7 @@
                             <div class="card-body">
                                 <a href="#" class="custom-button">Lorem ipsum <span class="arrow">→</span></a>
                                 <p class="card-text">utem.At aceasqui cones quam res repceriam, evendellabo utem.At aceasqui cones quam res repceriam, evendellabo utem.At aceasqui cones quam res repceriam, evendellabo.</p>
-                                <p class="additional-text">○ Project<br>○ Europe</p>
+                                <!-- <p class="additional-text">○ Project<br>○ Europe</p> -->
                             </div>
                         </div>
                     </div>
@@ -192,7 +184,7 @@
                             <div class="card-body">
                                 <a href="#" class="custom-button">Lorem ipsum <span class="arrow">→</span></a>
                                 <p class="card-text">utem.At aceasqui cones quam res repceriam, evendellabo utem.At aceasqui cones quam res repceriam, evendellabo utem.At aceasqui cones quam res repceriam, evendellabo.</p>
-                                <p class="additional-text">○ Project<br>○ Europe</p>
+                                <!-- <p class="additional-text">○ Project<br>○ Europe</p> -->
                             </div>
                         </div>
                     </div>
@@ -202,20 +194,20 @@
                             <div class="card-body">
                                 <a href="#" class="custom-button">Lorem ipsum <span class="arrow">→</span></a>
                                 <p class="card-text">utem.At aceasqui cones quam res repceriam, evendellabo utem.At aceasqui cones quam res repceriam, evendellabo utem.At aceasqui cones quam res repceriam, evendellabo.</p>
-                                <p class="additional-text">○ Project<br>○ Europe</p>
+                                <!-- <p class="additional-text">○ Project<br>○ Europe</p> -->
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-12">
-                    <hr class="section-line-bottom">
+                    <!-- <hr class="section-line-bottom"> -->
                 </div>
             </div>
         </section>
 
 
         <!-- Subscribe Section -->
-         <section class="subscribe-section"> 
+         <!-- <section class="subscribe-section"> 
                 <div class="custom-container">
                     <div class="row align-items-center">
                         <div class="col-12">
@@ -228,7 +220,7 @@
                     </div>
                 </div>
          </section>
-        
+         -->
     </div>
 
     <div class="fixed-bottom-mobile"></div>

@@ -91,6 +91,7 @@
 #titlesectionH2 {
     font-size: 20px;
     text-align: left; /* Center text for smaller screens */
+    font-weight: bold
 }
 
 .news-section {
@@ -211,6 +212,13 @@
         margin-right: -70px;
     }
 
+    .overlay-text{
+        top:5% !important
+    }
+    .overlay-text h2{
+        font-size: 30px
+    }
+
 } 
 
 @media (max-width: 480px) {
@@ -227,3 +235,81 @@
     }
 } 
 
+
+
+.learn-more-div {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.learn-more-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    color: #6f459c;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.learn-more-btn:hover {
+    background-color: #6f459c;
+    color: #fff;
+    border-color: #6f459c;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.row{
+    margin-right:0px
+}
+
+.learn-more-text {
+    margin-right: 5px;
+}
+
+.learn-more-arrow {
+    font-size: 16px;
+    transition: transform 0.3s ease;
+}
+
+.learn-more-btn:hover .learn-more-arrow {
+    transform: translateX(5px);
+}
+
+.image-container {
+    position: relative;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 20%; /* Adjust to change vertical position */
+    left: 5%; /* Adjust to change horizontal position */
+    color: white;
+    font-weight: bold;
+    text-align: left; /* Align text to the left */
+ 
+    font-weight: bold
+}
+
+.overlay-text h2{
+    font-size: 50px;
+    width: 100px;
+}
+
+.learn-more-link {
+    display: block;
+    margin-top: 10px;
+    color: white;
+    font-size: 14px; /* Adjust as needed */
+    text-decoration: none;
+}
+
+.learn-more-link:hover {
+    text-decoration: underline; /* Optional hover effect */
+}

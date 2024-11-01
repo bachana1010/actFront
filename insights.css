@@ -210,7 +210,7 @@ hr {
 
     .news-line, .section-line {
         display: block;
-        width:67%
+        width:67% !important
 
     }
 }
