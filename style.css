@@ -1855,3 +1855,143 @@ body {
 .social-icons a:hover {
     color: #007bff;
 }
+
+
+
+.card {
+    height: 575px; /* Fixed card height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-body {
+    flex: 1; /* Allow the body to take up remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space between content and button */
+}
+
+.card-text {
+    flex-grow: 1; /* Make the text take up available space */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* Limit to 4 lines */
+    -webkit-box-orient: vertical;
+}
+
+.learn-more-div {
+    margin-top: auto; /* Push to bottom */
+}
+
+
+/* Default: Show the web footer, hide the mobile footer */
+
+/* Default: Show the web footer, hide the mobile footer */
+.footer {
+    display: block;
+}
+
+.mobile-footer {
+    display: none;
+}
+
+/* On smaller screens: Show the mobile footer, hide the web footer */
+@media (max-width: 768px) {
+    .footer {
+        display: none;
+    }
+
+    .mobile-footer {
+        display: block;
+        background-color: #2a2c6f; /* Adjust the color based on your image */
+        color: white;
+        padding: 20px;
+        font-family: 'Arial', sans-serif;
+    }
+
+    .mobile-footer .footer-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .mobile-footer .footer-logo img {
+        width: 60px; /* Adjust as needed */
+    }
+
+    .mobile-footer .social-icons a {
+        margin-left: 10px;
+    }
+
+    .mobile-footer .social-icons img {
+        width: 24px; /* Adjust as needed */
+    }
+
+    .mobile-footer .footer-buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+
+    .mobile-footer .contact-btn, .mobile-footer .subscribe-btn {
+        background-color: #4a4c8f; /* Match the design */
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 8px;
+        cursor: pointer;
+        width: 124px;
+    }
+
+    .mobile-footer .subscribe-btn {
+        background-color: white;
+        color: #4a4c8f;
+    }
+
+    .mobile-footer .footer-contact-info {
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+
+    .mobile-footer .footer-contact-info p {
+        margin: 5px 0;
+    }
+
+    .mobile-footer .footer-bottom-links {
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        margin-right: 67px;
+    }
+
+    .mobile-footer .footer-bottom-links a {
+        color: white;
+        text-decoration: none;
+        margin-right: 10px;
+    }
+
+    .mobile-footer .footer-bottom-links a:hover {
+        text-decoration: underline;
+    }
+
+    .social-icons {
+       
+        margin-right: 0px ;
+        gap: 5px
+    }
+
+    .footer-buttons{
+        margin-right: 0px
+    }
+
+    .bi{
+        margin-right: 5px
+    }
+}
+
+
+
+

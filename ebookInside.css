@@ -343,7 +343,7 @@
 
     .news-line, .section-line {
         display: block;
-        width:60%
+        width:60% !important
     }
 
     #newSectionHr {
@@ -420,3 +420,33 @@
     
 }
 
+
+
+
+
+.card {
+    height: 575px; /* Fixed card height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-body {
+    flex: 1; /* Allow the body to take up remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space between content and button */
+}
+
+.card-text {
+    flex-grow: 1; /* Make the text take up available space */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* Limit to 4 lines */
+    -webkit-box-orient: vertical;
+}
+
+.learn-more-div {
+    margin-top: auto; /* Push to bottom */
+}
