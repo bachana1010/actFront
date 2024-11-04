@@ -3,7 +3,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const images = [
         'asserts/Rectangle12.png',
         'asserts/Rectangle4.png',
-        'asserts/Rectangle14.png'    ];
+        'asserts/Rectangle14.png'
+    ];
 
     let currentImageIndex = 0;
     let autoSwitchInterval;
@@ -45,101 +46,87 @@ document.addEventListener('DOMContentLoaded', function() {
     updateImage();
     startAutoSwitch();
 
-    // Navigation dropdown functionality
-    const navLinks = document.querySelectorAll('.nav-link');
-    const dropdownContainer = document.getElementById('dropdown-container');
+    // Dropdown functionality
+    const navLinks = document.querySelectorAll('.nav-link[data-target]');
     const dropdownContents = document.querySelectorAll('.dropdown-content');
+    
 
-    navLinks.forEach(link => {
-        link.addEventListener('mouseenter', function() {
-            const targetMenu = this.getAttribute('data-target');
-            const dropdownContent = document.getElementById(targetMenu);
-
-            if (dropdownContent) {
-                dropdownContents.forEach(content => {
-                    content.style.display = content.id === targetMenu ? 'flex' : 'none';
-                });
-                dropdownContainer.style.display = 'block';
-            }
-        });
-
-        link.addEventListener('mouseleave', function() {
-            const targetMenu = this.getAttribute('data-target');
-            const dropdownContent = document.getElementById(targetMenu);
-            
-            if (dropdownContent) {
-                dropdownContent.addEventListener('mouseleave', function() {
-                    dropdownContent.style.display = 'none';
-                });
-            }
-        });
+    // Hide all dropdowns initially
+    dropdownContents.forEach(content => {
+        content.style.display = 'none';
     });
 
-    dropdownContainer.addEventListener('mouseenter', function() {
-        this.style.display = 'block';
-    });
-
-    dropdownContainer.addEventListener('mouseleave', function() {
-        this.style.display = 'none';
-    });
-
-    // Hamburger menu functionality
-    const hamburger = document.querySelector('.hamburger');
-    const cross = document.querySelector('.cross');
-    const menu = document.querySelector('.menu');
-
-    hamburger.addEventListener('click', function() {
-        menu.classList.add('open');
-        hamburger.style.display = 'none';
-        cross.style.display = 'block';
-    });
-
-    cross.addEventListener('click', function() {
-        menu.classList.remove('open');
-        cross.style.display = 'none';
-        hamburger.style.display = 'block';
-    });
-
-    // Search icon toggle functionality
-    const searchHamburger = $('.search-hamburger');
-    const searchClose = $('.search-close');
-
-    function toggleSearch() {
-        searchHamburger.toggleClass('active');
-        searchClose.toggleClass('active');
+    function showSubmenu(targetMenu, arrow) {
+        if (targetMenu.id === 'menu1') {
+            targetMenu.style.display = 'flex'; // Display flex for menu1
+        } else {
+            targetMenu.style.display = 'grid'; // Default display for other menus
+        }
+        if (arrow) arrow.textContent = '▼'; // Change to down arrow when active
     }
 
-    searchHamburger.click(toggleSearch);
-    searchClose.click(toggleSearch);
+    function hideSubmenu(targetMenu, arrow) {
+        setTimeout(() => {
+            if (!targetMenu.matches(':hover') && !arrow.closest('.nav-link').matches(':hover')) {
+                targetMenu.style.display = 'none';
+                if (arrow) arrow.textContent = '>'; // Change back to right arrow
+            }
+        }, 200); // Small delay to prevent flicker
+    }
+    
 
-    // Mobile menu functionality
-    const parentItems = document.querySelectorAll('.parent-item');
+    const menu1 = document.getElementById('menu'); // This will get the #menu1 element
 
-    parentItems.forEach(item => {
-        item.addEventListener('click', function() {
-            const submenu = this.nextElementSibling;
-            submenu.classList.toggle('open');
-
-            // Toggle active class on parent item
-            this.classList.toggle('active');
-
-            // Update the toggle icon
-            const toggleIcon = this.querySelector('.toggle-icon');
-            toggleIcon.textContent = submenu.classList.contains('open') ? '▲' : '▼';
+    if (menu1) {
+        // Add event listeners to show and hide the menu on hover
+        menu1.addEventListener('mouseenter', () => {
+            menu1.style.display = 'flex'; // Display as flex when mouse is over
         });
-    });
-});
 
-$(document).ready(function() {
-    // Hide all submenus initially
-    $('.submenu').hide();
-
-    // Toggle submenu on click
-    $('.parent-item').on('click', function(e) {
-        e.preventDefault();
-        $(this).next('.submenu').slideToggle('fast');
-        $(this).find('.toggle-icon').text(function(_, value) {
-            return value === '▼' ? '▲' : '▼';
+        menu1.addEventListener('mouseleave', () => {
+            menu1.style.display = 'none'; // Hide when mouse leaves
         });
+    } else {
+        console.error('Element with ID #menu1 not found');
+    }
+
+    navLinks.forEach(link => {
+        const arrow = link.querySelector('.arrow');
+        const targetMenuId = link.getAttribute('data-target');
+        const targetMenu = document.querySelector(`#${targetMenuId}`);
+
+        // Dropdown functionality
+    const menu1 = document.getElementById('menu1'); // Select menu1 specifically
+
+
+
+
+
+        if (targetMenu) {
+            // Show submenu on mouseenter and change arrow direction
+            link.addEventListener('mouseenter', () => {
+                showSubmenu(targetMenu, arrow);
+            });
+
+            // Keep submenu visible when hovering over it and maintain arrow direction
+            targetMenu.addEventListener('mouseenter', () => {
+                if (targetMenu.id === 'menu1') {
+                    targetMenu.style.display = 'flex'; // Ensure menu1 stays flex
+                } else {
+                    targetMenu.style.display = 'grid';
+                }
+                if (arrow) arrow.textContent = '▼';
+            });
+
+            // Hide submenu and revert arrow when leaving the nav link
+            link.addEventListener('mouseleave', () => {
+                hideSubmenu(targetMenu, arrow);
+            });
+
+            // Hide submenu and revert arrow when leaving the submenu
+            targetMenu.addEventListener('mouseleave', () => {
+                hideSubmenu(targetMenu, arrow);
+            });
+        }
     });
 });

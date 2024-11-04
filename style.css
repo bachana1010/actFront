@@ -8,7 +8,7 @@ body {
 /* Header Styles */
 header {
     background-color: #fff;
-    border-bottom: 1px solid #ddd;
+    /* border-bottom: 1px solid #ddd; */
     padding: 10px 0;
     position: relative;
 }
@@ -190,7 +190,18 @@ header {
     background-color: #C2C1C0;
     margin: 0;
     padding: 0; /* Ensure no padding */
+    width: 91%;
+    margin-left: 69px;
 }
+
+.divider {
+    height: 1px;
+    background-color: #C2C1C0;
+    width: 100%; /* Make it span the full width */
+    margin: 0 auto; /* Center it */
+    position: relative; /* Position relative for better alignment */
+}
+
 
 .hero-section {
     width: 100%;
@@ -398,7 +409,7 @@ body {
     margin-top: 30px;
     margin-left: 40px;
     margin-right: 40px;    /* padding: 0 57px; */
-    max-width: calc(1330px + 114px); /* 1330px content + 57px padding on each side */
+    /* max-width: calc(1330px + 114px); 1330px content + 57px padding on each side */
     display: flex;
     flex-direction: column;
     gap: 57px; /* Consistent gap between sections */
@@ -926,8 +937,7 @@ body {
 }
 
 .nav-link:hover {
-    background-color: #001f3f;
-    color: white;
+    color: blue;
 }
 
 .dropdown-container {
@@ -1006,8 +1016,6 @@ body {
 
 /* Visual cue for active parent menu item */
 .nav-item:hover > .nav-link {
-    background-color: #001f3f; /* Change to desired color */
-    color: white; /* Ensure text is readable */
 }
 
 
@@ -1205,7 +1213,7 @@ body {
 
 header {
     background-color: #fff;
-    border-bottom: 1px solid #ddd;
+    /* border-bottom: 1px solid #ddd; */
     padding: 10px 0;
     position: relative;
     z-index: 1000;
@@ -1654,13 +1662,17 @@ body {
     flex-direction: column;
     align-items: center; /* Center horizontally */
     width: 100%; /* Full width */
-    max-width: 1180px; /* Match the width of the image */
+    /* max-width: 1180px; Match the width of the image */
     margin: 0 auto; /* Center the card wrapper */
 }
 
 .image-container img {
     width: 100%; /* Image takes the full width of its container */
     height: auto;
+}
+
+.image-container{
+    width: 100%
 }
 
 .text-container {
@@ -1741,7 +1753,7 @@ body {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    max-width: 1200px;
+    /* max-width: 1200px; */
 }
 
 .footer-left,
@@ -1995,3 +2007,437 @@ body {
 
 
 
+
+
+.menu {
+    position: relative;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu .parent-item {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+    position: relative;
+}
+
+.menu .submenu {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 100%; /* Position the submenu below the parent item */
+    left: 0;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.menu .submenu li {
+    padding: 10px;
+}
+
+.menu .submenu a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+}
+
+.menu .submenu a:hover {
+    background-color: #ddd;
+}
+
+
+.dropdown-content {
+    display: block; /* Hidden by default */
+    position: absolute;
+    top: 100%; /* Position below the nav item */
+    left: 0;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px 15px;
+    color: #000;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.nav-item {
+    position: relative; /* For submenu positioning */
+}
+
+.arrow {
+    margin-left: 5px;
+    font-size: 14px; /* Adjust size as needed */
+    color: inherit; /* Match the color of the link */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+
+/* Base styling for dropdown */
+.dropdown-content {
+    display: block; /* Hidden by default */
+    position: absolute;
+    top: 100%; /* Directly below the parent */
+    background-color: #1A0047; /* Your desired background color */
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    z-index: 1000;
+    max-width: 800px; /* Maximum width for dropdown */
+    grid-template-columns: repeat(4, minmax(150px, 1fr)); /* Up to 4 items per row */
+    gap: 20px;
+}
+
+.dropdown-content {
+    display: block; /* Ensure submenus are hidden initially */
+    position: absolute;
+    top: 100%; /* Position below the nav item */
+    left: 0;
+    background-color: #1A0047; /* Your desired background color */
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+/* Styling for dropdown items */
+.dropdown-content a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    font-size: 16px;
+}
+
+.dropdown-content a:hover {
+    background-color: #240060; /* Hover effect */
+}
+
+/* Show dropdown when hovering over nav-item */
+.nav-item:hover .dropdown-content {
+    display: grid;
+}
+
+/* Align submenus to the left when near the right edge */
+.nav-item.align-right .dropdown-content {
+    right: 0;
+    left: auto;
+}
+
+/* Center-align submenus when necessary */
+.nav-item.align-center .dropdown-content {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+
+/* Ensure the dropdown is visible only on hover */
+.nav-item:hover .dropdown-content {
+    display: block;
+}
+
+
+/* Hide submenus by default */
+/*  */
+
+/* Show submenus only when hovering over the nav item */
+.nav-item:hover .dropdown-content {
+    display: block;
+}
+
+
+.nav-item.menu6:hover .dropdown-content,
+.nav-item.menu7:hover .dropdown-content {
+    left: auto; /* Remove default left positioning */
+    right: 0; /* Align submenu to the right of the parent item */
+}
+
+/* Base styling for dropdown */
+.dropdown-content {
+    display: block;
+    position: absolute;
+    top: 100%; /* Directly below the parent */
+    background-color: #1A0047;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    z-index: 1000;
+    max-width: 800px;
+    grid-template-columns: repeat(4, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+/* Default alignment */
+.nav-item .dropdown-content {
+    left: 0;
+    right: auto;
+}
+
+/* Show dropdown on hover */
+.nav-item:hover .dropdown-content {
+    display: grid;
+}
+
+
+.nav-item {
+    position: relative;
+}
+
+.dropdown-content {
+    display: block;
+    position: absolute;
+    top: 100%; /* Position below the nav item */
+    background-color: #1A0047;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    z-index: 1000;
+    max-width: 800px;
+    grid-template-columns: repeat(4, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.nav-item:hover .dropdown-content {
+    display: grid;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.dropdown-content {
+    display: block;
+    position: absolute;
+    top: 100%;
+    background-color: #1A0047;
+    color: #fff;
+    padding: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    border-radius: 4px;
+}
+
+.nav-item:hover .dropdown-content {
+    display: block;
+}
+
+
+/* General styling for the header and navigation */
+#containerHeader {
+    background-color: #fff;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    color: #000;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    text-decoration: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #1e0946; /* Dark purple */
+    color: #fff;
+    min-width: 142px;
+    z-index: 1000;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: #fff;
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+    width: 100px;
+}
+
+.dropdown-content a:hover {
+    background-color: #3c2060; /* Slightly lighter purple */
+}
+
+.nav-item:hover .dropdown-content {
+    display: block;
+}
+
+/* Ensure dropdown aligns left when near right edge */
+.dropdown-content.right-aligned {
+    left: auto;
+    right: 0;
+}
+
+/* 
+.nav-item:nth-child(6) .dropdown-content,
+.nav-item:nth-child(7) .dropdown-content {
+    left: -200px;
+    right: 0; 
+} */
+
+/* For 6th and 7th menu items */
+.nav-item:nth-child(6) .dropdown-content,
+.nav-item:nth-child(7) .dropdown-content {
+    left: 110%; /* Positions it relative to the parent */
+    transform: translateX(-100%); /* Moves it left by its full width */
+    right: auto; /* Ensure right is not affecting the position */
+}
+
+
+.nav-item:nth-child(1) .dropdown-content,
+.nav-item:nth-child(2) .dropdown-content {
+    left: 100%; /* Positions it relative to the parent */
+    transform: translateX(-33%); /* Moves it left by its full width */
+    right: auto; /* Ensure right is not affecting the position */
+}
+
+
+.row{
+    margin-right: 10px
+}
+
+
+/* Base styling for dropdown */
+.dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 100%; /* Directly below the parent */
+    background-color: #1A0047; /* Your desired background color */
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    z-index: 1000;
+    grid-template-columns: repeat(4, minmax(150px, 1fr)); /* 4 items per row */
+    gap: 20px;
+}
+
+/* Styling for dropdown items */
+.dropdown-content a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    font-size: 16px;
+}
+
+.dropdown-content a:hover {
+    background-color: #240060; /* Hover effect */
+}
+
+/* Ensure dropdown aligns left when near the right edge */
+.nav-item.align-right .dropdown-content {
+    right: 0;
+    left: auto;
+}
+
+/* Show dropdown when hovering over the nav-item */
+.nav-item:hover .dropdown-content {
+    display: grid; /* Display as grid when hovered */
+}
+
+
+/* Full-width dropdown for menu1 */
+/* Full-width dropdown for menu */
+#menu {
+    display: none; /* Initially hidden */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100vw; /* Full width */
+    background-color: #1A0047; /* Background color */
+    color: white;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    justify-content: space-between; /* Space between left and right sections */
+    max-width: 1100px
+}
+/* Left section styling */
+/* Left section styling */
+.dropdown-left {
+    display: flex;
+    justify-content: space-between; /* Ensures columns are spaced evenly */
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between items in a column */
+}
+
+.dropdown-list {
+    display: flex;
+    flex-direction: row; /* Allows the columns to be side by side */
+    gap: 100px; /* Space between columns */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* Styling for list items */
+.dropdown-list li {
+    padding: 5px 0;
+}
+
+/* Dividing line */
+.dropdown-divider {
+    width: 1px;
+    background-color: #ddd;
+    margin: 0 30px; /* Adjust spacing between sections */
+    height: auto; /* Full height of the dropdown */
+}
+
+/* Right section styling */
+.dropdown-right {
+    flex: 1; /* Smaller width */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.dropdown-right h3,
+.dropdown-right h4 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.dropdown-right ul {
+    list-style: none;
+    padding: 0;
+}
+
+.dropdown-right li {
+    padding: 5px 0;
+}
+
+/* Show dropdown on hover */
+.nav-item:hover #menu {
+    display: flex;
+}
+
+#menu7{
+    max-width: 300px
+}

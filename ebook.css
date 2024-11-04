@@ -355,3 +355,40 @@ h1 {
 .learn-more-div {
     margin-top: auto; /* Push to bottom */
 }
+
+
+
+.card img {
+    width: 100%;
+    height: auto; /* Allow the image to maintain its aspect ratio */
+    object-fit: cover;
+}
+
+.card {
+    height: auto; /* Let the content determine the height */
+    flex: 1; /* Make the card expand to fill the available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.news-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Space between cards */
+}
+
+
+@media (min-width: 1024px) {
+    .card img {
+        height: auto; /* Adjusts image height */
+    }
+
+    .card {
+        height: 100%; /* Allows the card to stretch as needed */
+    }
+
+    .news-cards {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Larger columns for wider screens */
+    }
+}
