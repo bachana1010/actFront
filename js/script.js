@@ -59,8 +59,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const menu2 = document.getElementById('menu2'); // Select the specific menu
 
     function showSubmenu(targetMenu, arrow) {
-        debugger;
-        menu2.style.display = 'grid';
         if (targetMenu.id === 'menu') {
             targetMenu.style.display = 'flex'; // Display flex for the specific menu
         } else {
