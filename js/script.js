@@ -53,21 +53,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     // Hide all dropdowns initially
-
-    // Hide all dropdowns initially and set their display to grid by default
     dropdownContents.forEach(content => {
         content.style.display = 'none';
     });
+    const menu2 = document.getElementById('menu2'); // Select the specific menu
 
     function showSubmenu(targetMenu, arrow) {
-        dropdownContents.forEach(content => {
-            if (content === targetMenu) {
-                content.style.display = 'grid'; // Always set to grid when shown
-                if (arrow) arrow.textContent = '▼'; // Change to down arrow when active
-            } else {
-                content.style.display = 'none'; // Hide other submenus
-            }
-        });
+        debugger;
+        menu2.style.display = 'grid';
+        if (targetMenu.id === 'menu') {
+            targetMenu.style.display = 'flex'; // Display flex for the specific menu
+        } else {
+            targetMenu.style.display = 'grid'; // Default display for other menus
+        }
+        if (arrow) arrow.textContent = '▼'; // Change to down arrow when active
     }
 
     function hideSubmenu(targetMenu, arrow) {
@@ -77,6 +76,18 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (arrow) arrow.textContent = '>'; // Change back to right arrow
             }
         }, 200); // Small delay to prevent flicker
+    }
+
+    if (menu) {
+        menu.addEventListener('mouseenter', () => {
+            menu.style.display = 'flex'; // Display as flex when mouse is over
+        });
+
+        menu.addEventListener('mouseleave', () => {
+            menu.style.display = 'none'; // Hide when mouse leaves
+        });
+    } else {
+        console.error('Element with ID #menu not found');
     }
 
     navLinks.forEach(link => {
@@ -90,7 +101,11 @@ document.addEventListener('DOMContentLoaded', function() {
             });
 
             targetMenu.addEventListener('mouseenter', () => {
-                targetMenu.style.display = 'grid'; // Maintain grid display when hovering over submenu
+                if (targetMenu.id === 'menu') {
+                    targetMenu.style.display = 'flex'; // Ensure menu stays flex
+                } else {
+                    targetMenu.style.display = 'grid';
+                }
                 if (arrow) arrow.textContent = '▼';
             });
 
