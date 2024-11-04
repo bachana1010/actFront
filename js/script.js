@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function startAutoSwitch() {
         autoSwitchInterval = setInterval(function() {
-            currentImageIndex = (currentImageIndex + 1) % images.length; // Circular increment
+            currentImageIndex = (currentImageIndex + 1) % images.length;
             updateImage();
         }, 2000);
     }
@@ -49,20 +49,25 @@ document.addEventListener('DOMContentLoaded', function() {
     // Dropdown functionality
     const navLinks = document.querySelectorAll('.nav-link[data-target]');
     const dropdownContents = document.querySelectorAll('.dropdown-content');
-    
+    const menu = document.getElementById('menu'); // Select the specific menu
+
 
     // Hide all dropdowns initially
+
+    // Hide all dropdowns initially and set their display to grid by default
     dropdownContents.forEach(content => {
         content.style.display = 'none';
     });
 
     function showSubmenu(targetMenu, arrow) {
-        if (targetMenu.id === 'menu1') {
-            targetMenu.style.display = 'flex'; // Display flex for menu1
-        } else {
-            targetMenu.style.display = 'grid'; // Default display for other menus
-        }
-        if (arrow) arrow.textContent = '▼'; // Change to down arrow when active
+        dropdownContents.forEach(content => {
+            if (content === targetMenu) {
+                content.style.display = 'grid'; // Always set to grid when shown
+                if (arrow) arrow.textContent = '▼'; // Change to down arrow when active
+            } else {
+                content.style.display = 'none'; // Hide other submenus
+            }
+        });
     }
 
     function hideSubmenu(targetMenu, arrow) {
@@ -73,57 +78,26 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }, 200); // Small delay to prevent flicker
     }
-    
-
-    const menu1 = document.getElementById('menu'); // This will get the #menu1 element
-
-    if (menu1) {
-        // Add event listeners to show and hide the menu on hover
-        menu1.addEventListener('mouseenter', () => {
-            menu1.style.display = 'flex'; // Display as flex when mouse is over
-        });
-
-        menu1.addEventListener('mouseleave', () => {
-            menu1.style.display = 'none'; // Hide when mouse leaves
-        });
-    } else {
-        console.error('Element with ID #menu1 not found');
-    }
 
     navLinks.forEach(link => {
         const arrow = link.querySelector('.arrow');
         const targetMenuId = link.getAttribute('data-target');
         const targetMenu = document.querySelector(`#${targetMenuId}`);
 
-        // Dropdown functionality
-    const menu1 = document.getElementById('menu1'); // Select menu1 specifically
-
-
-
-
-
         if (targetMenu) {
-            // Show submenu on mouseenter and change arrow direction
             link.addEventListener('mouseenter', () => {
                 showSubmenu(targetMenu, arrow);
             });
 
-            // Keep submenu visible when hovering over it and maintain arrow direction
             targetMenu.addEventListener('mouseenter', () => {
-                if (targetMenu.id === 'menu1') {
-                    targetMenu.style.display = 'flex'; // Ensure menu1 stays flex
-                } else {
-                    targetMenu.style.display = 'grid';
-                }
+                targetMenu.style.display = 'grid'; // Maintain grid display when hovering over submenu
                 if (arrow) arrow.textContent = '▼';
             });
 
-            // Hide submenu and revert arrow when leaving the nav link
             link.addEventListener('mouseleave', () => {
                 hideSubmenu(targetMenu, arrow);
             });
 
-            // Hide submenu and revert arrow when leaving the submenu
             targetMenu.addEventListener('mouseleave', () => {
                 hideSubmenu(targetMenu, arrow);
             });
