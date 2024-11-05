@@ -119,6 +119,7 @@
 /* About Section */
 .about-section {
     margin-top: 20px;
+    margin-bottom: -361px;
 }
 
 .about-title {
@@ -133,7 +134,7 @@
     line-height: 1.8;
     color: #555;
     z-index: 1; /* Ensures text appears above the image */
-    margin-bottom:-300px
+    /* margin-bottom:-300px */
 }
 
 /* Bottom Image Footer Section */
