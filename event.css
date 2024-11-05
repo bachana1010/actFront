@@ -186,3 +186,100 @@
 .month-list {
     margin-left: 30px; /* Move the month list to the right */
 }
+
+
+/* Adjustments for the Event Section */
+.event-section {
+    margin: 0 auto;
+    max-width: 1300px; /* Adjust to make the section wider */
+    padding: 0 15px; /* Adjust padding for better spacing */
+    margin-bottom: 80px;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    padding: 20px;
+    height: 100%; /* Full height for sidebar */
+}
+
+/* Event Types List */
+.event-types-list li {
+    margin-bottom: 20px; /* Add more spacing */
+}
+
+/* Event Cards Container */
+.event-cards-wrapper {
+    height: 750px; /* Increase height */
+    overflow-y: scroll; /* Vertical scroll */
+    margin: 20px 0; /* Add vertical margin */
+    border-left: 1px solid #ddd; /* Left separator */
+    padding: 15px; /* Add padding for better layout */
+}
+
+/* Event Cards */
+.event-card {
+    display: flex;
+    align-items: center;
+    padding: 20px; /* Increase padding */
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for better appearance */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 20px; /* Add spacing between cards */
+    border: 1px solid #ddd; /* Add a border */
+}
+
+/* Date Section Styling */
+.event-card-date {
+    background-color: #17004c;
+    color: #fff;
+    padding: 15px;
+    width: 160px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* Image and Description Styling */
+.event-card-details {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 15px; /* Space between image and text */
+}
+
+.event-card-image {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.event-card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #3b1b6a;
+}
+
+/* Year and Month List Styling */
+.year-filters,
+.month-list {
+    margin-top: 20px;
+}
+
+.year-list,
+.month-list ul {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Add space between list items */
+}
+
+.year-list li a,
+.month-list li a {
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.year-list li a:hover,
+.month-list li a:hover {
+    color: #0056b3; /* Change color on hover */
+}

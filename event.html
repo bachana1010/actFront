@@ -27,7 +27,7 @@
             <div class="row align-items-center">
                 <div class="col-12 d-flex justify-content-between align-items-center">
                     <div class="d-flex align-items-center">
-                        <h2 class="news-title">Event calendar</h2>
+                        <h2 class="news-title">Event Calendar</h2>
                     </div>
                     <hr class="news-line flex-grow-1 ml-3" id="newSectionHr">
                 </div>
@@ -37,7 +37,7 @@
                 <h4 class="month">January</h4>
             </div>
 
-            <!-- Event Section with Sidebar and Years Filter -->
+            <!-- Event Section with Sidebar and Main Content -->
             <div class="row mt-4">
                 <!-- Sidebar for Event Types -->
                 <div class="col-lg-2 col-md-3 sidebar">
@@ -49,169 +49,150 @@
                     </ul>
                 </div>
 
-                <!-- Event Content with Year Filter -->
-                <div class="col-lg-8 col-md-9 d-flex" id="mainCard">
-                    <!-- Event Year Filters -->
-                    <div class="year-filters">
-                        <ul class="year-list">
-                            <li><a href="#">2024</a></li>
-                            <li><a href="#">2023</a></li>
-                            <li><a href="#">2022</a></li>
-                            <li><a href="#">2021</a></li>
-                            <li><a href="#">2020</a></li>
+                <!-- Main Event Content with Year Filter and Event Cards -->
+                <div class="col-lg-10 col-md-9" id="mainCard">
+                    <div class="row">
+                        <!-- Year Filters -->
+                        <div class="col-md-2 year-filters">
+                            <ul class="year-list">
+                                <li><a href="#">2024</a></li>
+                                <li><a href="#">2023</a></li>
+                                <li><a href="#">2022</a></li>
+                                <li><a href="#">2021</a></li>
+                                <li><a href="#">2020</a></li>
+                                <li><a href="#">2019</a></li>
+                                <li><a href="#">2018</a></li>
+                                <li><a href="#">2017</a></li>
+                                <li><a href="#">2016</a></li>
+                                <li><a href="#">2015</a></li>
+                            </ul>
+                        </div>
 
-                            <li><a href="#">2019</a></li>
-                            <li><a href="#">2018</a></li>
-                            <li><a href="#">2017</a></li>
-                            <li><a href="#">2016</a></li>
-                            <li><a href="#">2015</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- Event Cards Section -->
-                    <div class="event-cards-wrapper">
-                        <div class="event-cards">
-                            <div class="event-card">
-                                <div class="event-card-date">
-                                    <div class="event-card-date-box">
-                                        <span class="event-card-month">Jan 09 - Feb 16</span>
-                                        <span class="event-card-time">08:30 - 16:00</span>
+                        <!-- Event Cards Section -->
+                        <div class="col-md-8 event-cards-wrapper">
+                            <div class="event-cards">
+                                <!-- Event Card Template -->
+                                <div class="event-card">
+                                    <div class="event-card-date">
+                                        <div class="event-card-date-box">
+                                            <span class="event-card-month">Jan 09 - Feb 16</span>
+                                            <span class="event-card-time">08:30 - 16:00</span>
+                                        </div>
+                                    </div>
+                                    <div class="event-card-details">
+                                        <img src="asserts/Rectangle4.png" alt="Event Image" class="event-card-image">
+                                        <div class="event-card-text">
+                                            <h3 class="event-card-title">Credit Outlook Tbilisi 2024</h3>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="event-card-details">
-                                    <img src="asserts/Rectangle4.png" alt="Event Image" class="event-card-image">
-                                    <div class="event-card-text">
-                                        <h3 class="event-card-title">Credit Outlook Tbilisi 2024</h3>
+                                <!-- Repeat Event Cards -->
+                                <div class="event-card">
+                                    <div class="event-card-date">
+                                        <div class="event-card-date-box">
+                                            <span class="event-card-month">Jan 09 - Feb 16</span>
+                                            <span class="event-card-time">08:30 - 16:00</span>
+                                        </div>
+                                    </div>
+                                    <div class="event-card-details">
+                                        <img src="asserts/Rectangle5.png" alt="Event Image" class="event-card-image">
+                                        <div class="event-card-text">
+                                            <h3 class="event-card-title">Credit Outlook Tbilisi 2024</h3>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-
-                            <!-- Repeat Event Card as needed -->
-                            <div class="event-card">
-                                <div class="event-card-date">
-                                    <div class="event-card-date-box">
-                                        <span class="event-card-month">Jan 09 - Feb 16</span>
-                                        <span class="event-card-time">08:30 - 16:00</span>
+                                <div class="event-card">
+                                    <div class="event-card-date">
+                                        <div class="event-card-date-box">
+                                            <span class="event-card-month">Jan 09 - Feb 16</span>
+                                            <span class="event-card-time">08:30 - 16:00</span>
+                                        </div>
+                                    </div>
+                                    <div class="event-card-details">
+                                        <img src="asserts/Rectangle6.png" alt="Event Image" class="event-card-image">
+                                        <div class="event-card-text">
+                                            <h3 class="event-card-title">Credit Outlook Tbilisi 2024</h3>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="event-card-details">
-                                    <img src="asserts/Rectangle5.png" alt="Event Image" class="event-card-image">
-                                    <div class="event-card-text">
-                                        <h3 class="event-card-title">Credit Outlook Tbilisi 2024</h3>
+                                <div class="event-card">
+                                    <div class="event-card-date">
+                                        <div class="event-card-date-box">
+                                            <span class="event-card-month">Jan 09 - Feb 16</span>
+                                            <span class="event-card-time">08:30 - 16:00</span>
+                                        </div>
+                                    </div>
+                                    <div class="event-card-details">
+                                        <img src="asserts/Rectangle7.png" alt="Event Image" class="event-card-image">
+                                        <div class="event-card-text">
+                                            <h3 class="event-card-title">Credit Outlook Tbilisi 2024</h3>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-
-                            <div class="event-card">
-                                <div class="event-card-date">
-                                    <div class="event-card-date-box">
-                                        <span class="event-card-month">Jan 09 - Feb 16</span>
-                                        <span class="event-card-time">08:30 - 16:00</span>
+                                <div class="event-card">
+                                    <div class="event-card-date">
+                                        <div class="event-card-date-box">
+                                            <span class="event-card-month">Jan 09 - Feb 16</span>
+                                            <span class="event-card-time">08:30 - 16:00</span>
+                                        </div>
+                                    </div>
+                                    <div class="event-card-details">
+                                        <img src="asserts/Rectangle7.png" alt="Event Image" class="event-card-image">
+                                        <div class="event-card-text">
+                                            <h3 class="event-card-title">Credit Outlook Tbilisi 2024</h3>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="event-card-details">
-                                    <img src="asserts/Rectangle6.png" alt="Event Image" class="event-card-image">
-                                    <div class="event-card-text">
-                                        <h3 class="event-card-title">Credit Outlook Tbilisi 2024</h3>
+                                <div class="event-card">
+                                    <div class="event-card-date">
+                                        <div class="event-card-date-box">
+                                            <span class="event-card-month">Jan 09 - Feb 16</span>
+                                            <span class="event-card-time">08:30 - 16:00</span>
+                                        </div>
+                                    </div>
+                                    <div class="event-card-details">
+                                        <img src="asserts/Rectangle7.png" alt="Event Image" class="event-card-image">
+                                        <div class="event-card-text">
+                                            <h3 class="event-card-title">Credit Outlook Tbilisi 2024</h3>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-
-                            <div class="event-card">
-                                <div class="event-card-date">
-                                    <div class="event-card-date-box">
-                                        <span class="event-card-month">Jan 09 - Feb 16</span>
-                                        <span class="event-card-time">08:30 - 16:00</span>
+                                <div class="event-card">
+                                    <div class="event-card-date">
+                                        <div class="event-card-date-box">
+                                            <span class="event-card-month">Jan 09 - Feb 16</span>
+                                            <span class="event-card-time">08:30 - 16:00</span>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="event-card-details">
-                                    <img src="asserts/Rectangle7.png"  alt="Event Image" class="event-card-image">
-                                    <div class="event-card-text">
-                                        <h3 class="event-card-title">Credit Outlook Tbilisi 2024</h3>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="event-card">
-                                <div class="event-card-date">
-                                    <div class="event-card-date-box">
-                                        <span class="event-card-month">Jan 09 - Feb 16</span>
-                                        <span class="event-card-time">08:30 - 16:00</span>
-                                    </div>
-                                </div>
-                                <div class="event-card-details">
-                                    <img src="asserts/Rectangle7.png"  alt="Event Image" class="event-card-image">
-                                    <div class="event-card-text">
-                                        <h3 class="event-card-title">Credit Outlook Tbilisi 2024</h3>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="event-card">
-                                <div class="event-card-date">
-                                    <div class="event-card-date-box">
-                                        <span class="event-card-month">Jan 09 - Feb 16</span>
-                                        <span class="event-card-time">08:30 - 16:00</span>
-                                    </div>
-                                </div>
-                                <div class="event-card-details">
-                                    <img src="asserts/Rectangle7.png"  alt="Event Image" class="event-card-image">
-                                    <div class="event-card-text">
-                                        <h3 class="event-card-title">Credit Outlook Tbilisi 2024</h3>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="event-card">
-                                <div class="event-card-date">
-                                    <div class="event-card-date-box">
-                                        <span class="event-card-month">Jan 09 - Feb 16</span>
-                                        <span class="event-card-time">08:30 - 16:00</span>
-                                    </div>
-                                </div>
-                                <div class="event-card-details">
-                                    <img src="asserts/Rectangle7.png"  alt="Event Image" class="event-card-image">
-                                    <div class="event-card-text">
-                                        <h3 class="event-card-title">Credit Outlook Tbilisi 2024</h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="event-card">
-                                <div class="event-card-date">
-                                    <div class="event-card-date-box">
-                                        <span class="event-card-month">Jan 09 - Feb 16</span>
-                                        <span class="event-card-time">08:30 - 16:00</span>
-                                    </div>
-                                </div>
-                                <div class="event-card-details">
-                                    <img src="asserts/Rectangle7.png"  alt="Event Image" class="event-card-image">
-                                    <div class="event-card-text">
-                                        <h3 class="event-card-title">Credit Outlook Tbilisi 2024</h3>
+                                    <div class="event-card-details">
+                                        <img src="asserts/Rectangle7.png" alt="Event Image" class="event-card-image">
+                                        <div class="event-card-text">
+                                            <h3 class="event-card-title">Credit Outlook Tbilisi 2024</h3>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="month-list">
-                        <ul class="year-list">
-                            <li><a href="#">January</a></li>
-                            <li><a href="#">February</a></li>
-                            <li><a href="#">March</a></li>
-                            <li><a href="#">April</a></li>
-                            <li><a href="#">May</a></li>
-                            <li><a href="#">June</a></li>
-                            <li><a href="#">July</a></li>
-                            <li><a href="#">August</a></li>
-                            <li><a href="#">September</a></li>
-                            <li><a href="#">October</a></li>
-                            <li><a href="#">November</a></li>
-                            <li><a href="#">December</a></li>
-                        </ul>
+                        <!-- Month List -->
+                        <div class="col-md-1 month-list">
+                            <ul class="year-list">
+                                <li><a href="#">January</a></li>
+                                <li><a href="#">February</a></li>
+                                <li><a href="#">March</a></li>
+                                <li><a href="#">April</a></li>
+                                <li><a href="#">May</a></li>
+                                <li><a href="#">June</a></li>
+                                <li><a href="#">July</a></li>
+                                <li><a href="#">August</a></li>
+                                <li><a href="#">September</a></li>
+                                <li><a href="#">October</a></li>
+                                <li><a href="#">November</a></li>
+                                <li><a href="#">December</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    
                 </div>
-
             </div>
         </section>
     </main>
@@ -230,7 +211,7 @@
         });
     </script>
 
-    <script src="js/registration.js"></script> <!-- New JS file for registration -->
+    <script src="js/registration.js"></script>
 </body>
 
 </html>
