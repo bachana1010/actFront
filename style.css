@@ -1897,7 +1897,9 @@ body {
     margin-top: auto; /* Push to bottom */
 }
 
-
+.learn-more-text{
+    color: black
+}
 /* Default: Show the web footer, hide the mobile footer */
 
 /* Default: Show the web footer, hide the mobile footer */
@@ -2440,4 +2442,20 @@ body {
 
 #menu7{
     max-width: 300px
+}
+
+
+
+.row .col-12 {
+    /* margin-top: 30px; */
+    margin-bottom: 35px;
+}
+
+.ebook-type{
+    font-size:14px;
+    color: #643695
+}
+
+#cardIdP{
+    color:black
 }

@@ -47,6 +47,10 @@
     color: #fff;
 }
 
+.active {
+    background-color: #17004C !important;
+}
+
 
 /* Year Filter Styles */
 .year-filters {
@@ -145,8 +149,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 150px;
+    width: 150px !important;
     text-align: center;
+    height: 139px;
+}
+
+.event-card-month{
+    font-size: 25px;
+
 }
 
 /* Right section: Image and Description */

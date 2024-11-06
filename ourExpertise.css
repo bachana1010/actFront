@@ -159,11 +159,13 @@
     color: #643695;
     font-size: 20px;
     font-weight: bold;
+    text-align: left
 }
 
 #cardIdP {
     font-size: 16px;
     font-weight: bold;
+    text-align: left
 }
 
 /* Media Queries for Mobile Responsiveness */
@@ -313,3 +315,4 @@
 .learn-more-link:hover {
     text-decoration: underline; /* Optional hover effect */
 }
+
