@@ -20,7 +20,7 @@
     <section class="projects-section">
         <div class="container">
             <!-- Title and Line -->
-            <div class="row">
+            <div class="row" id="topSection">
                 <div class="col-12 d-flex justify-content-between align-items-center">
                     <h2 class="projects-title">Loro ipsum loro ipsum loro ipsum   loro ipsu loro ipsum</h2>
                 </div>
@@ -45,40 +45,78 @@
         </section>
 
         <!-- Project Inside Section -->
-    <section class="project-inside-section">
-        <div class="container">
-            <!-- Project Title -->
-            <div class="project-title">
-                <i class="bi bi-people-fill"></i> Grabar pharmaceutical
-            </div>
+        <section class="project-inside-section">
+            <div class="container">
+                <!-- Project Title, Date, and Status -->
+                <div class="project-header d-flex align-items-center justify-content-between">
+                    <div class="project-title">
+                        <i class="bi bi-people-fill"></i> Deloitte and Touche LLC
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <span class="date-label">Date: 18.02.2024</span>
+                        <span class="status-label active">active</span>
+                    </div>
+                </div>
+        
+                <!-- Areas of Expertise -->
+                <div class="areas-of-expertise mt-4">
+                    <p class="section-title">Areas of expertise</p>
+                    <div class="expertise-tags">
+                        <span class="tag">Education</span>
+                        <span class="tag">Poverty</span>
+                        <span class="tag">Reseance</span>
+                    </div>
+                </div>
+        
+                <!-- Project Team Members -->
+                <div class="team-members mt-4">
+                    <div class="team-title">
+                        <i class="bi bi-people-fill"></i>
+                        <p class="section-title">Project team members</p>
+                    </div>
 
-            <!-- Project Date and Status -->
-            <div class="project-info">
-                <span class="date-label">Date: 18.02.2024</span>
-                <span class="status-label finished">Finished</span>
-            </div>
-
-            <!-- Project Team Members -->
-            <div class="team-members">
-                <i class="bi bi-people-fill"></i> <span  id="projecTmember">Project team members</span>
-                <div class="member-names">
-                    <span>Jane Smith</span>
-                    <span>John Smith</span>
-                    <span>Natalie Smith</span>
+                    <div class="member-names">
+                        <span>Jane Smith</span>
+                        <span>John Smith</span>
+                        <span>Natalie Smith</span>
+                    </div>
                 </div>
             </div>
+        </section>
+        
 
-            <!-- Areas of Expertise -->
-            <div class="areas-of-expertise">
-                <p class="areasofexperrtise">Areas of expertise</p>
-                <div class="expertise-tags">
-                    <span class="tag">Education</span>
-                    <span class="tag">Poverty and social protection</span>
-                    <span class="tag">Research and evidence</span>
+        <div class="accordion-container">
+            <section class="accordion-section">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <h3 id="sizeH">About this project</h3>
+                    <span class="accordion-icon">▼</span>
                 </div>
-            </div>
+                <div class="accordion-content">
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                </div>
+            </section>
+        
+            <section class="accordion-section">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <h3 id="sizeH">Our Role</h3>
+                    <span class="accordion-icon">▼</span>
+                </div>
+                <div class="accordion-content">
+                    <p>"Our role in this project is to provide expertise in various fields and ensure the successful implementation of all stages, ensuring high-quality results."</p>
+                </div>
+            </section>
+        
+            <section class="accordion-section">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <h3 id="sizeH">Project Outcome</h3>
+                    <span class="accordion-icon">▼</span>
+                </div>
+                <div class="accordion-content">
+                    <p>"The project outcomes aim to make a significant positive impact on the community, fostering growth, and creating sustainable solutions for ongoing challenges."</p>
+                </div>
+            </section>
         </div>
-    </section>
+        
 
          <!-- Project Information Section -->
          <section class="container">

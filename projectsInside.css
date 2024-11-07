@@ -14,7 +14,7 @@
 
 /* Projects Section */
 .projects-section .container {
-    max-width: 900px; /* Adjusted to center content better */
+    max-width: 1180px; /* Adjusted to center content better */
     margin: 0 auto;
     padding: 0 20px;
     margin-bottom: 20px;
@@ -48,8 +48,8 @@
 }
 
 .custom-container {
-    max-width: 900px; /* Centered narrower container */
-    margin: 0 auto;
+    max-width: 1180px;
+        margin: 0 auto;
     padding: 20px;
 }
 
@@ -89,6 +89,135 @@
     }
 }
 
+/* Mobile Version Styles */
+@media (max-width: 768px) {
+    /* Container adjustments for mobile */
+    .project-inside-section .container {
+        max-width: 100% !important;
+        padding: 15px !important;
+    }
+
+    /* Project Title */
+    .project-title {
+        font-size: 20px !important; /* Adjusted for mobile */
+        font-weight: bold !important;
+        color: #3f0071 !important;
+        display: flex !important;
+        align-items: center !important;
+        gap: 8px !important;
+        flex-shrink: 0; /* Prevents shrinking on small screens */
+    }
+
+    
+    .project-title i {
+        font-size: 18px !important; /* Smaller icon size */
+    }
+
+    /* Wrapper for title and buttons to keep them on the same line */
+    .project-header {
+        display: flex !important;
+        flex-wrap: nowrap !important; /* Prevents items from wrapping */
+        align-items: center !important;
+        justify-content: space-between !important; /* Distribute space evenly */
+        width: 100% !important;
+    }
+
+    .project-header {
+        flex-direction: column !important; /* Stack title and buttons vertically */
+        align-items: flex-start !important; /* Align items to the left */
+        gap: 4px; /* Add some space between title and buttons */
+    }
+    
+
+    /* Date and Status Labels */
+    .project-info {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        gap: 8px !important;
+        margin-top: 10px !important;
+        flex-shrink: 0; /* Prevents shrinking on small screens */
+    }
+
+    .date-label,
+    .status-label {
+        font-size: 12px !important; /* Reduced font size */
+        padding: 6px 10px !important; /* Smaller padding */
+        border-radius: 4px !important;
+        color: #555 !important;
+        background-color: #f1f1f1 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        white-space: nowrap !important; /* Prevents text from breaking into a new line */
+        width: 120px !important
+    }
+
+    .status-label.active {
+        background-color: #e6e1f7 !important;
+        color: #3f0071 !important;
+        font-weight: bold !important;
+    }
+
+ /* Adjust the section title for mobile */
+ .areas-of-expertise .section-title {
+    font-size: 20px !important;
+    font-weight: bold;
+    color: #3f0071;
+    margin-bottom: 8px;
+    display: inline; /* Ensures title remains on one line */
+    white-space: nowrap; /* Prevents title from breaking onto multiple lines */
+}
+
+/* Adjust tag styling */
+.expertise-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.expertise-tags .tag {
+    font-size: 14px;
+    background-color: #f1f1f1;
+    padding: 6px 12px;
+    border-radius: 4px;
+    color: #333;
+}
+
+    
+.section-title{
+    margin-left: 0px !important
+}
+   
+.team-members .team-title {
+    font-size: 20px !important;
+    font-weight: bold;
+    color: #3f0071;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Adds space between the icon and the title */
+    white-space: nowrap; /* Prevents title from breaking into multiple lines */
+}
+
+/* Adjust member names styling for mobile */
+.member-names {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.member-names span {
+    font-size: 14px;
+    background-color: #f1f1f1;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+}
+
+
+
 /* Project Inside Section */
 .project-inside-section {
     padding: 40px 20px;
@@ -97,7 +226,7 @@
 }
 
 .project-inside-section .container {
-    max-width: 900px; /* Narrower max width to align content to center */
+    max-width: 1180px; /* Narrower max width to align content to center */
     margin: 0 auto;
     padding: 20px;
     border-radius: 8px;
@@ -116,7 +245,7 @@
 
 .project-title i {
     margin-right: 8px;
-    font-size: 24px;
+    font-size: 32px;
 }
 
 /* Date and Status */
@@ -160,7 +289,7 @@
 
 .member-names {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     gap: 10px;
     flex-wrap: wrap;
 }
@@ -188,7 +317,7 @@
 
 .expertise-tags {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     flex-wrap: wrap;
     gap: 10px;
 }
@@ -205,3 +334,254 @@
 .project-title, .areas-of-expertise, #projecTmember {
     color: #17004C;
 }
+
+
+.project-inside-section {
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.project-card {
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #17004c;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.project-title i {
+    margin-right: 8px;
+    font-size: 32px;
+}
+
+.project-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.date-label, .status-label {
+    font-size: 14px;
+    padding: 4px 10px;
+    border-radius: 4px;
+    color: #555;
+    background-color: #f1f1f1;
+}
+
+.status-label.active {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    background-color: #6f459c;
+}
+
+.status-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #28a745; /* Green dot for "active" status */
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.section-heading {
+    font-size: 16px;
+    font-weight: bold;
+    color: #17004c;
+    margin-bottom: 10px;
+}
+
+.areas-of-expertise, .team-members {
+    margin-bottom: 20px;
+}
+
+.expertise-tags, .member-names {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.tag, .member-names span {
+    font-size: 14px;
+    background-color: #f1f1f1;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+
+.project-inside-section {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.project-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #3f0071;
+    display: flex;
+    align-items: center;
+}
+
+.project-title i {
+    margin-right: 8px;
+    font-size: 32px;
+}
+
+.project-header {
+    /* border-bottom: 1px solid #e0e0e0; */
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.date-label, .status-label {
+    font-size: 18px;
+    color: #555;
+    background-color: #f1f1f1;
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin-left: 15px;
+    width: 173px;
+    height: 42px
+}
+
+.status-label.active {
+    background-color: #e6e1f7;
+    color: #3f0071;
+    padding-left:50px
+}
+
+.section-title {
+    font-size: 24px !important;
+    font-weight: bold;
+    color: #3f0071;
+    margin-bottom: 10px;
+    text-align: left; /* Align section titles to the left */
+}
+
+.areas-of-expertise, .team-members {
+    text-align: left; /* Align entire sections to the left */
+    margin-bottom: 20px;
+}
+
+.expertise-tags, .member-names {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tag, .member-names span {
+    font-size: 14px;
+    background-color: #f1f1f1;
+    padding: 6px 12px;
+    border-radius: 4px;
+    color: #333;
+}
+
+
+.d-flex.align-items-center {
+    justify-content: left !important;
+    margin-bottom: 10px;
+}
+
+
+.team-title {
+    display: flex;
+    align-items: center; /* Aligns icon and text vertically in the center */
+    gap: 8px; /* Adds space between the icon and text */
+    margin-bottom: 10px; /* Adjusts spacing from elements below */
+}
+
+.section-title {
+    margin: 0;
+    font-weight: bold;
+    font-size: 16px;
+    color: #17004c;
+}
+
+
+.accordion-container {
+    max-width: 1180px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.accordion-section {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #fafafa;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #4A3A82;
+}
+
+.accordion-header h3 {
+    margin: 0;
+}
+
+.accordion-icon {
+    font-size: 1.2em;
+    transition: transform 0.3s;
+    color: #4A3A82;
+}
+
+.accordion-content {
+    display: none;
+    padding: 20px;
+    font-size: 1em;
+    line-height: 1.6;
+    color: #333;
+}
+
+.accordion-content p {
+    margin: 0;
+}
+
+/* Active state */
+.accordion-section.active .accordion-content {
+    display: block;
+    background-color: white
+}
+
+.accordion-section.active .accordion-icon {
+    transform: rotate(180deg); /* Rotates the icon when active */
+}
+
+#sizeH{
+    font-size: 24px
+}
+
+.accordion-icon {
+    font-size: 0.8em; /* Make the arrow smaller */
+    color: #4A3A82; /* Adjust color as needed */
+    transition: transform 0.3s ease; /* Smooth rotation */
+}
+
+.accordion-section.active .accordion-icon {
+    transform: rotate(180deg); /* Rotate arrow when section is open */
+}
+
+
