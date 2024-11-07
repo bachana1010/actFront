@@ -184,7 +184,7 @@ header {
 
 .divider {
     position: absolute;
-    left: 0;
+    left: 25px;
     right: 0;
     height: 1px;
     background-color: #C2C1C0;
@@ -197,7 +197,7 @@ header {
 .divider {
     height: 1px;
     background-color: #C2C1C0;
-    width: 100%; /* Make it span the full width */
+    width: 95%; /* Make it span the full width */
     margin: 0 auto; /* Center it */
     position: relative; /* Position relative for better alignment */
 }
