@@ -1,26 +1,25 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Slider functionality
-    const images = [
-        'asserts/Rectangle12.png',
-        'asserts/Rectangle4.png',
-        'asserts/Rectangle14.png'
-    ];
+    const sliderImage = document.getElementById('slider-image');
+    const titleElement = document.getElementById('slider-title');
+    const descriptionElement = document.getElementById('slider-description');
+    const bars = document.querySelectorAll('.bar');
 
     let currentImageIndex = 0;
     let autoSwitchInterval;
 
-    const sliderImage = document.getElementById('slider-image');
-    const dots = document.querySelectorAll('.bar');
-
-    function updateImage() {
-        sliderImage.src = images[currentImageIndex];
-        updateDots();
+    function updateImage(index) {
+        const selectedBar = bars[index];
+        sliderImage.src = selectedBar.getAttribute('data-image');
+        titleElement.textContent = selectedBar.getAttribute('data-title');
+        descriptionElement.textContent = selectedBar.getAttribute('data-description');
+        updateDots(index);
     }
 
     function startAutoSwitch() {
         autoSwitchInterval = setInterval(function() {
-            currentImageIndex = (currentImageIndex + 1) % images.length;
-            updateImage();
+            currentImageIndex = (currentImageIndex + 1) % bars.length;
+            updateImage(currentImageIndex);
         }, 2000);
     }
 
@@ -28,22 +27,22 @@ document.addEventListener('DOMContentLoaded', function() {
         clearInterval(autoSwitchInterval);
     }
 
-    function updateDots() {
-        dots.forEach((dot, index) => {
-            dot.classList.toggle('active-bar', index === currentImageIndex);
+    function updateDots(index) {
+        bars.forEach((bar, i) => {
+            bar.classList.toggle('active-bar', i === index);
         });
     }
 
-    dots.forEach((dot, index) => {
-        dot.addEventListener('click', function() {
+    bars.forEach((bar, index) => {
+        bar.addEventListener('click', function() {
             stopAutoSwitch();
             currentImageIndex = index;
-            updateImage();
+            updateImage(currentImageIndex);
             startAutoSwitch();
         });
     });
 
-    updateImage();
+    updateImage(currentImageIndex); // Initialize with the first image and text
     startAutoSwitch();
 
     // Dropdown functionality

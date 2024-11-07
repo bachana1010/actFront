@@ -2459,3 +2459,90 @@ body {
 #cardIdP{
     color:black
 }
+
+
+.hero-image {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Fixed height for the entire slider container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0; /* Ensure the image stays behind all other content */
+}
+
+.slider-title{
+    margin-top: 220px !important;
+}
+.text-block {
+    position: relative; /* Set relative to make sure it appears above the image */
+    width: 80%; /* Optional: Set width to control text wrapping */
+    max-width: 500px;
+    color: #fff;
+    text-align: center;
+    z-index: 1; /* Ensure it stays above the image */
+    margin-top: 220px !important; 
+}
+
+.text-block h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.text-block p {
+    font-size: 1rem;
+}
+
+.slider-buttons {
+    position: absolute;
+    bottom: 20px; /* Align the buttons near the bottom of the container */
+    display: flex;
+    gap: 8px;
+    z-index: 1;
+}
+
+.bar {
+    cursor: pointer;
+    height: 4px;
+    width: 50px;
+    background-color: #bbb;
+    transition: background-color 0.3s ease;
+}
+
+.bar.active-bar {
+    background-color: #88b2df;
+}
+
+.featured-projects-section .card {
+    height: 100%; /* Ensures card height adjusts with content */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px
+}
+
+.card-img-top {
+    height: 284px; /* Fixed height */
+    object-fit: cover; /* Ensures image covers the area without stretching */
+}
+
+.card-body {
+    padding: 15px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+

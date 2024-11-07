@@ -122,8 +122,8 @@
     border: none;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
+    /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
+    /* background-color: #fff; */
 }
 
 .card img {
@@ -194,4 +194,22 @@
 .news-section {
     padding: 0;
     margin-top: 0px !important;
+}
+
+
+.custom-button {
+    display: inline-block; /* Allows wrapping */
+    white-space: normal; /* Enables text to wrap to a new line */
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+    margin-bottom: 10px;
+    position: relative;
+    font-weight: bold;
+    width: 99%;
+}
+
+.custom-button .arrow {
+    margin-left: 5px;
+    transition: margin-left 0.3s ease;
 }
