@@ -45,94 +45,49 @@ document.addEventListener('DOMContentLoaded', function() {
     updateImage(currentImageIndex); // Initialize with the first image and text
     startAutoSwitch();
 
-    // Dropdown functionality
+    // Dropdown functionality for the header menu
     const navLinks = document.querySelectorAll('.nav-link[data-target]');
-    const dropdownContents = document.querySelectorAll('.dropdown-content');
-    const menu = document.getElementById('menu'); // Select the specific menu
-
-
-    // Hide all dropdowns initially
-    dropdownContents.forEach(content => {
-        content.style.display = 'none';
-    });
-    const menu2 = document.getElementById('menu2'); // Select the specific menu
 
     function showSubmenu(targetMenu, arrow) {
+        if (!targetMenu) return; // Check if targetMenu exists
+        
+        // Set display style based on menu ID
         if (targetMenu.id === 'menu') {
-            targetMenu.style.display = 'flex'; // Display flex for the specific menu
-        } else {
-            targetMenu.style.display = 'grid'; // Default display for other menus
+            targetMenu.style.display = 'flex'; // First menu as flex
+            console.log("pirveli")
+        } else if (['menu2', 'menu6', 'menu7'].includes(targetMenu.id)) {
+            console.log("meore")
+
+            targetMenu.style.display = 'grid'; // Set grid for menus 2, 6, and 7
         }
-        if (arrow) arrow.textContent = '▼'; // Change to down arrow when active
+
+        if (arrow) arrow.textContent = '▼'; // Change arrow down
     }
 
     function hideSubmenu(targetMenu, arrow) {
         setTimeout(() => {
+            if (!targetMenu) return; // Check if targetMenu exists
+            // Only hide menu if neither the link nor the menu is hovered
             if (!targetMenu.matches(':hover') && !arrow.closest('.nav-link').matches(':hover')) {
                 targetMenu.style.display = 'none';
-                if (arrow) arrow.textContent = '>'; // Change back to right arrow
+                if (arrow) arrow.textContent = '›'; // Change arrow to right
             }
-        }, 200); // Small delay to prevent flicker
+        }, 200);
     }
 
-    if (menu) {
-        menu.addEventListener('mouseenter', () => {
-            menu.style.display = 'flex'; // Display as flex when mouse is over
-        });
-
-        menu.addEventListener('mouseleave', () => {
-            menu.style.display = 'none'; // Hide when mouse leaves
-        });
-    } else {
-        console.error('Element with ID #menu not found');
-    }
-
+    // Initialize hover listeners for dropdown menus
     navLinks.forEach(link => {
         const arrow = link.querySelector('.arrow');
         const targetMenuId = link.getAttribute('data-target');
         const targetMenu = document.querySelector(`#${targetMenuId}`);
 
-        if (targetMenu) {
-            link.addEventListener('mouseenter', () => {
-                showSubmenu(targetMenu, arrow);
-            });
-
-            targetMenu.addEventListener('mouseenter', () => {
-                if (targetMenu.id === 'menu') {
-                    targetMenu.style.display = 'flex'; // Ensure menu stays flex
-                } else {
-                    targetMenu.style.display = 'grid';
-                }
-                if (arrow) arrow.textContent = '▼';
-            });
-
-            link.addEventListener('mouseleave', () => {
-                hideSubmenu(targetMenu, arrow);
-            });
-
-            targetMenu.addEventListener('mouseleave', () => {
-                hideSubmenu(targetMenu, arrow);
-            });
+        if (targetMenu) { // Check if targetMenu exists
+            link.addEventListener('mouseenter', () => showSubmenu(targetMenu, arrow));
+            targetMenu.addEventListener('mouseenter', () => showSubmenu(targetMenu, arrow));
+            link.addEventListener('mouseleave', () => hideSubmenu(targetMenu, arrow));
+            targetMenu.addEventListener('mouseleave', () => hideSubmenu(targetMenu, arrow));
+        } else {
+            console.warn(`Element with ID #${targetMenuId} not found.`);
         }
     });
-
-    
 });
-
-function toggleAccordion(element) {
-    const section = element.parentElement;
-    const content = section.querySelector('.accordion-content');
-    const isOpen = section.classList.contains('active');
-    
-    // Close all sections
-    document.querySelectorAll('.accordion-section').forEach(sec => {
-        sec.classList.remove('active');
-        sec.querySelector('.accordion-content').style.display = 'none';
-    });
-
-    // Toggle current section
-    if (!isOpen) {
-        section.classList.add('active');
-        content.style.display = 'block';
-    }
-}
