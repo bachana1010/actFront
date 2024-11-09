@@ -1,7 +1,7 @@
 /* Global Styles */
 body {
     font-family: 'Lato', Arial, sans-serif;
-    background-color: #f4f4f4;
+    /* background-color: #f4f4f4; */
     color: #333;
 }
 
@@ -398,7 +398,7 @@ z-index:-1
 /* General styles */
 body {
     font-family: 'Lato', Arial, sans-serif;
-    background-color: #f4f4f4;
+    /* background-color: #f4f4f4; */
     color: #333;
     margin: 0;
     padding: 0;
@@ -1023,7 +1023,7 @@ body {
 /* Global Styles */
 body {
     font-family: 'Lato', Arial, sans-serif;
-    background-color: #f4f4f4;
+    /* background-color: #f4f4f4; */
     color: #333;
 }
 
@@ -1207,7 +1207,7 @@ body {
 /* Global Styles */
 body {
     font-family: 'Lato', Arial, sans-serif;
-    background-color: #f4f4f4;
+    /* background-color: #f4f4f4; */
     color: #333;
 }
 
@@ -1534,7 +1534,7 @@ header {
 
 body {
     font-family: 'Lato', Arial, sans-serif;
-    background-color: #f4f4f4;
+    /* background-color: #f4f4f4; */
     color: #333;
     margin: 0;
     padding: 0;
@@ -1646,7 +1646,7 @@ body {
 }
 
 #imageDivider{
-    margin-left:50px
+    margin-left: 30%
 }
 
 #dividerJustifyCenter{

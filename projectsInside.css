@@ -493,7 +493,7 @@
 
 
 .d-flex.align-items-center {
-    justify-content: left !important;
+    /* justify-content: left !important; */
     margin-bottom: 10px;
 }
 
@@ -585,3 +585,21 @@
 }
 
 
+
+.custom-button {
+    display: inline-block; /* Makes the element inline-block for proper wrapping */
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px;
+    text-decoration: none;
+    white-space: normal; /* Allow text to wrap */
+    overflow-wrap: break-word; /* Break long words if needed */
+    word-wrap: break-word; /* Legacy support for older browsers */
+    line-height: 1.4; /* Adjust line height for better readability */
+    text-align: left; /* Align text to the left */
+}
+
+.arrow {
+    margin-left: 8px; /* Space between text and arrow */
+    font-size: 16px;
+}
