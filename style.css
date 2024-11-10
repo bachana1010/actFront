@@ -1988,7 +1988,7 @@ body {
     }
 
     .mobile-footer .footer-bottom-links a:hover {
-        text-decoration: underline;
+        text-decoration: none;
     }
 
     .social-icons {
@@ -2551,5 +2551,10 @@ a {
 }
 
 #topSection{
-    margin-top:60px
+    margin-top:30px
+}
+
+
+a:hover{
+    text-decoration: none
 }

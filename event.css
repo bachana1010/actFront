@@ -5,8 +5,10 @@
 
 #newSectionHr {
     margin-right: 5px;
-    border: -0.1px solid gray !important;
-    margin-top: 17px;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+     margin-top: 17px;
+    background-color: #cfcfcf;
+
 }
 
 /* Event Section - Center with spacing */

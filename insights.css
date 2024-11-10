@@ -118,11 +118,12 @@
 
 .news-line {
     width: 90%;
-    height: 1px;
     background-color: #cfcfcf;
     margin: 10px auto;
     margin-top: -20px;
     margin-left: 115px;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+   background-color: #cfcfcf;
 }
 
 .read-more a {
@@ -143,7 +144,6 @@
 
 hr {
     border: none;
-    height: 2px;
     background-color: #e0e0e0;
     margin-top: 20px;
     margin-bottom: 20px;

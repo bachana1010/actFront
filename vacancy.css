@@ -273,3 +273,12 @@
         margin-top: 0;
     }
 }
+
+
+.vacancy-line {
+    background-color: #cfcfcf;
+    margin: 10px auto;
+    margin-top: 25px;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    background-color: #cfcfcf;
+}

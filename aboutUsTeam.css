@@ -1,7 +1,8 @@
 /* About Us Section */
 .about-us-section {
-    padding: 40px 20px;
+    /* padding: 40px 20px; */
     text-align: left;
+    margin-top:30px
 }
 
 /* Title Styling */
@@ -182,7 +183,10 @@
     margin-left: 177px;
     margin-bottom: 15px;
     margin-top: -10px;
-    width: 83% !important
+    width: 83% !important;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    background-color: #cfcfcf;
+    
 }
 
 @media (max-width: 768px) {
@@ -312,3 +316,81 @@
         gap: 10px;
     }
 }
+
+
+
+
+
+
+/* 
+
+
+.about-card {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    max-width: 445px;
+    background-color: #fbfbfb;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    margin-right: 20px;
+}
+
+.card-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.card-topics {
+    margin-top: 10px;
+    text-align: left;
+}
+
+.card-topics p {
+    font-size: 12px;
+}
+
+.card-right {
+    flex: 1;
+    text-align: left;
+}
+
+.card-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #17004c;
+    margin-bottom: 5px;
+}
+
+.card-title {
+    font-size: 14px;
+    color: #1f1f1f;
+    margin-bottom: 10px;
+}
+
+.card-icons {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    gap: 8px;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+ */

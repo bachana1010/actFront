@@ -69,9 +69,6 @@ h1 {
 }
 
 /* News Section */
-.news-section {
-    padding: 40px 0;
-}
 
 .custom-container {
     max-width: 1180px;
@@ -84,7 +81,7 @@ h1 {
 }
 
 .news-cards {
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
 .card {
@@ -192,9 +189,12 @@ h1 {
 
 /* News Section */
 .news-section {
-    padding: 40px 20px; /* Add padding around the section */
+    padding: 30px;
     display: flex;
     justify-content: center;
+    margin-top:0px;
+    margin-bottom:30px
+
 }
 
 /* Container for the section */
@@ -212,10 +212,11 @@ h1 {
 
 .news-line {
     width: 80%;
-    height: 1px;
     background-color: #cfcfcf;
     margin: 10px auto;
     margin-top: 25px;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    background-color: #cfcfcf;
 }
 
 /* Cards Grid */
@@ -223,7 +224,7 @@ h1 {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid layout */
     gap: 20px; /* Space between cards */
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
 /* Card Styling */

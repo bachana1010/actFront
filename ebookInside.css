@@ -21,7 +21,7 @@
 
 /* News Section */
 .news-section {
-    padding: 40px 0;
+    padding: 30px 0;
 }
 
 .custom-container {
@@ -40,7 +40,6 @@
 .ebook-inside-section {
     width: 100%;
     padding: 30px 20px;
-    background-color: #f9f9f9;
     position: relative; /* So the footer image is positioned relative to this section */
     overflow: hidden; /* Hide any overflow of the fixed image */
 }
@@ -68,6 +67,10 @@
     .top-section{
         flex-direction: row-reverse
 
+    }
+
+    #secontContainer{
+        margin-top:30px !important
     }
 
 }
@@ -220,7 +223,8 @@
 
 /* News Section */
 .news-section {
-    padding: 40px 0;
+    padding: 30px 0;
+    margin-top: 0px;
 }
 
 .custom-container {
@@ -331,7 +335,10 @@
 
 #newSectionHr{
     margin-right: 5px; 
-    border:1px solid #000
+    margin: 10px auto;
+    margin-top: 25px;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    background-color: #cfcfcf;
 }
 
 
@@ -451,3 +458,4 @@
 .learn-more-div {
     margin-top: auto; /* Push to bottom */
 }
+
