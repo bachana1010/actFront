@@ -2558,3 +2558,25 @@ a {
 a:hover{
     text-decoration: none
 }
+
+
+.nav-item:last-child .dropdown-content {
+    left: 110% !important;
+    transform: translateX(-100%) !important;
+    right: auto !important;
+}
+
+/* For the second-to-last element */
+.nav-item:nth-last-child(2) .dropdown-content {
+    left: 110% !important;
+    transform: translateX(-100%) !important;
+    right: auto !important;
+}
+
+
+.nav-item:nth-child(1) .dropdown-content,
+.nav-item:nth-child(2) .dropdown-content {
+    left: 100%  !important;
+    transform: translateX(-50%) !important; 
+    right: auto !important; 
+}
