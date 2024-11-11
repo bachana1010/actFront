@@ -2303,17 +2303,17 @@ body {
 /* For 6th and 7th menu items */
 .nav-item:nth-child(6) .dropdown-content,
 .nav-item:nth-child(7) .dropdown-content {
-    left: 110%; /* Positions it relative to the parent */
-    transform: translateX(-100%); /* Moves it left by its full width */
-    right: auto; /* Ensure right is not affecting the position */
+    left: 110% !important; 
+    transform: translateX(-100%)  !important; 
+    right: auto  !important;
 }
 
 
 .nav-item:nth-child(1) .dropdown-content,
 .nav-item:nth-child(2) .dropdown-content {
-    left: 100%; /* Positions it relative to the parent */
-    transform: translateX(-33%); /* Moves it left by its full width */
-    right: auto; /* Ensure right is not affecting the position */
+    left: 100%  !important;
+    transform: translateX(-33%) !important; 
+    right: auto !important; 
 }
 
 
