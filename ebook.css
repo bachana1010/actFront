@@ -156,9 +156,9 @@ h1 {
 }
 
 .learn-more-btn:hover {
-    background-color: #6f459c;
+    /* background-color: #643695; */
     color: #fff;
-    border-color: #6f459c;
+    border-color: #643695;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
@@ -232,8 +232,8 @@ h1 {
     border: none;
     border-radius: 8px;
     overflow: hidden;
-    background-color: #fbfbfb;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    /* background-color: #fbfbfb; */
+    /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
     text-align: left;
     transition: transform 0.3s ease; /* Smooth scaling on hover */
 }
@@ -290,9 +290,9 @@ h1 {
     transition: background-color 0.3s ease;
 }
 
-.learn-more-btn:hover {
+/* .learn-more-btn:hover {
     background-color: #563d7c;
-}
+} */
 
 .learn-more-text {
     margin-right: 5px;
@@ -393,3 +393,12 @@ h1 {
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Larger columns for wider screens */
     }
 }
+
+.news-cards .card img{
+    border-radius: 8px
+}
+
+.news-cards .card .card-body a {
+    border-radius: 8px
+}
+

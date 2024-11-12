@@ -40,7 +40,7 @@
     font-weight: bold;
     display: block;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 8px;
     transition: background-color 0.3s;
 }
 
@@ -79,6 +79,7 @@
     font-weight: bold;
     color: #333;
     transition: color 0.3s;
+    font-size: 16px;
 }
 
 .year-list li a:hover {
@@ -233,7 +234,7 @@
     display: flex;
     align-items: center;
     padding: 20px; /* Increase padding */
-    background-color: #fff;
+    background-color: rgba(249,249,249,255);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for better appearance */
     border-radius: 8px; /* Rounded corners */
     margin-bottom: 20px; /* Add spacing between cards */
@@ -295,3 +296,14 @@
 .month-list li a:hover {
     color: #0056b3; /* Change color on hover */
 }
+
+.year-list li a:hover,
+.month-list li a:hover {
+    color: #0056b3; /* Change color on hover */
+}
+
+.event-types-list li a:hover{
+    color: #0056b3; /* Change color on hover */
+
+}
+

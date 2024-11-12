@@ -236,11 +236,12 @@
 }
 
 .learn-more-btn:hover {
-    background-color: #6f459c;
+    /* background-color: #6f459c; */
     color: #fff;
-    border-color: #6f459c;
+    border-color: #643695;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
+
 
 .project-card {
     height: 550px; /* Set a fixed height for all cards */
