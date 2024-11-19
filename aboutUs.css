@@ -13,6 +13,11 @@
     object-fit: cover;
 }
 
+.aboutus-title {
+    font-size: 32px;
+    font-weight: 700;
+}
+
 /* Overlay and Centered Text Stay the Same */
 .overlay {
     position: absolute;
@@ -80,7 +85,7 @@
     margin-top: 20px;
 } */
 .container-section{
-    
+
 }
 /* ACT Logo and Quote Styling */
 .act-logo-container {

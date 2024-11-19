@@ -14,15 +14,15 @@
 
 /* Title and Line Styling */
 .news-title {
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 30px;
+    font-weight: 900;
     color: black;
     margin-bottom: 15px;
     text-align: left;
 }
 
 .news-line {
-    width: 86%;
+    width: 80%;
     margin: 10px auto;
     margin-top: -20px;
     border-top: 1px solid rgba(0, 0, 0, .1);
@@ -50,7 +50,7 @@
         height: 195px;
     }
 
-       
+
 }
 
 /* Image inside the card */
@@ -148,7 +148,7 @@
         display: block !important;
         width: 76%;
         margin-left: 69px;
-        
+
     }
 
     .news-section .news-title {
@@ -182,4 +182,56 @@
     color: #fff;
     border-color: #6f459c;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.pagination .page-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(23, 0, 76, 0.1);
+    border-radius: 4px;
+    background-color: white;
+    width: 23px;
+    height: 24px;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(49, 49, 49, 1);
+    padding: 0;
+}
+
+.pagination .prev .page-link,
+.pagination .next .page-link {
+    width: 58px;
+    gap: 4px;
+}
+
+.pagination .prev .page-link i,
+.pagination .next .page-link i {
+    position: relative;
+    top: 1px;
+    font-size: 8px;
+}
+
+.pagination .page-link.dots {
+    pointer-events: none;
+    align-items: inherit;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: rgba(59, 48, 146, 1);
+    color: white;
+    font-weight: 700;
+    border-color: rgba(59, 48, 146, 1);
+}
+
+.pagination .page-link:hover {
+    background-color: rgba(233, 233, 233, 0.5);
+}
+
+.pagination .page-item {
+    margin-right: 5px; /* Add spacing between pagination items */
+}
+
+.active, .dot:hover {
+    background-color: transparent;
 }

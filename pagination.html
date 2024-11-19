@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Section</title>
+    <script src="https://kendo.cdn.telerik.com/2018.3.911/js/jquery.min.js"></script>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="news.css"> <!-- New CSS file for the news section -->
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="header"></header>
+
+    <div class="mobile-header mobile-header--light">
+        <div id="search-btn-close"><i class="bi bi-x-lg text-white mr-0"></i></div>
+        <div id="search-btn-mobile"><img src="asserts/search-light.svg" height="24"></div>
+        <div>
+            <a href="/"><img src="asserts/logo-light.svg" height="19" alt="Logo"></a>
+        </div>
+        <div id="burger-btn-close"><i class="bi bi-x-lg text-white mr-0"></i></div>
+        <div id="burger-btn-mobile"><img src="asserts/burger-menu-light.svg" height="32"></div>
+    </div>
+
+    <main class="news-section">
+        <nav>
+            <ul class="pagination justify-content-center">
+                <!-- Previous -->
+                <li class="page-item prev">
+                    <a class="page-link" href="#"><i class="bi bi-chevron-left"></i> Back</a>
+                </li>
+
+                <!-- Page numbers -->
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item "><a class="page-link" href="#">6</a></li>
+                <li class="page-item active"><a class="page-link" href="#">7</a></li>
+                <li class="page-item"><span class="page-link dots">...</span></li>
+                <li class="page-item"><a class="page-link" href="#">10</a></li>
+
+                <!-- Next -->
+                <li class="page-item next">
+                    <a class="page-link" href="#">Next <i class="bi bi-chevron-right"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer"></footer>
+
+    <script>
+        function loadHTML(elementId, filePath) {
+            $(elementId).load(filePath);
+        }
+
+        $(document).ready(function() {
+            loadHTML('#header', 'header.html');
+            loadHTML('#footer', 'footer.html');
+        });
+    </script>
+
+    <script src="js/registration.js"></script> <!-- New JS file for registration -->
+</body>
+</html>

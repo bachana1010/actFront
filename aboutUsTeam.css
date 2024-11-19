@@ -8,7 +8,7 @@
 /* Title Styling */
 .about-title {
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 700;
     color: black;
     margin-bottom: 20px;
     text-align: center;
@@ -186,7 +186,7 @@
     width: 83% !important;
     border-top: 1px solid rgba(0, 0, 0, .1);
     background-color: #cfcfcf;
-    
+
 }
 
 @media (max-width: 768px) {
@@ -206,7 +206,7 @@
 
 
 
-       
+
 
 
 }
@@ -225,14 +225,14 @@
         gap: 10px;
         justify-content: space-between;
     }
-    
+
     .card-column {
         flex: 1;
         font-size: 13spx;
         color: #999;
         text-align: center; /* Center-align for consistency */
     }
-    
+
     .card-column p {
         margin: 0;
         color: #000;
@@ -242,8 +242,8 @@
         margin-top: 60px;
     }
 
-    
-    
+
+
 }
 
 
@@ -322,7 +322,7 @@
 
 
 
-/* 
+/*
 
 
 .about-card {
@@ -341,7 +341,7 @@
 .card-left {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; 
+    align-items: flex-start;
     margin-right: 20px;
 }
 

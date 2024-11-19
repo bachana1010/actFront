@@ -76,8 +76,8 @@ h1 {
 }
 
 .news-title {
-    font-size: 28px;
-    font-weight: bold;
+    font-size: 32px;
+    font-weight: 700;
 }
 
 .news-cards {
@@ -182,7 +182,7 @@ h1 {
 }
 
 #newSectionHr{
-    margin-right: 5px; 
+    margin-right: 5px;
     /* border:1px solid #000 */
 }
 
@@ -205,8 +205,8 @@ h1 {
 
 /* Title and Line Styling */
 .news-title {
-    font-size: 28px;
-    font-weight: bold;
+    font-size: 32px;
+    font-weight: 700;
     text-align: center;
 }
 

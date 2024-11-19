@@ -10,7 +10,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    
+
 </head>
 <body>
 
@@ -20,8 +20,7 @@
                 <a href="#" class="px-2">Subscription</a>
                 <a href="#" class="px-2">Contact</a>
                 <a href="#" class="px-2">ENG/GEO</a>
-                <a href="#" class="px-2">Search</a>
-                <a href="#" class="px-2"><i class="bi bi-search"></i></a>
+                <a href="#" id="search-btn" class="px-2">Search <i class="bi bi-search ml-1"></i></a>
             </div>
         </div>
         <div class="row">
@@ -34,14 +33,14 @@
                     <img id="imageDivider" src="https://act-global.com/themes/act/assets/images/logo.svg" alt="Logo" class="img-fluid">
                 </div>
             </div>
-            <div class="col-md-10 d-flex justify-content-end align-items-center" id="dividerJustifyCenter">
+            <div class="header-nav col-md-10 d-flex justify-content-end align-items-center" id="dividerJustifyCenter">
                 <nav class="d-none d-md-block">
                     <ul class="nav justify-content-end">
                         <li class="nav-item">
                             <a class="nav-link" href="#" data-target="menu">Our Expertise   <span class="arrow">›</span></a>
-    
+
                             <div id="menu" class="dropdown-content">
-    
+
                             <div class="dropdown-left">
                                 <ul class="dropdown-list">
                                     <div class="column">
@@ -62,10 +61,10 @@
                                     </div>
                                 </ul>
                             </div>
-                            
+
                             <!-- Dividing Line -->
                             <div class="dropdown-divider"></div>
-                            
+
                             <!-- Right Section -->
                             <div class="dropdown-right">
                                 <h4>Featured</h4>
@@ -79,12 +78,12 @@
                                 </ul>
                             </div>
                         </div>
-    
+
                         </li>
-    
-    
+
+
                         </li>
-    
+
                         <li class="nav-item">
                             <a class="nav-link" data-target="menu2" href="#">Act Research  <span class="arrow">›</span></a>
                             <div class="dropdown-content" id="menu2">
@@ -93,27 +92,27 @@
                                 <a href="#">Sub Item 3</a>
                                 <a href="#">Sub Item 4</a>
                                 <a href="#">Sub Item 5</a>
-                                <a href="#">Sub Item 6</a> 
+                                <a href="#">Sub Item 6</a>
                                 <a href="#">Sub Item 7</a>
                                 <a href="#">Sub Item 8</a>
                             </div>
                         </li>
-    
+
                         <li class="nav-item">
                             <a class="nav-link" href="#">Insights</a>
-                         
+
                         </li>
-    
+
                         <li class="nav-item">
                             <a class="nav-link" href="#">Event calendar</a>
                         </li>
-    
+
                         <li class="nav-item">
                             <a class="nav-link" href="#">Our PRojects</a>
                         </li>
-    
+
                         <li class="nav-item">
-    
+
                             <a class="nav-link" data-target="menu6" href="#">Resources  <span class="arrow">›</span></a>
                             <div class="dropdown-content" id="menu6">
                                 <a href="#">Sub Item 1</a>
@@ -124,24 +123,24 @@
                                 <a href="#">Sub Item 4</a>
                                 <a href="#">Sub Item 4</a>
                                 <a href="#">Sub Item 4</a>
-    
+
                                 <a href="#">Sub Item 5</a>
-                                <a href="#">Sub Item 6</a> 
+                                <a href="#">Sub Item 6</a>
                                 <a href="#">Sub Item 7</a>
                                 <a href="#">Sub Item 8</a>
                             </div>
                         </li>
-    
+
                         <li class="nav-item">
                             <a class="nav-link" data-target="menu7" href="#">About us  <span class="arrow">›</span></a>
                             <div class="dropdown-content" id="menu7">
                                 <a href="#">Sub Item 1</a>
                                 <a href="#">Sub Item 2</a>
-                             
+
                             </div>                    </li>
                     </ul>
                 </nav>
-    
+
                 <!-- hamburger menu -->
                 <!-- <button class="hamburger">&#9776;</button>
                 <button class="cross" style="display: none;">&#735;</button>
@@ -149,14 +148,106 @@
 
                  -->
 
-                 
+
 
             </div>
         </div>
     </header>
-    
-  
+
+
     <!-- <div id="header"></div> -->
+
+    <div class="mobile-header mobile-header--dark">
+        <div id="search-btn-close"><i class="bi bi-x-lg text-white mr-0"></i></div>
+        <div id="search-btn-mobile"><img src="asserts/search-dark.svg" height="24"></div>
+        <div>
+            <a href="/"><img src="asserts/logo.png" height="19" alt="Logo"></a>
+        </div>
+        <div id="burger-btn-close"><i class="bi bi-x-lg text-white mr-0"></i></div>
+        <div id="burger-btn-mobile"><img src="asserts/burger-menu-dark.svg" height="32"></div>
+    </div>
+
+    <div class="burger-menu-overlay">
+        <div class="burger-menu-overlay__inner">
+            <div class="burger-menu__collapse" id="accordion">
+                <div class="burger-menu__collapse-item">
+                    <div class="burger-menu__collapse-header" id="headingOne">
+                        <div class="burger-menu__collapse-title">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#our-expertise" aria-expanded="true" aria-controls="our-expertise">
+                                Our expertise <span><i class="bi bi-chevron-down"></i></span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div id="our-expertise" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <ul class="burger-menu__collapse-nav">
+                                <li>
+                                    <a href="#">- Child item</a>
+                                </li>
+                                <li>
+                                    <a href="#">- Child item</a>
+                                </li>
+                                <li>
+                                    <a href="#">- Child item</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="burger-menu__collapse-item">
+                    <div class="burger-menu__collapse-header" id="headingOne">
+                        <div class="burger-menu__collapse-title">
+                            <a href="#" class="btn btn-link">
+                                Linked
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="burger-menu__collapse-item">
+                    <div class="burger-menu__collapse-header" id="headingTwo">
+                        <div class="burger-menu__collapse-title">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#act-research" aria-expanded="false" aria-controls="act-research">
+                                Act Research <span><i class="bi bi-chevron-down"></i></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div id="act-research" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            <ul class="burger-menu__collapse-nav">
+                                <li>
+                                    <a href="#">- Child item</a>
+                                </li>
+                                <li>
+                                    <a href="#">- Child item</a>
+                                </li>
+                                <li>
+                                    <a href="#">- Child item</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <img src="asserts/logo.png" alt="ACT Logo" class="act-logo">
+        </div>
+    </div>
+
+    <div class="search-overlay">
+        <div class="search-overlay__inner">
+            <div class="search-box">
+                <div class="search-box__title">დაიწყეთ ძიება</div>
+                <form>
+                    <input type="text" placeholder="საძიებო სიტყვა..." id="search-input">
+                    <div class="search-addon">
+                        <button type="submit"><i class="bi bi-search"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <button type="button" class="search-overlay__close" id="search-close"><i class="bi bi-x-lg"></i></button>
+    </div>
 
 
     <section class="hero-section">
@@ -165,12 +256,12 @@
                 <div class="text-container" id="text-containerEmpr">
                     <div class="vertical-line"></div>
                     <div class="text-content">
-                        <h1>Empowering <br> <span>the Change</span></h1>
+                        <h1>Empowering <br> <span><i>the</i> <strong>Change</strong></span></h1>
                     </div>
                 </div>
             </div>
             <div class="hero-image">
-                <img id="slider-image" src="asserts/Rectangle12.png" alt="Hero Image" class="img-fluid">
+                <img id="slider-image" src="asserts/Rectangle12.png" alt="Hero Image" class="img-fluid" />
                 <div class="text-block">
                     <h2 id="slider-title">LOREM IPSUM</h2>
                     <p id="slider-description">This shows approved layouts with a responsive grid for a 16:9 Screen of our website. This will be applicable for websites, landing pages etc.</p>
@@ -181,191 +272,174 @@
                     <div class="bar" data-image="asserts/Rectangle9.png" data-title="Title for Image 3" data-description="Description for image 3."></div>
                 </div>
             </div>
-            
-
-            <video class="video-bg" autoplay muted loop>
-                <source src="asserts/1.mp4" type="video/mp4">
+        </div>
+        <div class="video-container">
+            <video autoplay muted loop>
+                <source src="asserts/1_2.mp4" type="video/mp4">
             </video>
         </div>
     </section>
 
-    <div class="main-content" style="margin-top:30px">
-        <section class="card-section">
-            <div class="card-wrapper">
-                <div class="image-container">
-                    <img src="asserts/Rectangle10.png" alt="Webinar Image">
-                </div>
-                <div class="text-container">
-                    <div>
-                        <p id="pastwebinar">Past Webinars</p>
-                        <p id="webinarabout" class="webinar">Webinar About how to make Webinars</p>
-                        <p id="webinaronline">Online</p>
-                        <p id="learnmorewebinar">learn more ></p>
+    <div class="main-content">
+        <div class="container">
+            <section class="card-section">
+                <div class="card-wrapper">
+                    <div class="image-container">
+                        <img src="asserts/Rectangle10.png" alt="Webinar Image">
                     </div>
-                </div>
-            </div>
-        </section>
-        
-    
-        <!-- New section with 3 rows -->
-        <section class="new-section">
-            <!-- First row -->
-            <div class="card-row reverse">
-                <div class="card-content" style="margin-right: 50px;">
-                    <h2 id="utemAt" >Utem At acesequi Cones</h2>
-                    <p id="utematP">utem.At aceasqui cones quam res repceriam, evendellabo utem.At aceasqui cones quam res repceriam, evendellabo utem.At aceasqui cones quam res repceriam, evendellabo.</p>
-                    <div class="buttons">
-                        <a href="#" class="custom-button" style="margin-top: -5px; margin-bottom:-5px">Learn more <span class="arrow">→</span></a>
-                    </div>
-                </div>
-                <div class="card-image">
-                    <img src="asserts/Subtract.png" alt="Image Description">
-                </div>
-            </div>
-
-            <!-- Second row -->
-            <div class="card-row" style="margin-top: -60px">
-                <div class="card-content" style="margin-right: 50px;">
-                    <h2 class="utemAt">Utem At acesequi Cones</h2>
-                    <p class="utemAtp" >utem.At acesequi cones quam res reperciam, evendellabo utem.At acesequi cones quam res reperciam, evendellabo utem.At acesequi cones quam res reperciam, evendellabo.</p>
-                    <div class="buttons">
-                        <a href="#" class="custom-button" style="margin-top: -5px; margin-bottom:-5px">Learn more <span class="arrow">→</span></a>
-                    </div>
-                </div>
-                <div class="card-image">
-                    <img src="asserts/Subtract1.png" alt="Image Description">
-                </div>
-            </div>
-
-            <!-- Third row -->
-            <div class="card-row reverse" style="margin-top: -60px">
-                <div class="card-content" style="margin-right: 50px;">
-                    <h2 class="utemAt">Utem At acesequi Cones</h2>
-                    <p class="utemAtp">utem.At acesequi cones quam res reperciam, evendellabo utem.At acesequi cones quam res reperciam, evendellabo utem.At acesequi cones quam res reperciam, evendellabo.</p>
-                    <div class="buttons">
-                        <a href="#" class="custom-button" style="margin-top: -5px; margin-bottom:-5px">Learn more <span class="arrow">→</span></a>
-                    </div>
-                </div>
-                <div class="card-image">
-                    <img src="asserts/Subtract2.png" alt="Image Description">
-                </div>
-            </div>
-        </section>
-
-        <!-- News Section -->
-        <section class="news-section">
-            <div class="custom-container">
-                <div class="row align-items-center">
-                    <div class="col-12 d-flex justify-content-between align-items-center">
-                        <div class="d-flex align-items-center">
-                            <h2 class="news-title">NEWS</h2>
+                    <div class="text-container">
+                        <div>
+                            <p id="pastwebinar">Past Webinars</p>
+                            <p id="webinarabout" class="webinar">Webinar About how to make Webinars</p>
+                            <p id="webinaronline">Online</p>
+                            <p id="learnmorewebinar">learn more ></p>
                         </div>
-                        <hr class="news-line flex-grow-1 ml-3" style="margin-right: 5px; border:1px solid #000">
-                    </div>
-                    
-                </div>
-                
-                <div class="row news-cards">
-                    <div class="col-md-4">
-                        <a href="">
-                            <div class="card">
-                                <img src="asserts/Rectangle4.png" class="card-img-top" alt="News Image 1">
-                                <div class="card-body">
-                                    <a href="#" class="custom-button">Lorem ipsum <span class="arrow">→</span></a>
-                                    <p class="card-text">utem.At aceasqui cones quam res repceriam, evendellabo utem.At aceasqui cones quam res repceriam, evendellabo utem.At aceasqui cones quam res repceriam, evendellabo.</p>
-                                </div>
-                            </div>
-                        </a>
-                    
-                    </div>
-                    <div class="col-md-4">
-                        <a href="">
-                            <div class="card">
-                                <img src="asserts/Rectangle4.png" class="card-img-top" alt="News Image 1">
-                                <div class="card-body">
-                                    <a href="#" class="custom-button">Lorem ipsum <span class="arrow">→</span></a>
-                                    <p class="card-text">utem.At aceasqui cones quam res repceriam, evendellabo utem.At aceasqui cones quam res repceriam, evendellabo utem.At aceasqui cones quam res repceriam, evendellabo.</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="">
-                            <div class="card">
-                                <img src="asserts/Rectangle4.png" class="card-img-top" alt="News Image 1">
-                                <div class="card-body">
-                                    <a href="#" class="custom-button">Lorem ipsum <span class="arrow">→</span></a>
-                                    <p class="card-text">utem.At aceasqui cones quam res repceriam, evendellabo utem.At aceasqui cones quam res repceriam, evendellabo utem.At aceasqui cones quam res repceriam, evendellabo.</p>
-                                </div>
-                            </div>
-                        </a>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Featured Projects Section -->
-        <section class="featured-projects-section">
-            <div class="custom-container">
-                <div class="row align-items-center">
-                    <div class="col-12 d-flex justify-content-between align-items-center">
-                        <div class="d-flex align-items-center">
-                            <h2 class="section-title">Featured Projects</h2>
-                            <a href="#" class="view-all-link ml-2" id="viewAll" style="color: #61686E; margin-right: 0px;"> > View all</a>
+
+            <!-- New section with 3 rows -->
+            <section class="new-section">
+                <!-- First row -->
+                <div class="card-row reverse">
+                    <div class="card-content" style="margin-right: 50px;">
+                        <h2 id="utemAt" >Utem At acesequi Cones</h2>
+                        <p id="utematP">utem.At aceasqui cones quam res repceriam, evendellabo utem.At aceasqui cones quam res repceriam, evendellabo utem.At aceasqui cones quam res repceriam, evendellabo.</p>
+                        <div class="buttons">
+                            <a href="#" class="custom-button" style="margin-top: -5px; margin-bottom:-5px">Learn more <span class="arrow">→</span></a>
                         </div>
-                        <hr class="section-line flex-grow-1 ml-3" style="margin-right: 5px;">
                     </div>
-                    
+                    <div class="card-image">
+                        <img src="asserts/Subtract.png" alt="Image Description">
+                    </div>
                 </div>
-                <div class="row featured-cards">
-                    <div class="col-md-4">
-                        <a href="">
-                            <div class="card">
-                                <img src="asserts/imgexplore.jpg" class="card-img-top" alt="Project Image 1">
-                                <div class="card-body">
-                                    <a href="#" class="custom-button">Lorem ipsum <span class="arrow">→</span></a>
-                                    <p class="card-text">utem.Atam res repceriam, evendellabo utem.At aceasqui cones quam res repceriam, evendellabo.</p>
-                                    <!-- <p class="additional-text">○ Project<br>○ Europe</p> -->
-                                </div>
-                            </div>
-                        </a>
-                     
-                    </div>
-                    <div class="col-md-4">
 
-                           <a href="">
-                            <div class="card">
-                                <img src="asserts/imgexplore10.jpg" class="card-img-top" alt="Project Image 1">
-                                <div class="card-body">
-                                    <a href="#" class="custom-button">Lorem ipsum <span class="arrow">→</span></a>
-                                    <p class="card-text">utem.At aceasqui cones quam res repceriam, evendellabo utem.At aceasqui cones quam res repceriam, evendellabo utem.At aceasqui cones quam res repceriam, evendellabo.</p>
-                                    <!-- <p class="additional-text">○ Project<br>○ Europe</p> -->
-                                </div>
-                            </div>
-                        </a>
+                <!-- Second row -->
+                <div class="card-row" style="margin-top: -60px">
+                    <div class="card-content" style="margin-right: 50px;">
+                        <h2 class="utemAt">Utem At acesequi Cones</h2>
+                        <p class="utemAtp" >utem.At acesequi cones quam res reperciam, evendellabo utem.At acesequi cones quam res reperciam, evendellabo utem.At acesequi cones quam res reperciam, evendellabo.</p>
+                        <div class="buttons">
+                            <a href="#" class="custom-button" style="margin-top: -5px; margin-bottom:-5px">Learn more <span class="arrow">→</span></a>
+                        </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="card-image">
+                        <img src="asserts/Subtract1.png" alt="Image Description">
+                    </div>
+                </div>
+
+                <!-- Third row -->
+                <div class="card-row reverse" style="margin-top: -60px">
+                    <div class="card-content" style="margin-right: 50px;">
+                        <h2 class="utemAt">Utem At acesequi Cones</h2>
+                        <p class="utemAtp">utem.At acesequi cones quam res reperciam, evendellabo utem.At acesequi cones quam res reperciam, evendellabo utem.At acesequi cones quam res reperciam, evendellabo.</p>
+                        <div class="buttons">
+                            <a href="#" class="custom-button" style="margin-top: -5px; margin-bottom:-5px">Learn more <span class="arrow">→</span></a>
+                        </div>
+                    </div>
+                    <div class="card-image">
+                        <img src="asserts/Subtract2.png" alt="Image Description">
+                    </div>
+                </div>
+            </section>
+
+            <!-- News Section -->
+            <section class="news-section">
+                <div class="custom-container">
+                    <div class="row align-items-center">
+                        <div class="col-12 d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center">
+                                <h2 class="news-title">NEWS</h2>
+                            </div>
+                            <hr class="news-line flex-grow-1 ml-3" style="margin-right: 5px; border:1px solid #000">
+                        </div>
+
+                    </div>
+
+                    <div class="row news-cards">
                         <a href="">
                             <div class="card">
-                                <img src="asserts/Rectangle7.png" class="card-img-top" alt="Project Image 1">
+                                <img src="asserts/Rectangle4.png" class="card-img-top" alt="News Image 1">
                                 <div class="card-body">
                                     <a href="#" class="custom-button">Lorem ipsum <span class="arrow">→</span></a>
                                     <p class="card-text">utem.At aceasqui cones quam res repceriam, evendellabo utem.At aceasqui cones quam res repceriam, evendellabo utem.At aceasqui cones quam res repceriam, evendellabo.</p>
-                                    <!-- <p class="additional-text">○ Project<br>○ Europe</p> -->
+                                </div>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="card">
+                                <img src="asserts/Rectangle4.png" class="card-img-top" alt="News Image 1">
+                                <div class="card-body">
+                                    <a href="#" class="custom-button">Lorem ipsum <span class="arrow">→</span></a>
+                                    <p class="card-text">utem.At aceasqui cones quam res repceriam, evendellabo utem.At aceasqui cones quam res repceriam, evendellabo utem.At aceasqui cones quam res repceriam, evendellabo.</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="card">
+                                <img src="asserts/Rectangle4.png" class="card-img-top" alt="News Image 1">
+                                <div class="card-body">
+                                    <a href="#" class="custom-button">Lorem ipsum <span class="arrow">→</span></a>
+                                    <p class="card-text">utem.At aceasqui cones quam res repceriam, evendellabo utem.At aceasqui cones quam res repceriam, evendellabo utem.At aceasqui cones quam res repceriam, evendellabo.</p>
                                 </div>
                             </div>
                         </a>
                     </div>
                 </div>
-                <div class="col-12">
-                    <!-- <hr class="section-line-bottom"> -->
+            </section>
+
+            <!-- Featured Projects Section -->
+            <section class="featured-projects-section">
+                <div class="custom-container">
+                    <div class="row align-items-center">
+                        <div class="col-12 d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center">
+                                <h2 class="section-title">Featured Projects</h2>
+                                <a href="#" class="view-all-link ml-2" id="viewAll" style="color: #61686E; margin-right: 0px;"> > View all</a>
+                            </div>
+                            <hr class="section-line flex-grow-1 ml-3" style="margin-right: 5px;">
+                        </div>
+
+                    </div>
+
+                    <div class="featured-cards">
+                        <div class="card">
+                            <img src="asserts/imgexplore.jpg" class="card-img-top" alt="Project Image 1">
+                            <div class="card-body">
+                                <a href="#" class="custom-button">Lorem ipsum <span class="arrow">→</span></a>
+                                <p class="card-text">utem.Atam res repceriam, evendellabo utem.At aceasqui cones quam res repceriam, evendellabo.</p>
+                                <!-- <p class="additional-text">○ Project<br>○ Europe</p> -->
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="asserts/imgexplore10.jpg" class="card-img-top" alt="Project Image 1">
+                            <div class="card-body">
+                                <a href="#" class="custom-button">Lorem ipsum <span class="arrow">→</span></a>
+                                <p class="card-text">utem.At aceasqui cones quam res repceriam, evendellabo utem.At aceasqui cones quam res repceriam, evendellabo utem.At aceasqui cones quam res repceriam, evendellabo.</p>
+                                <!-- <p class="additional-text">○ Project<br>○ Europe</p> -->
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="asserts/Rectangle7.png" class="card-img-top" alt="Project Image 1">
+                            <div class="card-body">
+                                <a href="#" class="custom-button">Lorem ipsum <span class="arrow">→</span></a>
+                                <p class="card-text">utem.At aceasqui cones quam res repceriam, evendellabo utem.At aceasqui cones quam res repceriam, evendellabo utem.At aceasqui cones quam res repceriam, evendellabo.</p>
+                                <!-- <p class="additional-text">○ Project<br>○ Europe</p> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <!-- <hr class="section-line-bottom"> -->
+                    </div>
                 </div>
-            </div>
-        </section>
+
+            </section>
+        </div>
 
 
         <!-- Subscribe Section -->
-         <!-- <section class="subscribe-section"> 
+         <!-- <section class="subscribe-section">
                 <div class="custom-container">
                     <div class="row align-items-center">
                         <div class="col-12">
@@ -396,7 +470,7 @@
             loadHTML('#footer', 'footer.html');
         });
     </script>
-    
+
     <script src="js/script.js"></script>
     <script src="js/header.js"></script>
 

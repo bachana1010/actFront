@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
         autoSwitchInterval = setInterval(function() {
             currentImageIndex = (currentImageIndex + 1) % bars.length;
             updateImage(currentImageIndex);
-        }, 2000);
+        }, 4000);
     }
 
     function stopAutoSwitch() {
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function showSubmenu(targetMenu, arrow) {
         if (!targetMenu) return; // Check if targetMenu exists
-        
+
         // Set display style based on menu ID
         if (targetMenu.id === 'menu') {
             targetMenu.style.display = 'flex'; // First menu as flex
@@ -90,13 +90,131 @@ document.addEventListener('DOMContentLoaded', function() {
             console.warn(`Element with ID #${targetMenuId} not found.`);
         }
     });
+
+    $('#search-btn').click(function () {
+        $('.search-overlay').fadeIn(500);
+    });
+
+    $('#search-btn-mobile').click(function () {
+        $('.burger-menu-overlay').fadeOut(200);
+        $('#burger-btn-close').hide();
+        $('#burger-btn-mobile').show();
+
+        $('.search-overlay').fadeIn(500);
+        $('#search-btn-mobile').hide();
+        $('#search-btn-close').show();
+    });
+
+    $('#search-close').click(function () {
+        $('.search-overlay').fadeOut(200);
+    });
+
+    $('#search-btn-close').click(function () {
+        $('.search-overlay').fadeOut(200);
+        $('#search-btn-close').hide();
+        $('#search-btn-mobile').show();
+    });
+
+    // Close the search overlay with fadeOut
+    $('.search-overlay').click(function (event) {
+        // Close only when clicking outside the search box
+        if ($(event.target).hasClass('search-overlay')) {
+            $('.search-overlay').fadeOut(500);  // Fade out effect
+        }
+    });
+
+    // Prevent click from closing when clicking inside the search box
+    $('.search-box').click(function (event) {
+        event.stopPropagation();
+    });
+
+    $('#burger-btn-mobile').click(function () {
+        $('html, body').css({
+            overflow: 'hidden',
+            height: '100%'
+        });
+
+        $('.search-overlay').fadeOut(200);
+        $('#search-btn-close').hide();
+        $('#search-btn-mobile').show();
+
+        $('.burger-menu-overlay').fadeIn(500);
+        $('#burger-btn-mobile').hide();
+        $('#burger-btn-close').show();
+    });
+
+    $('#burger-btn-close').click(function () {
+        $('html, body').css({
+            overflow: 'auto',
+            height: 'auto'
+        });
+
+        $('.burger-menu-overlay').fadeOut(200);
+        $('#burger-btn-close').hide();
+        $('#burger-btn-mobile').show();
+    });
+
+    // Month Dropdown
+    const $monthSelect = $('#monthSelect');
+    const $monthMenu = $('#monthMenu');
+    const $monthIcon = $('#monthIcon');
+
+    $monthSelect.on('click', function () {
+        $monthMenu.toggle();
+        $monthIcon.toggleClass('rotate');
+    });
+
+    $monthMenu.on('click', 'div', function () {
+        const selectedMonth = $(this).text();
+        $monthSelect.find('span').text(selectedMonth);
+        $monthMenu.hide();
+        $monthIcon.removeClass('rotate');
+    });
+
+    // Year Dropdown
+    const $yearSelect = $('#yearSelect');
+    const $yearMenu = $('#yearMenu');
+    const $yearIcon = $('#yearIcon');
+
+    $yearSelect.on('click', function () {
+        $yearMenu.toggle();
+        $yearIcon.toggleClass('rotate');
+    });
+
+    $yearMenu.on('click', 'div', function () {
+        const selectedYear = $(this).text();
+        $yearSelect.find('span').text(selectedYear);
+        $yearMenu.hide();
+        $yearIcon.removeClass('rotate');
+    });
+
+    // Close dropdowns if clicked outside
+    $(document).on('click', function (e) {
+        if (!$(e.target).closest('.drop').length) {
+            $monthMenu.hide();
+            $monthIcon.removeClass('rotate');
+            $yearMenu.hide();
+            $yearIcon.removeClass('rotate');
+        }
+    });
+
+    $monthSelect.click(function () {
+        $yearMenu.hide();
+        $yearIcon.removeClass('rotate');
+    });
+
+    $yearSelect.click(function () {
+        $monthMenu.hide();
+        $monthIcon.removeClass('rotate');
+    });
+
 });
 
 function toggleAccordion(element) {
     const section = element.parentElement;
     const content = section.querySelector('.accordion-content');
     const isOpen = section.classList.contains('active');
-    
+
     // Close all sections
     document.querySelectorAll('.accordion-section').forEach(sec => {
         sec.classList.remove('active');
