@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Slider functionality
+    const heroImage = document.getElementsByClassName('hero-image')?.[0];
     const sliderImage = document.getElementById('slider-image');
     const titleElement = document.getElementById('slider-title');
     const descriptionElement = document.getElementById('slider-description');
@@ -7,6 +8,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let currentImageIndex = 0;
     let autoSwitchInterval;
+
+    heroImage.style.display = 'block';
 
     function updateImage(index) {
         const selectedBar = bars[index];
