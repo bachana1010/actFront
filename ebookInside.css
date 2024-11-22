@@ -162,17 +162,18 @@
     position: relative;
     z-index: 1; /* Ensure the content stays above the image */
     padding-bottom: 350px; /* Add padding at the bottom so the image doesn't cover the text */
+    box-shadow: none;
 }
 
 /* Form Section */
 .ebook-form-section {
     width: 100%;
-    /* background-color: #f9f9f9; */
+    background-color: #f9f9f9;
     padding: 40px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: -315px
+    border-radius: 8;
 }
 
 .form-container {
