@@ -1107,8 +1107,7 @@ body {
 }
 
 .dropdown-content a:hover {
-    background-color: #ddd;
-    color: black;
+    color: #88B2DF;
 }
 
 
@@ -1251,8 +1250,7 @@ body {
 }
 
 .dropdown-content a:hover {
-    background-color: #ddd;
-    color: black;
+    color: #88B2DF;
 }
 
 /* Ensure the dropdown menu stays visible when hovering over it */
@@ -2214,7 +2212,7 @@ body {
 }
 
 .dropdown-content a:hover {
-    background-color: #ddd;
+    /*background-color: #ddd;*/
 }
 
 .nav-item {
@@ -2265,7 +2263,7 @@ body {
 }
 
 .dropdown-content a:hover {
-    background-color: #240060; /* Hover effect */
+    /*background-color: #240060;*/
 }
 
 /* Show dropdown when hovering over nav-item */
@@ -2419,7 +2417,7 @@ body {
 }
 
 .dropdown-content a:hover {
-    background-color: #3c2060; /* Slightly lighter purple */
+    /*background-color: #3c2060;*/
 }
 
 .nav-item:hover .dropdown-content {
@@ -2485,7 +2483,7 @@ body {
 }
 
 .dropdown-content a:hover {
-    background-color: #240060; /* Hover effect */
+    /*background-color: #240060;*/
 }
 
 /* Ensure dropdown aligns left when near the right edge */

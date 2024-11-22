@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Slider functionality
     const heroImage = document.getElementsByClassName('hero-image')?.[0];
+    const urlElement = document.getElementById('slider-url');
     const sliderImage = document.getElementById('slider-image');
     const titleElement = document.getElementById('slider-title');
     const descriptionElement = document.getElementById('slider-description');
@@ -13,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function updateImage(index) {
         const selectedBar = bars[index];
+        urlElement.href = selectedBar.getAttribute('data-url');
         sliderImage.src = selectedBar.getAttribute('data-image');
         titleElement.textContent = selectedBar.getAttribute('data-title');
         descriptionElement.textContent = selectedBar.getAttribute('data-description');
