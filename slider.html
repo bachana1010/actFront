@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Section</title>
+    <script src="https://kendo.cdn.telerik.com/2018.3.911/js/jquery.min.js"></script>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="news.css"> <!-- New CSS file for the news section -->
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="header"></header>
+
+    <div class="mobile-header mobile-header--light">
+        <div id="search-btn-close"><i class="bi bi-x-lg text-white mr-0"></i></div>
+        <div id="search-btn-mobile"><img src="asserts/search-light.svg" height="24"></div>
+        <div>
+            <a href="/"><img src="asserts/logo-light.svg" height="19" alt="Logo"></a>
+        </div>
+        <div id="burger-btn-close"><i class="bi bi-x-lg text-white mr-0"></i></div>
+        <div id="burger-btn-mobile"><img src="asserts/burger-menu-light.svg" height="32"></div>
+    </div>
+
+    <main>
+        <div class="container mt-0">
+            <div class="slider-container my-4">
+                <div class="swiper mb-4">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="https://via.placeholder.com/961x571" alt="Slide 1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://via.placeholder.com/961x571" alt="Slide 2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://via.placeholder.com/961x571" alt="Slide 3">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination mb-4"></div>
+                <!-- Add Navigation -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- Add Pagination -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer"></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        function loadHTML(elementId, filePath) {
+            $(elementId).load(filePath);
+        }
+
+        $(document).ready(function() {
+            loadHTML('#header', 'header.html');
+            loadHTML('#footer', 'footer.html');
+        });
+    </script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+
+    <script src="js/registration.js"></script> <!-- New JS file for registration -->
+</body>
+</html>
