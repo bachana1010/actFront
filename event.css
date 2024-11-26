@@ -11,6 +11,16 @@
 
 }
 
+.break-after-hyphen {
+    display: inline-block;
+    white-space: pre;
+}
+
+.break-after-hyphen::after {
+    content: ' ';
+    display: block;
+}
+
 /* Event Section - Center with spacing */
 .event-section {
     margin: 0 auto;

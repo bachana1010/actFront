@@ -3483,6 +3483,10 @@ body {
 }
 
 .event-card {
+    background: url("./asserts/event-light.jpg") no-repeat center;
+    background-size: cover;
+    box-shadow: none !important;
+
     @media (max-width: 768px) {
         align-items: flex-start !important;
         padding: 3px !important;
@@ -3491,6 +3495,12 @@ body {
         border-radius: 4px !important;
     }
 }
+
+.event-card:nth-child(even) {
+    background: url("./asserts/event-dark.jpg") no-repeat center;
+    background-size: cover;
+}
+
 
 .event .event-card-date {
     @media (max-width: 768px) {
@@ -3518,6 +3528,8 @@ body {
 }
 
 .event .event-card-title {
+    font-size: 16px;
+    color: rgba(2, 0, 0, 1);
     @media (max-width: 768px) {
         font-size: 16px;
         color: #020000;
@@ -3533,6 +3545,7 @@ body {
 
 .event .event-card-time {
     @media (max-width: 768px) {
+        display: none !important;
         font-size: 14px !important;
         font-weight: 500;
     }
@@ -3664,4 +3677,90 @@ body {
 
 .swiper-pagination-bullet-active {
     background: #17004C;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    @media (max-width: 1180px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 20px;
+    background: #ffffff;
+    box-shadow: -2px 4px 12px rgba(24, 24, 24, 0.08);
+    transition: all 0.4s;
+}
+
+.project-card:hover {
+    box-shadow: -2px 4px 12px rgba(24, 24, 24, 0.18);
+}
+
+.project-card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 16px;
+    width: 100%;
+    height: 100%;
+}
+
+.project-card .image {
+    width: 100%;
+    height: 194px;
+    border-radius: 4px;
+}
+
+.project-card .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.project-card .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    width: 100%;
+}
+
+.project-card .title {
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #181818;
+    margin: 0;
+    padding: 0;
+
+    @media (max-width: 768px) {
+        font-size: 18px;
+    }
+}
+
+.project-card .description {
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 32px;
+    color: #181818;
+    margin: 0;
+    padding: 0;
 }
