@@ -3765,3 +3765,122 @@ body {
     margin: 0;
     padding: 0;
 }
+
+.header-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.header-nav li {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.header-nav li,
+.header-nav li a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}
+
+.header-nav li:hover,
+.header-nav li a:hover {
+    color: #1E90FF;
+}
+
+.header-nav li i {
+    position: relative;
+    top: 1px;
+    transform: rotate(270deg);
+}
+
+.header-nav li.active {
+    color: #1E90FF;
+    background-color: transparent !important;
+}
+
+.header-nav li.active i {
+    transform: rotate(0deg);
+}
+
+.menu-content {
+    display: none;
+    background-color: transparent !important;
+    padding-top: 80px;
+}
+
+.menu-content.active {
+    display: block;
+}
+
+.dropdown-navigation {
+    position: absolute;
+    top: 160px;
+    left: 0;
+    width: 100%;
+    height: 496px;
+    padding: 0 24px 0;
+    overflow: hidden;
+    background: linear-gradient(90deg, #1A124C -24.06%, #262E7E 59.2%, #2B388E 109.53%, #2B3990 114.65%);
+    z-index: 999;
+    transition: all ease-in-out 0.5s;
+}
+
+.dropdown-navigation .container-fluid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropdown-navigation-left ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 74px;
+    row-gap: 34px;
+}
+
+.dropdown-navigation-left ul a {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #F9F9F9;
+}
+
+.dropdown-navigation-left ul a:hover {
+    color: #1E90FF;
+}
+
+
+.dropdown-navigation-right {
+    display: flex;
+    gap: 140px;
+    flex-direction: column;
+    width: 480px;
+    height: 342px;
+    border-left: 1px solid white;
+}
+
+.dropdown-navigation-right .dropdown-navigation-title {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+    color: white;
+    padding-left: 38px;
+}
+
+.dropdown-navigation-right .dropdown-navigation-image {
+    width: 100%;
+    text-align: center;
+}
+
+.dropdown-navigation-right img {
+    height: 120px;
+}

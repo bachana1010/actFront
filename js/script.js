@@ -256,3 +256,44 @@ function toggleAccordion(element) {
         content.style.display = 'block';
     }
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    const navItems = document.querySelectorAll(".header-nav li.dropdown");
+    const megamenu = document.querySelector(".dropdown-navigation");
+    const contents = document.querySelectorAll(".menu-content");
+
+    let currentOpenItem = null
+
+    navItems.forEach(item => {
+        item.addEventListener("click", () => {
+            const targetContentId = item.getAttribute("data-target");
+            const targetContent = document.getElementById(targetContentId);
+
+            navItems.forEach(nav => nav.classList.remove("active"));
+
+            // Check if the same item is clicked again (toggle behavior)
+            if (currentOpenItem === item) {
+                megamenu.style.maxHeight = "0px"; // Close the menu
+                currentOpenItem = null; // Reset the current open item
+                contents.forEach(content => content.classList.remove("active")); // Hide all content
+            } else {
+                // Open the megamenu for the new item
+                megamenu.style.maxHeight = "496px"; // Adjust height as needed
+                contents.forEach(content => content.classList.remove("active")); // Hide all content
+                targetContent.classList.add("active"); // Show the current content
+                item.classList.add("active");
+                currentOpenItem = item; // Set the current open item
+            }
+        });
+    });
+
+    // Optional: Close the megamenu if clicked outside
+    document.addEventListener("click", (event) => {
+        if (!megamenu.contains(event.target) && !event.target.closest(".header-nav")) {
+            megamenu.style.maxHeight = "0px"; // Close the menu
+            contents.forEach(content => content.classList.remove("active")); // Hide all content
+            navItems.forEach(nav => nav.classList.remove("active"));
+            currentOpenItem = null; // Reset the current open item
+        }
+    });
+});
