@@ -81,7 +81,7 @@
 .client-link i {
     margin-right: 8px; /* Adds spacing between chevron and text */
     font-size: 18px;
-    line-height: 1; 
+    line-height: 1;
 }
 
 .client-link:hover {
@@ -221,7 +221,7 @@
         font-size: 30px
     }
 
-} 
+}
 
 @media (max-width: 480px) {
     .help-clients {
@@ -235,7 +235,7 @@
     .ebook-type {
         font-size: 18px;
     }
-} 
+}
 
 
 
@@ -296,7 +296,7 @@
     color: white;
     font-weight: bold;
     text-align: left; /* Align text to the left */
- 
+
     font-weight: bold
 }
 
@@ -325,4 +325,12 @@
     object-fit: cover; /* Ensures the image covers the container without distortion */
     object-position: top; /* Aligns the image from the top to show faces */
     border-radius: 8px; /* Optional: add border radius for rounded corners */
+}
+
+.our-expertise-card .learn-more-btn {
+    box-shadow: none;
+}
+
+.our-expertises .card-body {
+    justify-content: flex-start;
 }

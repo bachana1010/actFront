@@ -24,8 +24,8 @@
 /* Event Section - Center with spacing */
 .event-section {
     margin: 0 auto;
-    max-width: 1200px; /* Adjust to keep it in the center */
-    padding: 0 10px; /* 10px space on both left and right */
+    max-width: 100%; /* Adjust to keep it in the center */
+    padding: 0; /* 10px space on both left and right */
     margin-bottom: 80px;
 }
 
@@ -210,13 +210,70 @@
     margin-left: 30px; /* Move the month list to the right */
 }
 
+.event-filters {
+    background-color: #F9F9F9;
+    height: 76px;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.event-filters .event-container {
+    height: 100%;
+}
+
+.event-filters-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.event-filters-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.event-filters-left .event-filters-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: black;
+}
+
+.event-filters-right {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    max-width: 50%;
+}
+
+#pastDropdown {
+    min-width: 120px;
+}
 
 /* Adjustments for the Event Section */
 .event-section {
     margin: 0 auto;
-    max-width: 1300px; /* Adjust to make the section wider */
-    padding: 0 15px; /* Adjust padding for better spacing */
+    max-width: 100%; /* Adjust to make the section wider */
+    padding: 0; /* Adjust padding for better spacing */
     margin-bottom: 80px;
+}
+
+.year-list {
+    @media (max-width: 768px) {
+        display: none !important;
+    }
+}
+
+.event-container {
+    width: 1300px;
+    margin: 0 auto;
+
+    @media (max-width: 1299px) {
+        width: 970px;
+    }
 }
 
 /* Sidebar Styles */
@@ -230,13 +287,18 @@
     margin-bottom: 20px; /* Add more spacing */
 }
 
+.event-cards-bg {
+    background-color: #F9F9F9;
+    padding: 30px;
+    border-radius: 8px;
+}
+
 /* Event Cards Container */
 .event-cards-wrapper {
     height: 750px; /* Increase height */
     overflow-y: scroll; /* Vertical scroll */
     margin: 20px 0; /* Add vertical margin */
-    border-left: 1px solid #ddd; /* Left separator */
-    padding: 15px; /* Add padding for better layout */
+    border-color: transparent !important;
 }
 
 /* Event Cards */
@@ -315,5 +377,21 @@
 .event-types-list li a:hover{
     color: #0056b3; /* Change color on hover */
 
+}
+
+.submit-btn {
+    padding: 12px 40px;
+    font-size: 14px;
+    background-color: #17004c;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 128px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #32007a;
 }
 

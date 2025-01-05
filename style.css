@@ -324,7 +324,7 @@ header {
         .text-container {
             display: flex;
             align-items: center;
-            margin: 156px 0 193px; /* Top and bottom margins only */
+            margin: 384px 0 193px; /* Top and bottom margins only */
             padding-left: 20px; /* Left padding to adjust position */
             justify-content: flex-end;
 
@@ -3596,6 +3596,7 @@ body {
     justify-content: center;
     gap: 42px;
     margin-top: 20px;
+    margin-bottom: 20px;
 
     @media (max-width: 768px) {
         display: flex;

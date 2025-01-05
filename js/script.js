@@ -213,6 +213,30 @@ document.addEventListener('DOMContentLoaded', function() {
         $monthIcon.removeClass('rotate');
     });
 
+    // Past Dropdown
+    const $pastSelect = $('#pastSelect');
+    const $pastMenu = $('#pastMenu');
+    const $pastIcon = $('#pastIcon');
+
+    $pastSelect.on('click', function () {
+        $pastMenu.toggle();
+        $pastIcon.toggleClass('rotate');
+    });
+
+    $pastMenu.on('click', 'div', function () {
+        const selectedYear = $(this).text();
+        $pastSelect.find('span').text(selectedYear);
+        $pastMenu.hide();
+        $pastIcon.removeClass('rotate');
+    });
+
+    // Close dropdowns if clicked outside
+    $(document).on('click', function (e) {
+        if (!$(e.target).closest('.drop').length) {
+            $pastMenu.hide();
+            $pastIcon.removeClass('rotate');
+        }
+    });
 });
 
 function toggleAccordion(element) {

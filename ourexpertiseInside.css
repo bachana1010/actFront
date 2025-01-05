@@ -7,21 +7,25 @@
 
 /* Card to contain everything */
 .expertise-card {
-    padding: 20px; /* Padding inside the card */
-    max-width: 1180px;
     width: 100%; /* Ensures it scales properly */
 }
 
 .image-container {
+    position: relative;
     text-align: center;
     margin: 0 auto;
 }
 
 .expertise-image {
     width: 100%;
-    max-width: 1180px;
-    height: auto; /* Maintain aspect ratio for responsiveness */
+    height: 548px !important; /* Maintain aspect ratio for responsiveness */
     object-fit: cover;
+    border-radius: 4px;
+}
+
+.expertise-card-content {
+    max-width: 1180px;
+    margin: 0 auto;
 }
 
 .expertise-caption {
@@ -87,7 +91,7 @@
 .client-link i {
     margin-right: 8px; /* Adds spacing between chevron and text */
     font-size: 18px;
-    line-height: 1; 
+    line-height: 1;
 }
 
 .client-link:hover {
@@ -171,6 +175,49 @@
     font-weight: bold;
 }
 
+.overlay-text {
+    position: absolute;
+    top: 0; /* Adjust to change vertical position */
+    left: 0; /* Adjust to change horizontal position */
+    color: white;
+    text-align: left; /* Align text to the left */
+    font-size: 50px;
+    width: 100%;
+    height: 548px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-text h2{
+    font-size: 80px;
+    width: 362px;
+    font-weight: 800;
+}
+
+
+@media (max-width: 991px) {
+    .image-container {
+        padding: 0 16px;
+    }
+    .overlay-text {
+        height: 305px !important;
+        justify-content: flex-start;
+    }
+
+    .overlay-text h2{
+        font-size: 36px;
+        width: 100%;
+        font-weight: 800;
+        padding: 0 30px;
+    }
+
+    .expertise-image {
+        height: 305px !important;
+    }
+}
+
 /* Media Queries for Mobile Responsiveness */
 @media (max-width: 768px) {
     .expertise-caption,
@@ -200,14 +247,10 @@
         text-align:left !important
     }
 
-    .overlay-text{
-        top:19% !important
+    .image-container .expertise-image {
+        height: 305px !important;
     }
-    .overlay-text h2 {
-        font-size:25px !important;
-
-    }
-} 
+}
 
 @media (max-width: 480px) {
     .help-clients {
@@ -222,21 +265,3 @@
         font-size: 18px;
     }
 }
-
-.overlay-text {
-    position: absolute;
-    top: 45%; /* Adjust to change vertical position */
-    left: 8%; /* Adjust to change horizontal position */
-    color: white;
-    font-weight: bold;
-    text-align: left; /* Align text to the left */
-    font-size: 50px;
-    width: 100px;
-    font-weight: bold
-}
-
-.overlay-text h2{
-    font-size: 50px;
-    width: 100px;
-}
-
