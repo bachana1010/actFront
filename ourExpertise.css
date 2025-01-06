@@ -7,8 +7,6 @@
 
 /* Card to contain everything */
 .expertise-card {
-    padding: 20px; /* Padding inside the card */
-    max-width: 1180px;
     width: 100%; /* Ensures it scales properly */
 }
 
@@ -19,8 +17,7 @@
 
 .expertise-image {
     width: 100%;
-    max-width: 1180px;
-    height: auto; /* Maintain aspect ratio for responsiveness */
+    height: 548px !important; /* Maintain aspect ratio for responsiveness */
     object-fit: cover;
 }
 
@@ -333,4 +330,9 @@
 
 .our-expertises .card-body {
     justify-content: flex-start;
+}
+
+.expertise-card-content {
+    max-width: 1180px;
+    margin: 0 auto;
 }
