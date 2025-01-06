@@ -3817,7 +3817,7 @@ body {
 
 .menu-content.active {
     display: block;
-    background-color: transparent; !important;
+    background-color: transparent !important;
 }
 
 .dropdown-navigation {
