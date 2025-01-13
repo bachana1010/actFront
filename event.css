@@ -85,6 +85,7 @@
 }
 
 .year-list li a {
+    display: block;
     text-decoration: none;
     font-weight: bold;
     color: #333;
@@ -94,6 +95,15 @@
 
 .year-list li a:hover {
     color: #0056b3; /* Change color on hover */
+}
+
+.year-list .active {
+    color: white;
+    height: 42px;
+    line-height: 36px;
+    margin-left: -8px;
+    padding: 0 8px;
+    border-radius: 8px;
 }
 
 /* Month Title */
@@ -250,7 +260,7 @@
 }
 
 #pastDropdown {
-    min-width: 120px;
+    min-width: 130px;
 }
 
 /* Adjustments for the Event Section */

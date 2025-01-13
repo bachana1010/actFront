@@ -195,7 +195,7 @@ ul li {
                 height: 40px;
     }
     #desktopApply{
-        display: none 
+        display: none
     }
 
     .job-detail-item:not(:last-child):not(.deadline)::after {
@@ -206,4 +206,59 @@ ul li {
 
 #mobileApply{
     display: none;
+}
+
+/* Form Section */
+.ebook-form-section {
+    width: 100%;
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8;
+}
+
+.form-container {
+    max-width: 600px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 30px;
+    position: relative;
+}
+
+/* Form Styling */
+.ebook-form .form-group {
+    margin-bottom: 20px;
+}
+
+.ebook-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #000;
+}
+
+.ebook-form .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.ebook-submit-btn {
+    width: 100%;
+    padding: 12px 0;
+    background-color: #17004c;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.ebook-submit-btn:hover {
+    background-color: #32007a;
 }

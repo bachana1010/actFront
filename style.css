@@ -29,6 +29,15 @@ html[lang=ka] * {
     font-family: 'Helvetica Neue LT GEO 55 Roman',sans-serif;
 }
 
+html[lang=ka] h1,
+html[lang=ka] h2,
+html[lang=ka] h3,
+html[lang=ka] h4,
+html[lang=ka] h5,
+html[lang=ka] h6 {
+    font-family: 'Helvetica Neue World 45 Lt',sans-serif !important;
+}
+
 body {
     font-family: 'Lato', Arial, sans-serif;
     /* background-color: #f4f4f4; */
@@ -341,7 +350,7 @@ header {
         position: relative;
         display: flex;
         align-items: center;
-        width: calc(100% - 616px);
+        width: calc(100% - 600px);
 
         @media (max-width: 1200px) {
             width: calc(100% - 470px);
@@ -354,9 +363,14 @@ header {
         .text-container {
             display: flex;
             align-items: center;
-            margin: 384px 0 193px; /* Top and bottom margins only */
+            margin: 384px auto 193px; /* Top and bottom margins only */
             padding-left: 20px; /* Left padding to adjust position */
-            justify-content: flex-end;
+            justify-content: flex-start;
+            width: 600px;
+
+            @media (max-width: 1300px) {
+                width: 400px;
+            }
 
             @media (max-width: 768px) {
                 margin: 30px 0 20px;
@@ -3914,4 +3928,29 @@ body {
 
 .dropdown-navigation-right img {
     height: 120px;
+}
+
+.learn-more-btn {
+    box-shadow: none !important;
+}
+
+.our-expertise-card #cardIdP {
+    height: 60px;
+}
+
+.ebook-card #cardIdP {
+    padding-top: 6px !important;
+}
+
+.ebook-card p {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.ebook-card .learn-more-div {
+    margin-top: 0;
+}
+
+.ebook-card .card-description {
+    height: 190px;
 }

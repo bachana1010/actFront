@@ -23,13 +23,13 @@
         <section class="vacancy">
             <!-- Back Arrow -->
         <div class="back-arrow">←</div>
-    
+
         <!-- Job Header -->
         <section class="job-header">
             <h2>Account Manager</h2>
             <button id="desktopApply">Apply now</button>
         </section>
-    
+
         <!-- Job Details -->
      <!-- Job Details -->
      <section class="job-details">
@@ -73,7 +73,7 @@
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
             </p>
         </section>
-    
+
         <!-- Duties and Requirements -->
         <section class="duties-requirements">
             <div>
@@ -96,15 +96,45 @@
                     <li>loro ipsum minim veniam, quis nostrud exercitation</li>
                 </ul>
             </div>
+
+            <div class="container p-0 w-100" id="secontContainer">
+                <section class="ebook-form-section w-100">
+                    <div class="form-container  w-100">
+                        <form class="ebook-form">
+                            <div class="form-group w-100">
+                                <label for="name">Name Surname*</label>
+                                <input type="text" id="name" class="form-control" required>
+                            </div>
+                            <div class="form-group w-100">
+                                <label for="email">Email*</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="form-group w-100">
+                                <label for="phone">Phone Number*</label>
+                                <input type="text" id="phone" class="form-control" required>
+                            </div>
+                            <div class="form-group w-100">
+                                <label for="position">Position*</label>
+                                <input type="text" id="position" class="form-control" required>
+                            </div>
+                            <div class="form-group w-100">
+                                <label for="company">Company*</label>
+                                <input type="text" id="company" class="form-control" required>
+                            </div>
+                            <button type="submit" class="ebook-submit-btn">Download eBook</button>
+                        </form>
+                    </div>
+                </section>
+            </div>
         </section>
         <button id="mobileApply">Apply now</button>
 
         </section>
-    
+
 
     </main>
 
-    
+
      <!-- Footer -->
      <footer id="footer"></footer>
 
@@ -112,13 +142,13 @@
          function loadHTML(elementId, filePath) {
              $(elementId).load(filePath);
          }
- 
+
          $(document).ready(function () {
              loadHTML('#header', 'header.html');
              loadHTML('#footer', 'footer.html');
          });
      </script>
- 
+
      <script src="js/registration.js"></script> <!-- New JS file for registration -->
 </body>
 </html>
