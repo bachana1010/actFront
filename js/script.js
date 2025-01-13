@@ -296,4 +296,12 @@ document.addEventListener("DOMContentLoaded", () => {
             currentOpenItem = null; // Reset the current open item
         }
     });
+
+    const fileInput = document.getElementById('fileInput');
+    const fileName = document.getElementById('fileName');
+
+    fileInput.addEventListener('change', (event) => {
+        const selectedFile = event.target.files[0];
+        fileName.textContent = selectedFile ? selectedFile.name : 'არ არის არჩეული ფაილი';
+    });
 });

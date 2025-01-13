@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacancy Section</title>
+    <script src="https://kendo.cdn.telerik.com/2018.3.911/js/jquery.min.js"></script>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="vacancyinside.css">
+</head>
+
+<body>
+    <header id="header"></header>
+
+    <main class="vacancy-section">
+        <section class="vacancy">
+            <!-- Back Arrow -->
+        <div class="back-arrow">←</div>
+            <div class="container my-5">
+                <!-- Frame -->
+                <div class="custom-bg p-4">
+                    <!-- Header -->
+                    <div class="text-center mb-4">
+                        <h1 class="custom-header">მომხმარებლის გამოცდილების (CX) კონსულტანტი</h1>
+                    </div>
+                    <div class="vacancy-form">
+                        <!-- Form -->
+                        <form class="d-flex flex-column gap-3 mx-auto">
+                            <div class="mb-4">
+                                <input type="text" id="vacancy" class="form-control custom-input" placeholder="კონსულტანტი" disabled>
+                            </div>
+                            <div class="mb-4">
+                                <input type="text" id="time" class="form-control custom-input" placeholder="სრული განაკვეთი" disabled>
+                            </div>
+                            <div class="mb-4">
+                                <input type="text" id="name" class="form-control custom-input" placeholder="სახელი და გვარი">
+                            </div>
+                            <div class="mb-4">
+                                <input type="tel" id="phone" class="form-control custom-input" placeholder="ტელ.ნომერი">
+                            </div>
+                            <div class="mb-4">
+                                <div class="custom-file">
+                                    <label for="fileInput" id="fileName">
+                                        ფაილის ატვირთვა
+                                    </label>
+                                    <input type="file" class="form-control custom-input" id="fileInput" style="display: none;">
+                                    <button type="button" class="btn btn-secondary" onclick="document.getElementById('fileInput').click()">
+                                        ატვირთვა
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- Additional Text -->
+                        <div class="mt-4 custom-text">
+                            ACT-ში თქვენ მიერ გამოგზავნილი რეზიუმე შესაძლოა შეიცავდეს "პერსონალურ მონაცემთა დაცვის შესახებ" საქართველოს კანონით გათვალისწინებულ პერსონალურ მონაცემებს, მათ შორის, განსაკუთრებული კატეგორიის მონაცემებს. გაცნობებთ, რომ თქვენი პერსონალური მონაცემები ACT-ის მიერ დამუშავდება თქვენთან სახელშეკრულებო, მათ შორის, შრომითი ურთიერთობისის დამყარების შესახებ გადაწყვეტილების მიღების მიზნებისათვის. ასევე, თქვენ მიერ გამოგზავნილი რეზიუმე შესაძლოა არ იქნას განხილული მოცემულ ვაკანსიაზე და დარეზერვებული იქნას სხვა რელევანტური ვაკანსიისათვის, არაუმეტეს 3 წლის ვადით. იმ შემთხვევაში, თუ ეთანხმებით ზემოთ აღნიშნულს, გთხოვთ, გამოგვიგზავნოთ თქვენი რეზიუმე.
+                        </div>
+
+                        <!-- Footer Button -->
+                        <div class="text-center mt-4 pt-4 pb-4">
+                            <button class="btn btn-secondary mx-auto px-5">გაგზავნა</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+     <!-- Footer -->
+     <footer id="footer"></footer>
+
+     <script>
+         function loadHTML(elementId, filePath) {
+             $(elementId).load(filePath);
+         }
+
+         $(document).ready(function () {
+             loadHTML('#header', 'header.html');
+             loadHTML('#footer', 'footer.html');
+         });
+     </script>
+
+    <script src="js/script.js"></script>
+     <script src="js/registration.js"></script> <!-- New JS file for registration -->
+</body>
+</html>
