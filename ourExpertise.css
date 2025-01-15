@@ -288,18 +288,35 @@
 
 .overlay-text {
     position: absolute;
-    top: 20%; /* Adjust to change vertical position */
-    left: 5%; /* Adjust to change horizontal position */
+    top: 0; /* Adjust to change vertical position */
+    left: 0; /* Adjust to change horizontal position */
     color: white;
     font-weight: bold;
     text-align: left; /* Align text to the left */
+    height: 548px;
+    width: 100%;
 
-    font-weight: bold
+    @media (max-width: 768px) {
+        top: 0 !important;
+        height: 170px;
+    }
+}
+
+.overlay-text .container {
+    position: relative;
+    height: 100%;
 }
 
 .overlay-text h2{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     font-size: 50px;
-    width: 100px;
+    max-width: 300px;
+
+    @media (max-width: 768px) {
+        font-size: 24px;
+    }
 }
 
 .learn-more-link {

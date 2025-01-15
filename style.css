@@ -21,12 +21,56 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Lato';
+    src: url('./fonts/Lato-Black.eot');
+    src: url('./fonts/Lato-Black.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/Lato-Black.woff2') format('woff2'),
+    url('./fonts/Lato-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('./fonts/Lato-ExtraBold.eot');
+    src: url('./fonts/Lato-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/Lato-ExtraBold.woff2') format('woff2'),
+    url('./fonts/Lato-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('./fonts/Lato-Bold.eot');
+    src: url('./fonts/Lato-Bold.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/Lato-Bold.woff2') format('woff2'),
+    url('./fonts/Lato-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('./fonts/Lato-Regular.eot');
+    src: url('./fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/Lato-Regular.woff2') format('woff2'),
+    url('./fonts/Lato-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 html[lang=en] * {
-    font-family: 'Helvetica Neue World 45 Lt',sans-serif;
+    font-family: 'Helvetica Neue LT GEO 55 Roman',sans-serif;
 }
 
 html[lang=ka] * {
-    font-family: 'Helvetica Neue LT GEO 55 Roman',sans-serif;
+    font-family: 'Helvetica Neue World 45 Lt',sans-serif;
 }
 
 html[lang=ka] h1,
@@ -3953,4 +3997,8 @@ body {
 
 .ebook-card .card-description {
     height: 190px;
+}
+
+.font-family-lato {
+    font-family: 'Lato', sans-serif !important;
 }
