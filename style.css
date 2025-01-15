@@ -4004,5 +4004,5 @@ body {
 }
 
 .news-cards-sim .card-img-top {
-    height: 250px;
+    height: 250px !important;
 }
