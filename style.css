@@ -82,8 +82,12 @@ html[lang=ka] h6 {
     font-family: 'Helvetica Neue World 45 Lt',sans-serif !important;
 }
 
+html[lang=ka] .font-family-lato,
+html[lang=en] .font-family-lato{
+    font-family: 'Lato', sans-serif !important;
+}
+
 body {
-    font-family: 'Lato', Arial, sans-serif;
     /* background-color: #f4f4f4; */
     color: #333;
 }
@@ -3999,6 +4003,6 @@ body {
     height: 190px;
 }
 
-.font-family-lato {
-    font-family: 'Lato', sans-serif !important;
+.news-cards-sim .card-img-top {
+    height: 250px;
 }
