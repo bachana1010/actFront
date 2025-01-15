@@ -268,3 +268,7 @@
 .event-speaker-cards .card-body{
     justify-content: flex-start;
 }
+
+.event-speaker-cards #cardIdP {
+    min-height: 120px;
+}
