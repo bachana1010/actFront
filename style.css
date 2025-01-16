@@ -1688,7 +1688,8 @@ header {
 .news-section .news-title {
     margin-bottom: 10px;
     text-align: center;
-    width:0
+    width: auto
+
 }
 
 .news-section .view-all-link {
@@ -4001,8 +4002,19 @@ body {
 
 .ebook-card .card-description {
     height: 190px;
+
+    @media (max-width: 991px) {
+        height: auto;
+        padding-bottom: 12px;
+    }
 }
 
 .news-cards-sim .card-img-top {
     height: 250px !important;
+}
+
+@media (max-width: 991px) {
+    .news-section .news-title {
+        margin-right: 228px !important;
+    }
 }

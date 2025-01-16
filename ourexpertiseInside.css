@@ -257,6 +257,15 @@
     .image-container .expertise-image {
         height: 305px !important;
     }
+
+    .expertise-card td {
+        width: 100% !important;
+    }
+
+    .expertise-card tr {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 480px) {

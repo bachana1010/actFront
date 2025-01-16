@@ -284,6 +284,11 @@
     @media (max-width: 1299px) {
         width: 970px;
     }
+
+    @media (max-width: 991px) {
+        width: 100%;
+        padding: 0 16px;
+    }
 }
 
 /* Sidebar Styles */
@@ -309,6 +314,10 @@
     overflow-y: scroll; /* Vertical scroll */
     margin: 20px 0; /* Add vertical margin */
     border-color: transparent !important;
+
+    @media (max-width: 991px) {
+        margin: 0;
+    }
 }
 
 /* Event Cards */

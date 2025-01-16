@@ -262,7 +262,23 @@
 }
 
  .news-cards{
-    width: 1180px
+    width: 1180px;
+
+     @media (max-width: 991px) {
+         width: 100%;
+     }
+}
+
+.event-speaker-cards {
+    @media (max-width: 991px) {
+        gap: 16px;
+    }
+}
+
+.event-speaker-cards .card {
+    @media (max-width: 991px) {
+        margin-top: 0;
+    }
 }
 
 .event-speaker-cards .card-body{
@@ -271,4 +287,10 @@
 
 .event-speaker-cards #cardIdP {
     min-height: 120px;
+}
+
+.event-speaker-cards .learn-more-div {
+    @media (max-width: 991px) {
+        margin-left: 12px;
+    }
 }
