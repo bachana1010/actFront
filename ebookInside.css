@@ -342,6 +342,9 @@
     background-color: #cfcfcf;
 }
 
+.align-items-center {
+    margin-left: 9px;
+}
 
 
 @media (max-width: 768px) {

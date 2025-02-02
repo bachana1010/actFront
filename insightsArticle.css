@@ -121,6 +121,7 @@ h1 {
 /* News Section */
 .news-section {
     padding: 20px 0;
+    margin-left: 5rem;
 }
 
 @media (min-width: 768px) {
@@ -157,6 +158,7 @@ h1 {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
+    margin-left: -55px;
 }
 
 @media (min-width: 768px) {
@@ -358,4 +360,31 @@ h1 {
     margin-left: 65px;
         font-size: 30px;
         border: none
+}
+
+
+/* Spotlight Projects Section */
+.spotlight-section {
+    padding: 40px 0;
+    display: flex;
+    margin-left: 2.5rem;
+    justify-content: center; /* Center the section */
+}
+
+.custom-container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+/* Title in Spotlight Section */
+.spotlight-title {
+    font-size: 20px;
+    /*font-weight: bold;*/
+    text-align: center; /* Centered title */
+}
+
+.spotlight-line {
+    width: 79%;
+    margin-top: 25px;
 }

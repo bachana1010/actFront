@@ -307,12 +307,12 @@
     height: 100%;
 }
 
-.overlay-text h2{
+.overlay-text .expertise-title{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     font-size: 50px;
-    max-width: 300px;
+    max-width: 100%;
 
     @media (max-width: 768px) {
         font-size: 24px;

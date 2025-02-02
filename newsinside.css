@@ -87,14 +87,15 @@
 }
 
 .spotlight-title {
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
+    font-size: 20px;
+    /*font-weight: bold;*/
+    text-align: center; /* Centered title */
+    font-weight: bold !important;
 }
 
 @media (min-width: 768px) {
     .spotlight-title {
-        font-size: 28px;
+        font-size: 20px;
     }
 }
 

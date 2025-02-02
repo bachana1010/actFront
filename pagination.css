@@ -1,0 +1,51 @@
+.pagination .page-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(23, 0, 76, 0.1);
+    border-radius: 4px;
+    background-color: white;
+    width: 23px;
+    height: 24px;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(49, 49, 49, 1);
+    padding: 0;
+}
+
+.pagination .prev .page-link,
+.pagination .next .page-link {
+    width: 58px;
+    gap: 4px;
+}
+
+.pagination .prev .page-link i,
+.pagination .next .page-link i {
+    position: relative;
+    top: 1px;
+    font-size: 8px;
+}
+
+.pagination .page-link.dots {
+    pointer-events: none;
+    align-items: inherit;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: rgba(59, 48, 146, 1);
+    color: white;
+    font-weight: 700;
+    border-color: rgba(59, 48, 146, 1);
+}
+
+.pagination .page-link:hover {
+    background-color: rgba(233, 233, 233, 0.5);
+}
+
+.pagination .page-item {
+    margin-right: 5px; /* Add spacing between pagination items */
+}
+
+.active, .dot:hover {
+    background-color: transparent;
+}

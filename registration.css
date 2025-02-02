@@ -1,6 +1,5 @@
 /* Background image for the section */
 .registration-section {
-    background-image: url('asserts/Rectangle14.png'); /* Update the background image URL */
     background-size: cover;
     background-position: center;
     padding: 60px 0;
