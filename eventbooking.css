@@ -270,6 +270,8 @@
 }
 
 .event-speaker-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     @media (max-width: 991px) {
         gap: 16px;
     }
@@ -286,7 +288,7 @@
 }
 
 .event-speaker-cards #cardIdP {
-    min-height: 120px;
+    min-height: 80px;
 }
 
 .event-speaker-cards .learn-more-div {
