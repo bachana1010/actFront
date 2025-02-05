@@ -147,7 +147,6 @@
     flex-direction: column;
     gap: 20px;
     margin-top: 20px;
-    margin-left: 20rem;
 }
 
 @media (min-width: 768px) {
