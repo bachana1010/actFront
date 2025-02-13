@@ -2113,7 +2113,6 @@ body {
 
 
 .card {
-    height: 575px; /* Fixed card height */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
