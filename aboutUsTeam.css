@@ -318,13 +318,20 @@
 @media (max-width: 768px) {
     /* Stack cards in one column for mobile */
     .about-card {
+        flex-direction: column;
+        align-items: flex-start;
         width: 100%;
         margin-bottom: 20px;
+        text-align: left;
     }
 
     .card-columns {
         flex-direction: column;
         gap: 10px;
+    }
+
+    .card-icons {
+        margin-left: 15rem;
     }
 }
 
@@ -405,3 +412,4 @@
     cursor: pointer;
 }
  */
+
