@@ -51,10 +51,6 @@
     padding: 20px;
 }
 
-.about-card a:last-child {
-    width: 100%;
-}
-
 
 @media (min-width: 768px) {
     .about-card {
