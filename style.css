@@ -4165,4 +4165,8 @@ body {
     .show-mobile {
         display: block;
     }
+
+    .pagination {
+        flex-direction: row !important;
+    }
 }
