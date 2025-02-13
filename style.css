@@ -4120,4 +4120,8 @@ body {
     .news-cards-sim {
         grid-template-columns: repeat(1, 1fr) !important;
     }
+
+    .card-content .buttons > a {
+        height: 30px !important;
+    }
 }
