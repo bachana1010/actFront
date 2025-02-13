@@ -4108,6 +4108,14 @@ body {
     margin-left: -15px;
 }
 
+.show-desktop {
+    display: block;
+}
+
+.show-mobile {
+    display: none;
+}
+
 @media (max-width: 991px) {
     .news-section .news-title {
         margin-right: 228px !important;
@@ -4148,5 +4156,13 @@ body {
 
     .featured-projects-section .section-title {
         margin-left: 0;
+    }
+
+    .show-desktop {
+        display: none;
+    }
+
+    .show-mobile {
+        display: block;
     }
 }
