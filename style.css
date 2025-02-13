@@ -4125,7 +4125,7 @@ body {
     }
 
     .aboutus-section img {
-        width: 100%;
+        width: 100% !important;
         height: auto;
         object-fit: cover;
     }
