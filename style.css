@@ -4129,4 +4129,8 @@ body {
         height: auto;
         object-fit: cover;
     }
+
+    body {
+        overflow-x: hidden;
+    }
 }
