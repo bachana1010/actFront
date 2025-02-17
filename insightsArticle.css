@@ -85,12 +85,18 @@ h1 {
 .article-content {
     max-width: 100%;
     margin: 40px auto;
-    padding: 0 0;
+    padding-top: 1rem;
 }
 
 @media (min-width: 768px) {
     .article-content {
         max-width: 1180px;
+    }
+}
+
+@media (max-width: 768px) {
+    .article-content {
+        padding-top: 0;
     }
 }
 
@@ -309,24 +315,24 @@ h1 {
         margin-left: 10px !important
     }
 
-    .news-section .news-title {
+        .news-section .news-title {
 
-        margin-left: -81px;
-    }
+            margin-left: -81px;
+        }
 
-    #hrNesSection{
-        margin-top: -18px
-    }
+        #hrNesSection{
+            margin-top: -18px
+        }
 
-    .news-line, .section-line{
-        width: 60%
-    }
+        .news-line, .section-line{
+            width: 60%
+        }
 
-    .news-titleExplore{
-        font-weight: bold !important;
-        margin-left: -156px !important;
+        .news-titleExplore{
+            font-weight: bold !important;
+            margin-left: -156px !important;
 
-    }
+        }
 
 }
 
@@ -358,8 +364,8 @@ h1 {
 
 #arrowP{
     margin-left: 65px;
-    font-size: 30px;
-    border: none
+        font-size: 30px;
+        border: none
 }
 
 
@@ -387,4 +393,14 @@ h1 {
 .spotlight-line {
     width: 79%;
     margin-top: 25px;
+}
+
+.insight-article-content {
+    background-color: #fcfcfc;
+}
+
+@media (max-width: 768px) {
+    .insight-article-content {
+
+    }
 }

@@ -103,6 +103,7 @@ html[lang=en] .font-family-lato * {
 body {
     /* background-color: #f4f4f4; */
     color: #333;
+    overflow-x: hidden; /* Prevent horizontal scrolling on the entire page */
 }
 
 /* Header Styles */
@@ -259,6 +260,32 @@ header {
 
     }
 
+    .hero-section {
+        overflow-x: hidden; /* Prevent horizontal overflow on mobile */
+    }
+
+    .hero-section .container {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 15px; /* Adjust padding to fit within the viewport */
+        box-sizing: border-box;
+    }
+
+    .media-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .media-container .mobile-image {
+        width: 100%;
+        max-width: 100%;
+        height: 52rem; /* Fixed height */
+        object-fit: cover; /* Maintain aspect ratio and cover the container */
+        display: block;
+    }
 }
 
 #utemAt{
@@ -4310,5 +4337,95 @@ body {
     .article-head .social-icon img {
         height: 12px;
         width: 12px;
+    }
+
+    .hero-section {
+        overflow-x: hidden; /* Prevent horizontal overflow on mobile */
+        overflow-y: hidden;
+    }
+
+    .hero-section .container {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 15px; /* Adjust padding to fit within the viewport */
+        box-sizing: border-box;
+        overflow-y: hidden;
+    }
+
+    .hero-section .text-container,
+    .hero-section .hero-image {
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .hero-section .text-content {
+        padding: 0; /* Remove or adjust padding to prevent overflow */
+    }
+
+    .media-container .mobile-image {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.media-container .desktop-video {
+    display: block;
+}
+
+.media-container .mobile-image {
+    display: none;
+    width: 100%; /* Ensure the image takes the full width of its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+@media (max-width: 768px) {
+    .media-container .desktop-video {
+        display: none;
+    }
+
+    .media-container .mobile-image {
+        display: block !important;
+        max-width: 100%;
+        height: 52rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        overflow-x: hidden; /* Prevent horizontal overflow on mobile */
+    }
+
+    .hero-section .container {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 15px; /* Adjust padding to fit within the viewport */
+        box-sizing: border-box;
+    }
+
+    .hero-section .text-container,
+    .hero-section .hero-image {
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .hero-section .text-content {
+        padding: 0; /* Remove or adjust padding to prevent overflow */
+    }
+
+    .media-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .media-container .mobile-image {
+        width: 100%;
+        max-width: 100%;
+        height: 52rem; /* Fixed height */
+        object-fit: cover; /* Maintain aspect ratio and cover the container */
+        display: block;
     }
 }
