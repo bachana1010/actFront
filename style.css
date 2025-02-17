@@ -4428,4 +4428,31 @@ body {
         object-fit: cover; /* Maintain aspect ratio and cover the container */
         display: block;
     }
+
+    .footer {
+        padding: 0 20px 10px;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+    }
+
+    .footer-container {
+        padding: 0;
+    }
+
+    .footer-left {
+        margin: 0;
+        min-width: auto;
+    }
+
+    .footer-right {
+        margin: 0;
+        min-width: auto;
+    }
+
+
+    .footer .bottom-links a {
+        color: white;
+        font-size: 10px;
+        padding-right: 18px;
+    }
 }
